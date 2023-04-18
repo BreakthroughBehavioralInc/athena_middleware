@@ -26,7 +26,7 @@ module AthenaApi
     end
 
     def token_url
-       "#{config.base_url}/oauthpreview/token"
+       "#{config.base_url}/#{config.auth_path}"
     end
   end
 end

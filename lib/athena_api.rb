@@ -26,5 +26,6 @@ module AthenaApi
     def_delegators :@config, :api_key, :api_key=
     def_delegators :@config, :api_secret, :api_secret=
     def_delegators :@config, :base_url, :base_url=
+    def_delegators :@config, :auth_path, :auth_path=
   end
 end
