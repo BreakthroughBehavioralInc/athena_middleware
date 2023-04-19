@@ -17,6 +17,8 @@ module AthenaApi
   autoload :Resource, "athena_api/resource"
 
   autoload :Patients, "athena_api/resources/patients"
+  autoload :Departments, "athena_api/resources/departments"
+  autoload :Reference, "athena_api/resources/reference"
 
   @config = AthenaApi::Config.new
 

@@ -20,6 +20,7 @@ module AthenaApi
   
       def self.execute_request(method, url, params: {}, headers: {}, body_params: nil)
         headers.merge!(set_headers) if [:put,:post].include?(method)
+        headers.merge!(get_method_headers) if [:get].include?(method)
         body_params.merge!("Content-Type" => "application/json") if [:put,:post].include?(method)
         client.token_connection.send(method, url, params: params, headers: headers, body: body_params.to_json)
       end
@@ -27,6 +28,11 @@ module AthenaApi
       def self.set_headers
         headers = {"Content-Type" => "application/x-www-form-urlencoded"}
         headers[:"Accept-Encoding"] = "identity"
+        headers
+      end
+
+      def self.get_method_headers
+        headers = {"Accept-Encoding" => "identity"}
         headers
       end
     end
