@@ -16,6 +16,8 @@ AthenaApi.api_key = ENV["ATHENA_KEY"]
 AthenaApi.api_secret = ENV["ATHENA_SECRET"]
 AthenaApi.base_url = ENV["ATHENA_BASE_URL"]
 AthenaApi.auth_path = ENV["ATHENA_AUTH_PATH"]
+AthenaApi.version_string = ENV["ATHENA_VERSION_STRING"]
+AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
 
 require "irb"
 IRB.start(__FILE__)

@@ -16,6 +16,8 @@ module AthenaApi
   autoload :Object, "athena_api/object"
   autoload :Resource, "athena_api/resource"
 
+  autoload :Patients, "athena_api/resources/patients"
+
   @config = AthenaApi::Config.new
 
   class << self
@@ -27,5 +29,7 @@ module AthenaApi
     def_delegators :@config, :api_secret, :api_secret=
     def_delegators :@config, :base_url, :base_url=
     def_delegators :@config, :auth_path, :auth_path=
+    def_delegators :@config, :version_string, :version_string=
+    def_delegators :@config, :practice_id, :practice_id=
   end
 end

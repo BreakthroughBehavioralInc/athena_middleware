@@ -15,13 +15,19 @@ module AthenaApi
                 "on its subclasses (e.g. Patient)"
         end
   
-        "#{client.config.base_url}/#{class_name.downcase}"
+        "#{client.config.base_url}/#{client.config.version_string}/#{client.config.practice_id}/#{class_name.downcase}"
       end
   
       def self.execute_request(method, url, params: {}, headers: {}, body_params: nil)
-        headers.merge!("Content-Type" => "application/json") if [:post].include?(method)
-        body_params.merge!("Content-Type" => "application/json") if [:put].include?(method)
+        headers.merge!(set_headers) if [:put,:post].include?(method)
+        body_params.merge!("Content-Type" => "application/json") if [:put,:post].include?(method)
         client.token_connection.send(method, url, params: params, headers: headers, body: body_params.to_json)
+      end
+
+      def self.set_headers
+        headers = {"Content-Type" => "application/x-www-form-urlencoded"}
+        headers[:"Accept-Encoding"] = "identity"
+        headers
       end
     end
   end
