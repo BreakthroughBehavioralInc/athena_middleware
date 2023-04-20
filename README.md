@@ -1,6 +1,6 @@
 # athena_middleware
 # Build Status # 
-![Ruby](https://github.com/BreakthroughBehavioralInc/cigna-ruby/actions/workflows/ruby.yml/badge.svg)
+![Ruby](https://github.com/BreakthroughBehavioralInc/athena_middleware/actions/workflows/ruby.yml/badge.svg)
 
 
 # AthenaApi
@@ -27,11 +27,41 @@ Or install it yourself as:
 
 ## Usage
 
-The library needs to be configured with your account's key and secret. Set `CignaApi.api_key` and `Cigna.api_secret` to their values, ideally using hidden `ENV` variables:
+
+
+The library needs to be configured with your account's key and secret. Set `AthenaApi.api_key` and `AthenaApi.api_secret` to their values, ideally using hidden `ENV` variables:
 
 ```ruby
 require 'athena_middleware'
 
+AthenaApi.api_key = ENV["ATHENA_KEY"]
+AthenaApi.api_secret = ENV["ATHENA_SECRET"]
+AthenaApi.base_url = ENV["ATHENA_BASE_URL"]
+AthenaApi.auth_path = ENV["ATHENA_AUTH_PATH"]
+AthenaApi.version_string = ENV["ATHENA_VERSION_STRING"]
+AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
+
+# RESOURCES
+
+# Patients
+AthenaApi::Patients.get(patient_id)
+AthenaApi::Patients.put(patient_id, params)
+AthenaApi::Patients.post(params)
+AthenaApi::Patients.get_patient_details(patient_id)
+AthenaApi::Patients.record_payment(patient_id, params)
+AthenaApi::Patients.update_patient_privacy_information(id, params)
+
+# Departments
+AthenaApi::Departments.get()
+
+# Reference
+AthenaApi::Reference.get_provider_types()
+AthenaApi::Reference.get_provider_types()
+AthenaApi::Reference.get_provider_specialties()
+
+
+
+```
 
 ## Development
 
