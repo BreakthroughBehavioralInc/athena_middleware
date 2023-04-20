@@ -5,7 +5,7 @@
 
 # AthenaApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/athena_middleware`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/athena_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -14,7 +14,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'athena_middleware'
+gem 'athena_api'
 ```
 
 And then execute:
@@ -28,8 +28,7 @@ Or install it yourself as:
 ## Usage
 
 
-
-The library needs to be configured with your account's key and secret. Set `AthenaApi.api_key` and `AthenaApi.api_secret` to their values, ideally using hidden `ENV` variables:
+The library needs to be configured with your account's key, secret, base_url, auth_path, version_String, and practice_id.
 
 ```ruby
 require 'athena_middleware'
@@ -58,6 +57,15 @@ AthenaApi::Departments.get()
 AthenaApi::Reference.get_provider_types()
 AthenaApi::Reference.get_provider_types()
 AthenaApi::Reference.get_provider_specialties()
+
+# Insurance
+AthenaApi::Insurance.get(patient_id)
+AthenaApi::Insurance.post(patient_id,params)
+AthenaApi::Insurance.put(patient_id,params)
+AthenaApi::Insurance.delete(patient_id,insurance_id)
+AthenaApi::Insurance.get_deactivated_insurance(patient_id)
+AthenaApi::Insurance.reactivate_insurance(patient_id,insurance_id)
+
 
 
 

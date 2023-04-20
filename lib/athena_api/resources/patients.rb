@@ -4,16 +4,16 @@ module AthenaApi
       extend AthenaApi::Crud::Post
       extend AthenaApi::Crud::Put
 
-      def self.get_patient_details(id)
-        execute_request(:get, "#{resource_url}/#{id}?showallclaims=true&showbalancedetails=true").parsed
+      def self.get_patient_details(patient_id)
+        execute_request(:get, "#{resource_url}/#{patient_id}?showallclaims=true&showbalancedetails=true").parsed
       end
 
-      def self.record_payment(id, params = {})
-        execute_request(:post, "#{resource_url}/#{id}/recordpayment", body_params: params).parsed
+      def self.record_payment(patient_id, params = {})
+        execute_request(:post, "#{resource_url}/#{patient_id}/recordpayment", body_params: params).parsed
       end
 
-      def self.update_patient_privacy_information(id, params = {})
-        execute_request(:post, "#{resource_url}/#{id}/privacyinformationverified", body_params: params).parsed
+      def self.update_patient_privacy_information(patient_id, params = {})
+        execute_request(:post, "#{resource_url}/#{patient_id}/privacyinformationverified", body_params: params).parsed
       end
     end
 end
