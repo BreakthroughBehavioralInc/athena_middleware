@@ -34,5 +34,6 @@ module AthenaApi
     def_delegators :@config, :auth_path, :auth_path=
     def_delegators :@config, :version_string, :version_string=
     def_delegators :@config, :practice_id, :practice_id=
+    def_delegators :@config, :debug, :debug=
   end
 end

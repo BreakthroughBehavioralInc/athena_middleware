@@ -3,11 +3,11 @@ module AthenaApi
       extend AthenaApi::Crud::Get
 
       def self.get_provider_specialties
-        execute_request(:get, "#{resource_url}/providerspecialties").parsed
+        execute_request(:get, "#{resource_url}/providerspecialties")
       end
 
       def self.get_provider_types
-        execute_request(:get, "#{resource_url}/providertypes").parsed
+        execute_request(:get, "#{resource_url}/providertypes")
       end
     end
 end
