@@ -1,10 +1,5 @@
 module AthenaApi
     class Insurances < Resource
-        extend AthenaApi::Crud::Get
-        extend AthenaApi::Crud::Post
-        extend AthenaApi::Crud::Put
-        extend AthenaApi::Crud::Delete
-
         def self.resource_url
             "#{client.config.base_url}/#{client.config.version_string}/#{client.config.practice_id}/patients"
         end
