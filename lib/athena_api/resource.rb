@@ -22,7 +22,8 @@ module AthenaApi
         headers.merge!(set_headers) if [:put,:post].include?(method)
         headers.merge!(get_method_headers) if [:get].include?(method)
         body_params.merge!("Content-Type" => "application/json") if [:put,:post].include?(method)
-        client.token_connection.send(method, url, params: params, headers: headers, body: body_params.to_json)
+        response = client.token_connection.send(method, url, params: params, headers: headers, body: body_params.to_json)
+        client.config.debug ? response : response.parsed
       end
 
       def self.set_headers

@@ -19,6 +19,7 @@ module AthenaApi
   autoload :Patients, "athena_api/resources/patients"
   autoload :Departments, "athena_api/resources/departments"
   autoload :Reference, "athena_api/resources/reference"
+  autoload :Insurances, "athena_api/resources/reference"
 
   @config = AthenaApi::Config.new
 
@@ -33,5 +34,6 @@ module AthenaApi
     def_delegators :@config, :auth_path, :auth_path=
     def_delegators :@config, :version_string, :version_string=
     def_delegators :@config, :practice_id, :practice_id=
+    def_delegators :@config, :debug, :debug=
   end
 end

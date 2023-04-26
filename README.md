@@ -1,11 +1,11 @@
 # athena_middleware
 # Build Status # 
-![Ruby](https://github.com/BreakthroughBehavioralInc/cigna-ruby/actions/workflows/ruby.yml/badge.svg)
+![Ruby](https://github.com/BreakthroughBehavioralInc/athena_middleware/actions/workflows/ruby.yml/badge.svg)
 
 
 # AthenaApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/athena_middleware`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/athena_api`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -14,7 +14,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'athena_middleware'
+gem 'athena_api'
 ```
 
 And then execute:
@@ -27,11 +27,49 @@ Or install it yourself as:
 
 ## Usage
 
-The library needs to be configured with your account's key and secret. Set `CignaApi.api_key` and `Cigna.api_secret` to their values, ideally using hidden `ENV` variables:
+
+The library needs to be configured with your account's key, secret, base_url, auth_path, version_String, and practice_id.
 
 ```ruby
 require 'athena_middleware'
 
+AthenaApi.api_key = ENV["ATHENA_KEY"]
+AthenaApi.api_secret = ENV["ATHENA_SECRET"]
+AthenaApi.base_url = ENV["ATHENA_BASE_URL"]
+AthenaApi.auth_path = ENV["ATHENA_AUTH_PATH"]
+AthenaApi.version_string = ENV["ATHENA_VERSION_STRING"]
+AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
+
+# RESOURCES
+
+# Patients
+AthenaApi::Patients.get(patient_id)
+AthenaApi::Patients.put(patient_id, params)
+AthenaApi::Patients.post(params)
+AthenaApi::Patients.get_patient_details(patient_id)
+AthenaApi::Patients.record_payment(patient_id, params)
+AthenaApi::Patients.update_patient_privacy_information(id, params)
+
+# Departments
+AthenaApi::Departments.get()
+
+# Reference
+AthenaApi::Reference.get_provider_types()
+AthenaApi::Reference.get_provider_types()
+AthenaApi::Reference.get_provider_specialties()
+
+# Insurance
+AthenaApi::Insurance.get(patient_id)
+AthenaApi::Insurance.post(patient_id,params)
+AthenaApi::Insurance.put(patient_id,params)
+AthenaApi::Insurance.delete(patient_id,insurance_id)
+AthenaApi::Insurance.get_deactivated_insurance(patient_id)
+AthenaApi::Insurance.reactivate_insurance(patient_id,insurance_id)
+
+
+
+
+```
 
 ## Development
 
