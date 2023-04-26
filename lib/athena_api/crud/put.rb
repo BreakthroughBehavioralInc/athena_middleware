@@ -1,8 +1,8 @@
 module AthenaApi
     module Crud
       module Put
-        def put(params = {})
-          execute_request(:post, resource_url, body_params: params)
+        def put(id, params = {})
+          execute_request(:post, "#{resource_url}/#{id}", body_params: params)
         end
       end
     end
