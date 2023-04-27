@@ -71,6 +71,129 @@ AthenaApi::Insurance.reactivate_insurance(patient_id,insurance_id)
 
 ```
 
+## Resource Body (need to verify)
+
+```
+POST Patient Body
+    {
+    departmentid: "123",
+    primarydepartmentid: "123",
+    firstname: "rob",
+    lastname: "mag",
+    middlename: "",
+    sex: "male",
+    dob: "07/23/1995",
+    address1: "123 Main Street",
+    address2: "",
+    city: "Piscataway",
+    state: "NJ"
+    zip: "08854",
+    homephone: "9081234567",
+    mobilephone: "9081234567",
+    email: "rob@mail.com",
+    notes: "rob notes",
+    }
+
+
+PUT Patient Update Body
+    {
+    departmentid: "123",
+    primarydepartmentid: "123",
+    firstname: "ROB",
+    lastname: "mag",
+    middlename: "",
+    sex: "male",
+    dob: "07/23/1995",
+    address1: "123 Main Street",
+    address2: "",
+    city: "Piscataway",
+    state: "NJ"
+    zip: "08854",
+    homephone: "9081234567",
+    mobilephone: "9081234567",
+    email: "rob@mail.com",
+    notes: "rob notes",
+    }
+
+POST Patient Record Payment
+    {
+    appointmentid: "123"
+    checknumber: "123"
+    departmentid: "123"
+    otheramount: "amount_collected"
+    paymentmethod: "paymentmethod"
+    todayservice: "Y"
+    }
+
+POST update_patient_privacy_information
+    {
+        departmentid:"123"
+        insuredsignature:"signature"
+        patientsignature:"signature"
+        privacynotice:"true"
+        signaturedatetime:"07/12/2001"
+        signaturename: "rob"
+    }
+
+POST Insurance Body
+    {
+        patientid: "123",
+        departmentid: "123",     
+        expirationdate: "07-01-2023",
+        insuranceidnumber: "123",
+        insuranceidnumber: "TOAAN3684542",
+        insurancepackageid: "package",
+        insurancephone: "phone",
+        insurancepolicyholder: "firstname lastname",
+        insurancepolicyholderaddress1: "address1",
+        insurancepolicyholderaddress2: "address2",
+        insurancepolicyholdercity: "Piscataway",
+        insurancepolicyholdercountrycode: "USA",
+        insurancepolicyholdercountryiso3166: "US",
+        insurancepolicyholderdob: "07-01-2001",
+        insurancepolicyholderfirstname: "firstname",
+        insurancepolicyholderlastname: "lastname",
+        insurancepolicyholdermiddlename: "",
+        insurancepolicyholdersex: "male",
+        insurancepolicyholderstate: "NJ",
+        insurancepolicyholderzip: "08854",
+        insuredentitytypeid: "1",
+        policynumber: "123",
+        relationshiptoinsuredid: "123",
+        sequencenumber: "1",
+    }
+
+
+PUT Insurance Update Body
+    {
+        patientid: "123",
+        departmentid: "123",     
+        expirationdate: "07-01-2023",
+        insuranceidnumber: "123",
+        insuranceidnumber: "TOAAN3684542",
+        insurancepackageid: "package",
+        insurancephone: "phone",
+        insurancepolicyholder: "firstname lastname",
+        insurancepolicyholderaddress1: "address1",
+        insurancepolicyholderaddress2: "address2",
+        insurancepolicyholdercity: "Piscataway",
+        insurancepolicyholdercountrycode: "USA",
+        insurancepolicyholdercountryiso3166: "US",
+        insurancepolicyholderdob: "07-01-2001",
+        insurancepolicyholderfirstname: "firstname",
+        insurancepolicyholderlastname: "lastname",
+        insurancepolicyholdermiddlename: "",
+        insurancepolicyholdersex: "male",
+        insurancepolicyholderstate: "NJ",
+        insurancepolicyholderzip: "08854",
+        insuredentitytypeid: "1",
+        policynumber: "123",
+        relationshiptoinsuredid: "123",
+        sequencenumber: "1",
+    }
+
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
