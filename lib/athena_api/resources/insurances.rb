@@ -1,7 +1,7 @@
 module AthenaApi
     class Insurances < Resource
         def self.resource_url
-            "#{client.config.base_url}/#{client.config.version_string}/#{client.config.practice_id}/patients"
+            "#{client.config.base_url}/#{url_version}/#{client.config.practice_id}/patients"
         end
 
         def self.get(patient_id)
