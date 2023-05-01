@@ -25,7 +25,7 @@ module AthenaApi
       def self.execute_request(method, url, params: {}, headers: {}, body_params: nil)
         headers.merge!(set_headers) if [:put,:post].include?(method)
         headers.merge!(get_method_headers) if [:get].include?(method)
-        body_params.push(["Content-Type","application/json"]) if [:put,:post].include?(method)
+        body_params.push(["Content-Type","application/json"]) if [:put,:post].include?(method) && body_params
         response = client.token_connection.send(method, url, params: params, headers: headers, body: body_params)
         client.config.debug ? response : response.parsed
       end
