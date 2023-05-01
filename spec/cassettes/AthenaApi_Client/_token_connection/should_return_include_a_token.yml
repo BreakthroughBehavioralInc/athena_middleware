@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ATHENA_BASE_URL>/oauth2/v1/token"
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.%2A
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 01 May 2023 18:41:48 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '130'
+      connection:
+      - keep-alive
+      host:
+      - api.preview.platform.athenahealth.com
+      x-forwarded-for:
+      - 68.194.64.78
+      x-forwarded-port:
+      - '443'
+      x-forwarded-proto:
+      - https
+      user-agent:
+      - Faraday v2.7.4
+      authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      x-forwarded-host:
+      - api.preview.platform.athenahealth.com
+      cache-control:
+      - no-store
+      pragma:
+      - no-cache
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '3'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"aGJJATWzdD6Q9Gxk2rE3MGsqWDTl","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Mon, 01 May 2023 18:41:48 GMT
+recorded_with: VCR 6.1.0

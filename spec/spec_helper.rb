@@ -16,8 +16,8 @@ VCR.configure do |config|
   config.allow_http_connections_when_no_cassette = true
   config.debug_logger = $stderr
   config.filter_sensitive_data('<API_KEY>') { ENV['ATHENA_KEY'] }
-  config.filter_sensitive_data('<API_SECRET>') { CGI.escape(ENV['ATHENA_KEY_SECRET']) }
-  config.filter_sensitive_data('<RESOURCE_URL>') { ENV['ATHENA_BASE_URL'] }
+  config.filter_sensitive_data('<API_SECRET>') { CGI.escape(ENV['ATHENA_SECRET']) }
+  config.filter_sensitive_data('<ATHENA_BASE_URL>') { ENV['ATHENA_BASE_URL'] }
 end
 
 RSpec.configure do |config|
@@ -32,8 +32,11 @@ RSpec.configure do |config|
   end
 
   AthenaApi.api_key = ENV["ATHENA_KEY"]
-  AthenaApi.api_secret = ENV["ATHENA_KEY_SECRET"]
+  AthenaApi.api_secret = ENV["ATHENA_SECRET"]
   AthenaApi.base_url = ENV["ATHENA_BASE_URL"]
+  AthenaApi.auth_path = ENV["ATHENA_AUTH_PATH"]
+  AthenaApi.version_string = ENV["ATHENA_VERSION_STRING"]
+  AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
 end
 
 
@@ -51,8 +54,8 @@ def patient_body
       ["city", "Piscataway"],
       ["state", "NJ"],
       ["zip", "08854"],
-      ["homephone", "9081234567"],
-      ["mobilephone", "9081234567"],
+      ["homephone", "908-555-0173"],
+      ["mobilephone", "908-555-0173"],
       ["email", "rob@mail.com"],
       ["notes", "rob notes"]
     ]
@@ -72,8 +75,6 @@ def patient_update
     ["city", "Piscataway"],
     ["state", "NJ"],
     ["zip", "08854"],
-    ["homephone", "9081234568"],
-    ["mobilephone", "9081234568"],
     ["email", "rob@mail.com"],
     ["notes", "rob notes"]
   ]
@@ -84,8 +85,8 @@ def patient_record_payment
     [
       ["appointmentid", "123"],
       ["checknumber", "123"],
-      ["departmentid", "123"],
-      ["otheramount", "amount_collected"],
+      ["departmentid", "1"],
+      ["otheramount", "30"],
       ["paymentmethod", "paymentmethod"],
       ["todayservice", "Y"]
     ]
@@ -94,11 +95,11 @@ end
 
 def update_patient_privacy_information
   [
-    ["departmentid","123"],
-    ["insuredsignature", "signature"],
-    ["patientsignature", "signature"],
+    ["departmentid","1"],
+    ["insuredsignature", "true"],
+    ["patientsignature", "true"],
     ["privacynotice", "true"],
-    ["signaturedatetime", "07/12/2001"],
+    ["signaturedatetime", "07/12/2001 12:20:03"],
     ["signaturename", "rob"]
   ]
 end

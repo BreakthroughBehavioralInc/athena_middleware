@@ -1,5 +1,4 @@
 require "oauth2"
-require "singleton"
 
 module AthenaApi
   class Client

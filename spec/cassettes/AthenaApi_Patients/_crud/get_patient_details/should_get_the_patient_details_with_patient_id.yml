@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382?showallclaims=true&showbalancedetails=true"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer e2u9EyqeoeqeD7cAmb6Q8LWsB4Ey
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 01 May 2023 19:19:49 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '1584'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=BFFC262F2C3716232B8B0C44974E3125|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      nncoection:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49944'
+      x-request-id:
+      - rrt-309366922668247079-d-gea1-3602-22023818-1
+    body:
+      encoding: UTF-8
+      string: '[{"email":"rob@mail.com","departmentid":"1","guarantorstate":"NJ","portalaccessgiven":false,"lastupdated":"05\/01\/2023","driverslicense":false,"contactpreference_appointment_email":true,"contactpreference_appointment_sms":false,"contactpreference_billing_phone":true,"notes":"rob
+        notes","contactpreference_announcement_phone":true,"lastemail":"rob@mag.com","veteran":"Y","contactpreference_lab_sms":false,"guarantordob":"07\/23\/1995","zip":"08854","guarantoraddresssameaspatient":true,"portaltermsonfile":false,"status":"active","lastname":"Mag","guarantorfirstname":"Rob","city":"PISCATAWAY","guarantoremail":"rob@mail.com","guarantorcity":"PISCATAWAY","guarantorzip":"08854","sex":"M","privacyinformationverified":true,"primarydepartmentid":"1","contactpreference_lab_email":true,"balances":[{"balance":0,"departmentlist":"1,21,102,144,145,148,150,157,162,166,168","providergroupid":1,"cleanbalance":true}],"contactpreference_announcement_sms":false,"emailexists":true,"patientphoto":false,"contactpreference_billing_email":true,"contactpreference_announcement_email":true,"registrationdate":"05\/01\/2023","lastupdatedby":"API-28747","guarantorlastname":"Mag","firstname":"Rob","guarantorcountrycode":"USA","state":"NJ","contactpreference_appointment_phone":true,"patientid":"54382","dob":"07\/23\/1995","guarantorrelationshiptopatient":"1","address1":"123
+        Main Street","contactpreference_billing_sms":false,"countrycode":"USA","guarantoraddress1":"123
+        Main Street","consenttotext":false,"countrycode3166":"US","contactpreference_lab_phone":true,"guarantorcountrycode3166":"US"}]'
+  recorded_at: Mon, 01 May 2023 19:19:49 GMT
+recorded_with: VCR 6.1.0
