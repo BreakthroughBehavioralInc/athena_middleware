@@ -37,126 +37,126 @@ RSpec.configure do |config|
 end
 
 
-# def patient_body
-#     {
-#     departmentid: "123",
-#     primarydepartmentid: "123",
-#     firstname: "rob",
-#     lastname: "mag",
-#     middlename: "",
-#     sex: "male",
-#     dob: "07/23/1995",
-#     address1: "123 Main Street",
-#     address2: "",
-#     city: "Piscataway",
-#     state: "NJ"
-#     zip: "08854",
-#     homephone: "9081234567",
-#     mobilephone: "9081234567",
-#     email: "rob@mail.com",
-#     notes: "rob notes",
-#     }
-# end
+def patient_body
+    [
+      ["departmentid","1"],
+      ["primarydepartmentid","1"],
+      ["firstname", "rob"],
+      ["lastname", "mag"],
+      ["middlename", ""],
+      ["sex","M"],
+      ["dob", "07/23/1995"],
+      ["address1", "123 Main Street"],
+      ["address2", ""],
+      ["city", "Piscataway"],
+      ["state", "NJ"],
+      ["zip", "08854"],
+      ["homephone", "9081234567"],
+      ["mobilephone", "9081234567"],
+      ["email", "rob@mail.com"],
+      ["notes", "rob notes"]
+    ]
+end
 
-# def patient_update
-#     {
-#     departmentid: "123",
-#     primarydepartmentid: "123",
-#     firstname: "ROB",
-#     lastname: "mag",
-#     middlename: "",
-#     sex: "male",
-#     dob: "07/23/1995",
-#     address1: "123 Main Street",
-#     address2: "",
-#     city: "Piscataway",
-#     state: "NJ"
-#     zip: "08854",
-#     homephone: "9081234567",
-#     mobilephone: "9081234567",
-#     email: "rob@mail.com",
-#     notes: "rob notes",
-#     }
-# end
-
-
-# def patient_record_payment
-#     {
-#     appointmentid: "123"
-#     checknumber: "123"
-#     departmentid: "123"
-#     otheramount: "amount_collected"
-#     paymentmethod: "paymentmethod"
-#     todayservice: "Y"
-#     }
-# end
+def patient_update
+  [
+    ["departmentid","1"],
+    ["primarydepartmentid","1"],
+    ["firstname", "rob"],
+    ["lastname", "mag"],
+    ["middlename", ""],
+    ["sex","M"],
+    ["dob", "07/23/1995"],
+    ["address1", "123 Main Street"],
+    ["address2", ""],
+    ["city", "Piscataway"],
+    ["state", "NJ"],
+    ["zip", "08854"],
+    ["homephone", "9081234568"],
+    ["mobilephone", "9081234568"],
+    ["email", "rob@mail.com"],
+    ["notes", "rob notes"]
+  ]
+end
 
 
-# def update_patient_privacy_information
-#     {
-#         departmentid:"123"
-#         insuredsignature:"signature"
-#         patientsignature:"signature"
-#         privacynotice:"true"
-#         signaturedatetime:"07/12/2001"
-#         signaturename: "rob"
-#     }
-# end
+def patient_record_payment
+    [
+      ["appointmentid", "123"],
+      ["checknumber", "123"],
+      ["departmentid", "123"],
+      ["otheramount", "amount_collected"],
+      ["paymentmethod", "paymentmethod"],
+      ["todayservice", "Y"]
+    ]
+end
 
-# def insurance_body
-#     {
-#         patientid: "123",
-#         departmentid: "123",     
-#         expirationdate: "07-01-2023",
-#         insuranceidnumber: "123",
-#         insuranceidnumber: "TOAAN3684542",
-#         insurancepackageid: "package",
-#         insurancephone: "phone",
-#         insurancepolicyholder: "firstname lastname",
-#         insurancepolicyholderaddress1: "address1",
-#         insurancepolicyholderaddress2: "address2",
-#         insurancepolicyholdercity: "Piscataway",
-#         insurancepolicyholdercountrycode: "USA",
-#         insurancepolicyholdercountryiso3166: "US",
-#         insurancepolicyholderdob: "07-01-2001",
-#         insurancepolicyholderfirstname: "firstname",
-#         insurancepolicyholderlastname: "lastname",
-#         insurancepolicyholdermiddlename: "",
-#         insurancepolicyholdersex: "male",
-#         insurancepolicyholderstate: "NJ",
-#         insurancepolicyholderzip: "08854",
-#         insuredentitytypeid: "1",
-#         policynumber: "123",
-#         relationshiptoinsuredid: "123",
-#         sequencenumber: "1",
-#     }
-# end
 
-# def insurance_update
-#     {
-#         patientid: "123",
-#         departmentid: "123",     
-#         expirationdate: "07-01-2023",
-#         insuranceidnumber: "123",
-#         insuranceidnumber: "TOAAN3684542",
-#         insurancepackageid: "package",
-#         insurancephone: "phone",
-#         insurancepolicyholder: "firstname lastname",
-#         insurancepolicyholderaddress1: "address1",
-#         insurancepolicyholderaddress2: "address2",
-#         insurancepolicyholdercity: "Piscataway",
-#         insurancepolicyholdercountrycode: "USA",
-#         insurancepolicyholdercountryiso3166: "US",
-#         insurancepolicyholderdob: "07-01-2001",
-#         insurancepolicyholderfirstname: "firstname",
-#         insurancepolicyholderlastname: "lastname",
-#         insurancepolicyholdermiddlename: "",
-#         insurancepolicyholdersex: "male",
-#         insurancepolicyholderstate: "NJ",
-#         insurancepolicyholderzip: "08854",
-#         insuredentitytypeid: "1",
-#         policynumber: "123",
-#         relationshiptoinsuredid: "123",
-#         sequencenumber: "1",
-#     }
-# end
+def update_patient_privacy_information
+  [
+    ["departmentid","123"],
+    ["insuredsignature", "signature"],
+    ["patientsignature", "signature"],
+    ["privacynotice", "true"],
+    ["signaturedatetime", "07/12/2001"],
+    ["signaturename", "rob"]
+  ]
+end
+
+def insurance_body
+  [
+    ["patientid", "54382"],
+    ["departmentid", "1"],     
+    ["expirationdate", "07/01/2025"],
+    ["insuranceidnumber", "123"],
+    ["insuranceidnumber", "TOAAN3684542"],
+    ["insurancepackageid", "123"],
+    ["insurancephone", "6091234567"],
+    ["insurancepolicyholder", "rob mag"],
+    ["insurancepolicyholderaddress1", "123 Main Street"],
+    ["insurancepolicyholderaddress2", "address2"],
+    ["insurancepolicyholdercity", "Piscataway"],
+    ["insurancepolicyholdercountrycode", "USA"],
+    ["insurancepolicyholdercountryiso3166", "US"],
+    ["insurancepolicyholderdob", "07/23/1995"],
+    ["insurancepolicyholderfirstname", "rob"],
+    ["insurancepolicyholderlastname", "mag"],
+    ["insurancepolicyholdermiddlename", ""],
+    ["insurancepolicyholdersex", "M"],
+    ["insurancepolicyholderstate", "NJ"],
+    ["insurancepolicyholderzip", "08854"],
+    ["insuredentitytypeid", "1"],
+    ["policynumber", "123"],
+    ["relationshiptoinsuredid", "123"],
+    ["sequencenumber", "1"]
+  ]
+end
+
+def insurance_update
+  [
+    ["patientid", "54382"],
+    ["departmentid", "1"],     
+    ["expirationdate", "07/01/2025"],
+    ["insuranceidnumber", "123"],
+    ["insuranceidnumber", "TOAAN3684542"],
+    ["insurancepackageid", "123"],
+    ["insurancephone", "6091234567"],
+    ["insurancepolicyholder", "rob mag"],
+    ["insurancepolicyholderaddress1", "123 Main Street"],
+    ["insurancepolicyholderaddress2", "address2"],
+    ["insurancepolicyholdercity", "Piscataway"],
+    ["insurancepolicyholdercountrycode", "USA"],
+    ["insurancepolicyholdercountryiso3166", "US"],
+    ["insurancepolicyholderdob", "07/23/1995"],
+    ["insurancepolicyholderfirstname", "rob"],
+    ["insurancepolicyholderlastname", "mag"],
+    ["insurancepolicyholdermiddlename", ""],
+    ["insurancepolicyholdersex", "M"],
+    ["insurancepolicyholderstate", "NJ"],
+    ["insurancepolicyholderzip", "08854"],
+    ["insuredentitytypeid", "1"],
+    ["policynumber", "123"],
+    ["relationshiptoinsuredid", "123"],
+    ["sequencenumber", "1"]
+  ]
+end
