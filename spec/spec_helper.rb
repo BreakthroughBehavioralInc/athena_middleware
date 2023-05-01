@@ -148,9 +148,9 @@ def appointment_open
   ]
 end
 
-def create_claim
-  [
-    ["claimcharges", ["procedurecode", "CPT_code\icdcode"]],
-    ["supervisingproviderid", ""]
-  ]
-end
+# def create_claim
+#   [
+#     ["claimcharges", ["procedurecode", "CPT_code\icdcode"]],
+#     ["supervisingproviderid", ""]
+#   ]
+# end
