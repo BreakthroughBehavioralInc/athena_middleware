@@ -147,10 +147,3 @@ def appointment_open
     ["reasonid", "1343"]
   ]
 end
-
-# def create_claim
-#   [
-#     ["claimcharges", ["procedurecode", "CPT_code\icdcode"]],
-#     ["supervisingproviderid", ""]
-#   ]
-# end
