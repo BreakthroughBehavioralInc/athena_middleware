@@ -20,6 +20,9 @@ module AthenaApi
   autoload :Departments, "athena_api/resources/departments"
   autoload :Reference, "athena_api/resources/reference"
   autoload :Insurances, "athena_api/resources/insurances"
+  autoload :Providers, "athena_api/resources/providers"
+  autoload :Appointments, "athena_api/resources/appointments"
+  autoload :Claims, "athena_api/resources/claims"
 
   @config = AthenaApi::Config.new
 

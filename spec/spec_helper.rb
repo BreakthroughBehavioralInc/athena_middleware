@@ -137,4 +137,20 @@ def insurance_update
     ["insurancepolicyholderaddress1", "124 Main Street"],
     ["sequencenumber", "1"]
   ]
+
+def appointment_open
+  [
+    ["departmentid", "1"],
+    ["providerid","3"],
+    ["appointmentdate","06-01-2023"],
+    ["appointmenttime","12:30:00"],
+    ["reasonid", "1343"]
+  ]
+end
+
+def create_claim
+  [
+    ["claimcharges", ["procedurecode", "CPT_code\icdcode"]],
+    ["supervisingproviderid", ""]
+  ]
 end
