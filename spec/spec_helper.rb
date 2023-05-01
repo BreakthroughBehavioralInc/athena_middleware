@@ -65,7 +65,7 @@ def patient_update
   [
     ["departmentid","1"],
     ["primarydepartmentid","1"],
-    ["firstname", "rob"],
+    ["firstname", "robert"],
     ["lastname", "mag"],
     ["middlename", ""],
     ["sex","M"],
@@ -76,7 +76,7 @@ def patient_update
     ["state", "NJ"],
     ["zip", "08854"],
     ["email", "rob@mail.com"],
-    ["notes", "rob notes"]
+    ["notes", "rob notes udpate"]
   ]
 end
 
@@ -111,7 +111,7 @@ def insurance_body
     ["expirationdate", "07/01/2025"],
     ["insuranceidnumber", "123"],
     ["insuranceidnumber", "TOAAN3684542"],
-    ["insurancepackageid", "123"],
+    ["insurancepackageid", "31724"],
     ["insurancephone", "6091234567"],
     ["insurancepolicyholder", "rob mag"],
     ["insurancepolicyholderaddress1", "123 Main Street"],
@@ -138,9 +138,9 @@ def insurance_update
     ["patientid", "54382"],
     ["departmentid", "1"],     
     ["expirationdate", "07/01/2025"],
-    ["insuranceidnumber", "123"],
+    ["insuranceidnumber", "131"],
     ["insuranceidnumber", "TOAAN3684542"],
-    ["insurancepackageid", "123"],
+    ["insurancepackageid", "31724"],
     ["insurancephone", "6091234567"],
     ["insurancepolicyholder", "rob mag"],
     ["insurancepolicyholderaddress1", "123 Main Street"],
