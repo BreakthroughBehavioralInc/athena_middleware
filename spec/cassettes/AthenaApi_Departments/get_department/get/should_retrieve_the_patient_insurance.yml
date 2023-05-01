@@ -1,0 +1,219 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ATHENA_BASE_URL>/oauth2/v1/token"
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.%2A
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 01 May 2023 19:27:02 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '130'
+      connection:
+      - keep-alive
+      host:
+      - api.preview.platform.athenahealth.com
+      x-forwarded-for:
+      - 68.194.64.78
+      x-forwarded-port:
+      - '443'
+      x-forwarded-proto:
+      - https
+      user-agent:
+      - Faraday v2.7.4
+      authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      x-forwarded-host:
+      - api.preview.platform.athenahealth.com
+      cache-control:
+      - no-store
+      pragma:
+      - no-cache
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"4zxhxEDfLR295w415fVFII6ZzEUm","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Mon, 01 May 2023 19:27:02 GMT
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/departments"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer 4zxhxEDfLR295w415fVFII6ZzEUm
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 01 May 2023 19:27:03 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '22280'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=EF3FB4B5D976E01B5F8B183F54A8ADE9|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      nncoection:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49942'
+      x-request-id:
+      - rrt-309366922668247079-d-gea1-3603-22055176-1
+    body:
+      encoding: UTF-8
+      string: '{"totalcount":31,"departments":[{"timezoneoffset":-5,"state":"MA","placeofservicefacility":false,"latitude":"34.25597","departmentid":"1","address":"311
+        arsenal street","placeofservicetypeid":"11","longitude":"-85.17026","clinicals":"ON","timezone":-4,"name":"Cruickshank
+        HEALTH CARE","patientdepartmentname":"Rome Office - this is a test to see
+        how long this field actually is. 75 ch","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","zip":"02472-2785","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"WATERTOWN","servicedepartment":true,"fax":"72009333688608","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","phone":"(555)
+        004-0271","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"GA","placeofservicefacility":false,"latitude":"34.1649","departmentid":"21","address":"APT.
+        159 104 GLENNIE FIE","placeofservicetypeid":"11","longitude":"-84.79669","clinicals":"ON","timezone":-4,"name":"MacGyver
+        MED GROUP","patientdepartmentname":"Cartersville Office-","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"MA","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"82","address":"APT.
+        417 078 EUDORA EXTE","placeofservicetypeid":"11","clinicals":"ON","timezone":-4,"patientdepartmentname":"Six
+        Hills","chartsharinggroupid":"41","name":"Murazik HEALTH CARE","placeofservicetypename":"OFFICE","clinicalproviderfax":"(701)
+        712-4273","timezonename":"America\/New_York","communicatorbrandid":"21"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-6,"singleappointmentcontractmax":"3000","state":"CO","placeofservicefacility":true,"departmentid":"102","placeofservicetypeid":"22","clinicals":"ON","timezone":-5,"name":"Blick
+        HEATLH INC","patientdepartmentname":"Cardiology Consults for 7 Hills","chartsharinggroupid":"42","placeofservicetypename":"ON
+        CAMPUS-OUTPATIENT HOSPITAL","timezonename":"America\/Chicago","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","address2":"100
+        MAIN ST","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"2","state":"CT","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"BLACKSTONE
+        VALLEY MEDICAL GROUP","doesnotobservedst":false,"departmentid":"142","address":"797
+        HEATH RIVER, NEW DER","placeofservicetypeid":"11","federaltaxid":"556527447","clinicals":"ON","timezone":-4,"patientdepartmentname":"Patient
+        Face Name Test Department 47 College St","chartsharinggroupid":"43","name":"Deckow
+        INC","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"42","state":"MA","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"5
+        Peaks Medical Organization","doesnotobservedst":false,"departmentid":"143","federaltaxid":"556527447","clinicals":"ON","timezone":-4,"patientdepartmentname":"Johns
+        INC","chartsharinggroupid":"41","name":"Johns INC","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"1","state":"ME","portalurl":"1959-1.portal.athenahealth.com","city":"CAMDEN","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"departmentid":"144","address":"50
+        MAIN ST","placeofservicetypeid":"11","federaltaxid":"332628371","clinicals":"ON","timezone":-4,"patientdepartmentname":"Bailey
+        HEALTH CARE","chartsharinggroupid":"42","name":"Bailey HEALTH CARE","placeofservicetypename":"OFFICE","ecommercecreditcardtypes":["AX","DS","MC","VI"],"zip":"04843-1724","timezonename":"America\/New_York","communicatorbrandid":"1"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"ME","placeofservicefacility":false,"latitude":"44.41919","departmentid":"145","address":"APT.
+        257 4119 WINTHEISER","placeofservicetypeid":"11","longitude":"-69.02124","clinicals":"ON","timezone":-4,"name":"Murray
+        HEALTH GROUP","patientdepartmentname":"Shawnee Mission Health","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","phone":"(555)
+        084-3357","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"42","state":"ME","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"5
+        Peaks Medical Organization","doesnotobservedst":false,"departmentid":"147","federaltaxid":"556527447","clinicals":"ON","timezone":-4,"patientdepartmentname":"Ohio
+        Health Primary Care Pickerington Office 1234","chartsharinggroupid":"41","name":"Wunsch
+        HEATLH INC","timezonename":"America\/New_York","communicatorbrandid":"21"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-6,"singleappointmentcontractmax":"3000","state":"NY","placeofservicefacility":false,"latitude":"44.27192","departmentid":"148","placeofservicetypeid":"11","longitude":"-69.37563","clinicals":"ON","timezone":-5,"name":"Metz
+        HEATLH INC","patientdepartmentname":"Patient Face Name Test Department 47
+        College St","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/Chicago","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","phone":"(555)
+        642-0276","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"MA","placeofservicefacility":false,"departmentid":"149","address":"090
+        CONNELLY TUNNEL, EAS","clinicals":"ON","timezone":-4,"name":"Kub HEATLH INC","patientdepartmentname":"Psych
+        OP","chartsharinggroupid":"81","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"1","state":"NY","portalurl":"1959-1.portal.athenahealth.com","city":"NEW
+        YORK","placeofservicefacility":false,"servicedepartment":true,"latitude":"44.419193","fax":"14897237674455","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"departmentid":"150","address":"PO
+        BOX 1407","placeofservicetypeid":"11","longitude":"-69.021307","federaltaxid":"332628371","clinicals":"ON","timezone":-4,"patientdepartmentname":"Gerlach
+        HEATLH INC","chartsharinggroupid":"42","name":"Gerlach HEATLH INC","placeofservicetypename":"OFFICE","phone":"(555)
+        650-1440","address2":"suite 1","ecommercecreditcardtypes":["AX","DS","MC","VI"],"zip":"10008-1407","timezonename":"America\/New_York","communicatorbrandid":"1"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"MA","placeofservicefacility":false,"departmentid":"155","address":"APT.
+        471 0709 ALBERTA RA","placeofservicetypeid":"33","clinicals":"ON","timezone":-4,"name":"Schmitt
+        LLC","patientdepartmentname":"Schmitt LLC","chartsharinggroupid":"41","placeofservicetypename":"CUSTODIAL
+        CARE FACILITY","timezonename":"America\/New_York","communicatorbrandid":"43","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"62","portalurl":"www.kenneth.net","city":"","servicedepartment":true,"oneyearcontractmax":"1500","fax":"2517352641","providergroupname":"kate
+        PG","doesnotobservedst":false,"federaltaxid":"332628371","phone":"(555) 230-4967","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-8,"singleappointmentcontractmax":"3000","state":"MA","placeofservicefacility":false,"latitude":"33.12390285","departmentid":"157","address":"SUITE
+        192 105 ALYCE MOUN","placeofservicetypeid":"11","longitude":"-84.29847983","clinicals":"ON","timezone":-7,"name":"Jacobs
+        ATHENA HEALTH CARE INC","patientdepartmentname":"CommOpsDevTest","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/Los_Angeles","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"MA","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"latitude":"42.3709299","providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"159","address":"SUITE
+        759 37297 GIOVANI ","longitude":"-71.1828321","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Cassin
+        MED GROUP","chartsharinggroupid":"41","name":"Cassin MED GROUP","phone":"(555)
+        410-7441","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"MA","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"latitude":"42.3709299","providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"160","address":"9709
+        REESE CROSSROAD, LA","longitude":"-71.1828321","clinicals":"ON","timezone":-4,"patientdepartmentname":"Koepp
+        HEALTH LLC","chartsharinggroupid":"41","name":"Koepp HEALTH LLC","phone":"(555)
+        943-5363","timezonename":"America\/New_York","communicatorbrandid":"21"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"NY","placeofservicefacility":false,"latitude":"43.3760874","departmentid":"162","address":"APT.
+        907 5232 ULISES GAR","placeofservicetypeid":"11","longitude":"-73.6351245","clinicals":"OFF","timezone":-4,"name":"Kessler
+        ATHENA HEALTH CARE INC","patientdepartmentname":"Main Office - NY","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"ME","placeofservicefacility":false,"departmentid":"163","address":"021
+        HALVORSON MANOR, KUN","clinicals":"ON","timezone":-4,"name":"Macejkovic HEALTH
+        CARE","patientdepartmentname":"Seven Hills rholaday test ISE","chartsharinggroupid":"42","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","fax":"33103083538254","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"2","state":"ME","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"BLACKSTONE
+        VALLEY MEDICAL GROUP","doesnotobservedst":false,"departmentid":"164","placeofservicetypeid":"11","federaltaxid":"556527447","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Bogisich
+        LLC","chartsharinggroupid":"43","name":"Bogisich LLC","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"NY","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"165","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Spencer
+        HEALTH LLC","chartsharinggroupid":"41","name":"Spencer HEALTH LLC","timezonename":"America\/New_York","communicatorbrandid":"21"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"MA","placeofservicefacility":false,"latitude":"42.3634917","departmentid":"166","address":"505
+        ORLANDO PARKWAY, NEW","placeofservicetypeid":"11","longitude":"-71.1670094","clinicals":"ON","timezone":-4,"name":"Lockman
+        MED GROUP","patientdepartmentname":"Training Dept Patient Facing Name","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"MA","placeofservicefacility":false,"departmentid":"168","address":"519
+        GAYLORD STRAVENUE, B","placeofservicetypeid":"11","clinicals":"OFF","timezone":-4,"name":"Nitzsche
+        MEDICAL CARE","patientdepartmentname":"Nitzsche MEDICAL CARE","chartsharinggroupid":"42","placeofservicetypename":"OFFICE","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"1","state":"MA","portalurl":"1959-1.portal.athenahealth.com","city":"","placeofservicefacility":false,"servicedepartment":true,"latitude":"42.3675294","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"departmentid":"169","address":"298
+        BAHRINGER OVAL, KOZE","longitude":"-71.1869661","federaltaxid":"332628371","clinicals":"OFF","timezone":-4,"patientdepartmentname":"16
+        11 testing","chartsharinggroupid":"42","name":"Swift INC","ecommercecreditcardtypes":["AX","DS","MC","VI"],"timezonename":"America\/New_York","communicatorbrandid":"1"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"1","state":"KS","portalurl":"1959-1.portal.athenahealth.com","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"departmentid":"170","address":"SUITE
+        307 7500 DEMETRIUS","federaltaxid":"332628371","clinicals":"OFF","timezone":-4,"patientdepartmentname":"6
+        Hills Medical Group","chartsharinggroupid":"42","name":"Beer INC","phone":"(555)
+        350-0243","ecommercecreditcardtypes":["AX","DS","MC","VI"],"timezonename":"America\/New_York","communicatorbrandid":"1"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"FL","placeofservicefacility":false,"departmentid":"171","address":"APT.
+        571 28608 REESE TRA","clinicals":"OFF","timezone":-4,"name":"Senger LLC","patientdepartmentname":"Senger
+        LLC","chartsharinggroupid":"42","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","phone":"(555)
+        183-2673","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"150","state":"TX","placeofservicefacility":false,"departmentid":"180","address":"19109
+        MOHAMED PARK, ANTO","clinicals":"ON","timezone":-4,"name":"Gutmann LLC","patientdepartmentname":"HCP
+        TIN","chartsharinggroupid":"41","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"142","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"HCP
+        TIN Consolidation","doesnotobservedst":false},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"2","state":"MA","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"BLACKSTONE
+        VALLEY MEDICAL GROUP","doesnotobservedst":false,"departmentid":"181","address":"972
+        DORIAN PORTS, NORTH ","federaltaxid":"556527447","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Grantville
+        Family Care","chartsharinggroupid":"43","name":"McKenzie HEALTH GROUP","phone":"(555)
+        587-1520","address2":"Watertown","timezonename":"America\/New_York","communicatorbrandid":"21"},{"creditcardtypes":["AX","DS","MC","VI"],"timezoneoffset":-5,"singleappointmentcontractmax":"3000","state":"MI","placeofservicefacility":false,"departmentid":"183","address":"145
+        MERTZ TUNNEL, EAST J","clinicals":"ON","timezone":-4,"name":"Bechtelar INC","patientdepartmentname":"Bechtelar
+        INC","chartsharinggroupid":"42","timezonename":"America\/New_York","communicatorbrandid":"1","medicationhistoryconsent":false,"ishospitaldepartment":false,"providergroupid":"1","portalurl":"1959-1.portal.athenahealth.com","city":"","servicedepartment":true,"oneyearcontractmax":"1500","providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"federaltaxid":"332628371","ecommercecreditcardtypes":["AX","DS","MC","VI"]},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"ME","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"184","address":"APT.
+        902 3914 HERMANN PA","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Purdy
+        HEATLH INC","chartsharinggroupid":"41","name":"Purdy HEATLH INC","phone":"(555)
+        084-1151","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-5,"ishospitaldepartment":false,"providergroupid":"22","state":"ME","portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","city":"","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"6
+        Hills Medical Associates","doesnotobservedst":false,"departmentid":"185","address":"SUITE
+        875 20398 ELZA MOT","clinicals":"OFF","timezone":-4,"patientdepartmentname":"Jones
+        ATHENA HEALTH CARE INC","chartsharinggroupid":"41","name":"Jones ATHENA HEALTH
+        CARE INC","phone":"(555) 058-6380","timezonename":"America\/New_York","communicatorbrandid":"21"},{"medicationhistoryconsent":false,"timezoneoffset":-8,"ishospitaldepartment":false,"providergroupid":"1","state":"CA","portalurl":"1959-1.portal.athenahealth.com","city":"NORTH
+        HOLLYWOOD","placeofservicefacility":false,"servicedepartment":true,"providergroupname":"7
+        Hills Medical Group","doesnotobservedst":false,"departmentid":"192","address":"12
+        Hollywood Dr.","federaltaxid":"332628371","clinicals":"OFF","timezone":-7,"patientdepartmentname":"Hollywood","chartsharinggroupid":"42","name":"Hollywood","ecommercecreditcardtypes":["AX","DS","MC","VI"],"zip":"91601-1000","timezonename":"America\/Los_Angeles","communicatorbrandid":"1"}]}'
+  recorded_at: Mon, 01 May 2023 19:27:03 GMT
+recorded_with: VCR 6.1.0

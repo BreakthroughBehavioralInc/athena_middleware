@@ -1,0 +1,340 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/reference/providertypes"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer EaQJ1LvYolrmuyEAytsOjCl0UGtn
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 01 May 2023 19:29:14 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '26511'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=43CB2B9E7B00E1124400406A62ADF1E1|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      nncoection:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49940'
+      x-request-id:
+      - rrt-7133440215022416485-d-gea1-11073-22642560-1
+    body:
+      encoding: UTF-8
+      string: '{"providertypes":[{"providertypeid":"ACNP","providertype":"ACUTE CARE
+        - NURSE PRACTITIONER"},{"providertypeid":"ACNS-BC","providertype":"ACUTE CLINICAL
+        NURSE SPECIALIST BOARD CERTIFIED (ACNS-BC)"},{"providertypeid":"ACNPC-AG","providertype":"ADULT
+        GERONTOLOGY ACUTE CLINICAL NURSE PRACTITIONER BOARD CERTIFIED (ACNPC-AG)"},{"providertypeid":"AGACNP-BC","providertype":"ADULT
+        GERONTOLOGY ACUTE CLINICAL NURSE PRACTITIONER BOARD CERTIFIED (AGACNP-BC)"},{"providertypeid":"AGANP-C","providertype":"ADULT
+        GERONTOLOGY ACUTE CLINICAL NURSE PRACTITIONER CERTIFIED (AGANP-C)"},{"providertypeid":"AGCNS","providertype":"ADULT
+        GERONTOLOGY CLINICAL NURSE SPECIALIST (AGCNS)"},{"providertypeid":"AGCNS-BC","providertype":"ADULT
+        GERONTOLOGY CLINICAL NURSE SPECIALIST BOARD CERTIFIED (AGCNS-BC)"},{"providertypeid":"ANP-BC","providertype":"ADULT
+        NURSE PRACTITIONER-BOARD CERTIFIED"},{"providertypeid":"AGPCNP-BC","providertype":"ADULT-GERONTOLOGY
+        PRIMARY CARE NURSE PRACTITIONER-BOARD CERTIFIED (AGPCNP-BC)"},{"providertypeid":"APN","providertype":"ADVANCED
+        PRACTICE NURSE"},{"providertypeid":"APNP","providertype":"ADVANCED PRACTICE
+        NURSE PRACTITIONER"},{"providertypeid":"APRN","providertype":"ADVANCED PRACTICE
+        REGISTERED NURSE"},{"providertypeid":"APRN-CNP","providertype":"ADVANCED PRACTICE
+        REGISTERED NURSE - CERTIFIED NURSE PRACTITIONER"},{"providertypeid":"APRN-FNP-C","providertype":"ADVANCED
+        PRACTICE REGISTERED NURSE - FAMILY NURSE PRACTITIONER - CERTIFIED"},{"providertypeid":"APRN-FPA","providertype":"ADVANCED
+        PRACTICE REGISTERED NURSE - FULL PRACTICE AUTHORITY (APRN-FPA)"},{"providertypeid":"APRN-NP-C","providertype":"ADVANCED
+        PRACTICE REGISTERED NURSE - NURSE PRACTITIONER - CERTIFIED"},{"providertypeid":"APRN-FNPBC","providertype":"ADVANCED
+        PRACTICE REGISTERED NURSE FAMILY NURSE PRACTITIONER BOARD CERTIFIED"},{"providertypeid":"ARNP","providertype":"ADVANCED
+        REGISTERED NURSE PRACTITIONER"},{"providertypeid":"ADC-TP","providertype":"ALCOHOL
+        AND DRUG COUNSELOR - TEMPORARY PERMIT (ADC-TP)"},{"providertypeid":"AA","providertype":"ANESTHESIOLOGIST
+        ASSISTANT"},{"providertypeid":"ASW","providertype":"ASSOCIATE CLINICAL SOCIAL
+        WORKER"},{"providertypeid":"LCSW-A","providertype":"ASSOCIATE LICENSED CLINICAL
+        SOCIAL WORKER (LCSW-A)"},{"providertypeid":"AMFT","providertype":"ASSOCIATE
+        MARRIAGE AND FAMILY THERAPIST"},{"providertypeid":"BDS","providertype":"BACHELOR
+        DEGREE OF DENTISTRY"},{"providertypeid":"MBBS","providertype":"BACHELOR OF
+        MEDICINE AND BACHELOR OF SURGERY"},{"providertypeid":"BPSYCH","providertype":"BACHELOR
+        OF PSYCHOLOGY (BPSYCH)"},{"providertypeid":"BSN","providertype":"BACHELOR
+        OF SCIENCE IN NURSING (BSN)"},{"providertypeid":"BSW","providertype":"BACHELOR
+        OF SOCIAL WORK"},{"providertypeid":"BI","providertype":"BEHAVIOR INTERVENTIONIST"},{"providertypeid":"BH","providertype":"BEHAVIORAL
+        HEALTH CERTIFICATION"},{"providertypeid":"BHI","providertype":"BEHAVIORAL
+        HEALTH INTERN"},{"providertypeid":"BHT","providertype":"BEHAVIORAL HEALTH
+        TECHNICIAN (BHT)"},{"providertypeid":"BCBA","providertype":"BOARD CERTIFIED
+        BEHAVIOR ANALYST (BCBA)"},{"providertypeid":"BCO","providertype":"BOARD CERTIFIED
+        OCULARIST"},{"providertypeid":"BC","providertype":"BRAIN COACH"},{"providertypeid":"CC","providertype":"CARE
+        COORDINATOR"},{"providertypeid":"CCR","providertype":"CAREER COUNSELOR (CCR)"},{"providertypeid":"CM","providertype":"CASE
+        MANAGER"},{"providertypeid":"CAC I","providertype":"CERTIFIED ADDICTION COUNSELOR
+        I"},{"providertypeid":"CAC II","providertype":"CERTIFIED ADDICTION COUNSELOR
+        II"},{"providertypeid":"CAC III","providertype":"CERTIFIED ADDICTION COUNSELOR
+        III"},{"providertypeid":"ANP-C","providertype":"CERTIFIED ADULT NURSE PRACTITIONER"},{"providertypeid":"CADC
+        II","providertype":"CERTIFIED ALCOHOL AND DRUG COUNSELOR II"},{"providertypeid":"CADCIII","providertype":"CERTIFIED
+        ALCOHOL AND DRUG COUNSELOR III"},{"providertypeid":"ATC","providertype":"CERTIFIED
+        ATHLETIC TRAINER"},{"providertypeid":"CD","providertype":"CERTIFIED BIRTH
+        DOULA"},{"providertypeid":"CCH","providertype":"CERTIFIED CLASSICAL HOMEOPATH"},{"providertypeid":"CCCA","providertype":"CERTIFIED
+        CLINICAL AUDIOLOGIST"},{"providertypeid":"CCEP","providertype":"CERTIFIED
+        CLINICAL EXERCISE PHYSIOLOGIST"},{"providertypeid":"CCP","providertype":"CERTIFIED
+        CLINICAL PERFUSIONIST"},{"providertypeid":"CCS","providertype":"CERTIFIED
+        CLINICAL SUPERVISOR"},{"providertypeid":"CDCES","providertype":"CERTIFIED
+        DIABETES CARE AND EDUCATION SPECIALIST"},{"providertypeid":"CDE","providertype":"CERTIFIED
+        DIABETIC EDUCATOR"},{"providertypeid":"CDMS","providertype":"CERTIFIED DISABILITY
+        CASE MANAGER (CDMS)"},{"providertypeid":"CEP","providertype":"CERTIFIED EXERCISE
+        PHYSIOLOGIST"},{"providertypeid":"CFA","providertype":"CERTIFIED FIRST ASSISTANT"},{"providertypeid":"CFO","providertype":"CERTIFIED
+        FITTER - ORTHOTICS"},{"providertypeid":"CLC","providertype":"CERTIFIED LACTATION
+        CONSULTANT"},{"providertypeid":"CMA","providertype":"CERTIFIED MEDICAL ASSISTANT"},{"providertypeid":"CNIM","providertype":"CERTIFIED
+        NEUROPHYSIOLOGIC INTRAOPERATIVE MONITORING TECHNICIAN"},{"providertypeid":"CNP","providertype":"CERTIFIED
+        NURSE PRACTITIONER"},{"providertypeid":"CNA","providertype":"CERTIFIED NURSING
+        ASSISTANT"},{"providertypeid":"COTA\/L","providertype":"CERTIFIED OCCUPATIONAL
+        THERAPY ASSISTANT-LICENSED"},{"providertypeid":"OTC","providertype":"CERTIFIED
+        ORTHOPEDIC TECHNICIAN"},{"providertypeid":"COPT","providertype":"CERTIFIED
+        ORTHOPTIST"},{"providertypeid":"COA","providertype":"CERTIFIED ORTHOTIC ASSISTANT"},{"providertypeid":"CO","providertype":"CERTIFIED
+        ORTHOTIST"},{"providertypeid":"CPASTC","providertype":"CERTIFIED PASTORAL
+        COUNSELOR"},{"providertypeid":"CPNP","providertype":"CERTIFIED PEDIATRIC NURSE
+        PRACTITIONER"},{"providertypeid":"CPNP-PC","providertype":"CERTIFIED PEDIATRIC
+        NURSE PRACTITIONER - PRIMARY CARE (CPNP-PC)"},{"providertypeid":"CPNP-AC\/PC","providertype":"CERTIFIED
+        PEDIATRIC NURSE PRACTITIONER: PRIMARY CARE & ACUTE CARE"},{"providertypeid":"CPED","providertype":"CERTIFIED
+        PEDORTHIST (CPED)"},{"providertypeid":"CPRC","providertype":"CERTIFIED PEER
+        RECOVERY COACH"},{"providertypeid":"CPRSR","providertype":"CERTIFIED PEER
+        RECOVERY SPECIALIST RECIPROCAL (CPRSR)"},{"providertypeid":"CRXT","providertype":"CERTIFIED
+        PHARMACY TECHNICIAN"},{"providertypeid":"CPT","providertype":"CERTIFIED PHLEBOTOMY
+        TECHNICIAN"},{"providertypeid":"PA-C","providertype":"CERTIFIED PHYSICIAN
+        ASSISTANT"},{"providertypeid":"CPM","providertype":"CERTIFIED PROFESSIONAL
+        MIDWIFE (CPM)"},{"providertypeid":"CP","providertype":"CERTIFIED PROSTHETIST"},{"providertypeid":"CPO","providertype":"CERTIFIED
+        PROSTHETIST\/ORTHOTIST"},{"providertypeid":"CRPA","providertype":"CERTIFIED
+        RECOVERY PEER ADVOCATE (CRPA)"},{"providertypeid":"CRNA","providertype":"CERTIFIED
+        REGISTERED NURSE ANESTHESIOLOGIST"},{"providertypeid":"CRNP","providertype":"CERTIFIED
+        REGISTERED NURSE PRACTITIONER"},{"providertypeid":"CRC","providertype":"CERTIFIED
+        REHABILITATION COUNSELOR"},{"providertypeid":"CCSH","providertype":"CERTIFIED
+        SLEEP HEALTH CLINICIAN"},{"providertypeid":"CSAC","providertype":"CERTIFIED
+        SUBSTANCE ABUSE COUNSELOR (CSAC)"},{"providertypeid":"CSA","providertype":"CERTIFIED
+        SURGICAL ASSISTANT"},{"providertypeid":"CST","providertype":"CERTIFIED SURGICAL
+        TECHNICIAN"},{"providertypeid":"CDC I","providertype":"CHEMICAL DEPENDENCY
+        COUNSELOR (CDC I)"},{"providertypeid":"CDP","providertype":"CHEMICAL DEPENDENCY
+        PROFESSIONAL (CDP)"},{"providertypeid":"CDP-T","providertype":"CHEMICAL DEPENDENCY
+        PROFESSIONAL - TRAINEE"},{"providertypeid":"CLP","providertype":"CHILD LIFE
+        PROFESSIONAL"},{"providertypeid":"CLS","providertype":"CHILD LIFE SPECIALIST"},{"providertypeid":"CNS","providertype":"CLINICAL
+        NURSE SPECIALIST"},{"providertypeid":"CNS-BC","providertype":"CLINICAL NURSE
+        SPECIALIST BOARD CERTIFIED (CNS-BC)"},{"providertypeid":"LCPC-I","providertype":"CLINICAL
+        PROFESSIONAL COUNSELOR INTERN (LCPC-I)"},{"providertypeid":"PSYD","providertype":"CLINICAL
+        PSYCHOLOGIST"},{"providertypeid":"EDD","providertype":"CLINICAL PSYCHOLOGIST
+        (EDD)"},{"providertypeid":"PSYMA","providertype":"CLINICAL PSYCHOLOGIST (MA)"},{"providertypeid":"PHD","providertype":"CLINICAL
+        PSYCHOLOGIST (PHD)"},{"providertypeid":"CSW","providertype":"CLINICAL SOCIAL
+        WORKER"},{"providertypeid":"CSWI","providertype":"CLINICAL SOCIAL WORKER INTERN"},{"providertypeid":"CNA,TECH","providertype":"CNA,
+        ALLERGY TECH"},{"providertypeid":"CHA-T","providertype":"COMMUNITY HEALTH
+        AIDE TRAINEE"},{"providertypeid":"CHA1","providertype":"COMMUNITY HEALTH AIDE,
+        LEVEL 1"},{"providertypeid":"CHA2","providertype":"COMMUNITY HEALTH AIDE,
+        LEVEL 2"},{"providertypeid":"CHA3","providertype":"COMMUNITY HEALTH AIDE,
+        LEVEL 3"},{"providertypeid":"CHA4","providertype":"COMMUNITY HEALTH AIDE,
+        LEVEL 4"},{"providertypeid":"CHW","providertype":"COMMUNITY HEALTH OUTREACH
+        WORKER"},{"providertypeid":"CHP","providertype":"COMMUNITY HEALTH PRACTITIONER"},{"providertypeid":"HD","providertype":"COUNTY
+        HEALTH DEPARTMENT"},{"providertypeid":"CRNASUP","providertype":"CRNA,SUPERVISING"},{"providertypeid":"CNM","providertype":"Certified
+        Nurse Midwife (CNM)"},{"providertypeid":"DHAT","providertype":"DENTAL HEALTH
+        AIDE THERAPIST"},{"providertypeid":"DMS","providertype":"DENTIST"},{"providertypeid":"LSW-I","providertype":"DO
+        NOT USE"},{"providertypeid":"CH3","providertype":"DO NOT USE"},{"providertypeid":"DAOM","providertype":"DOCTOR
+        OF ACUPUNCTURE AND ORIENTAL MEDICINE (DAOM)"},{"providertypeid":"AU.D","providertype":"DOCTOR
+        OF AUDIOLOGY"},{"providertypeid":"DC","providertype":"DOCTOR OF CHIROPRACTIC"},{"providertypeid":"DMD","providertype":"DOCTOR
+        OF DENTAL MEDICINE"},{"providertypeid":"DDS","providertype":"DOCTOR OF DENTAL
+        SURGERY"},{"providertypeid":"DGS","providertype":"DOCTOR OF GENERAL SURGERY"},{"providertypeid":"(DMH)","providertype":"DOCTOR
+        OF MENTAL HEALTH (DMH)"},{"providertypeid":"DMH","providertype":"DOCTOR OF
+        MENTAL HEALTH (DMH)"},{"providertypeid":"ND","providertype":"DOCTOR OF NATUROPATHY"},{"providertypeid":"DNP","providertype":"DOCTOR
+        OF NURSING PRACTICE"},{"providertypeid":"DOM","providertype":"DOCTOR OF ORIENTAL
+        MEDICINE"},{"providertypeid":"DO-FACO","providertype":"DOCTOR OF OSTEOPATHIC
+        MEDICINE FELLOW OF AMERICAN COLLEGE OF OSTEOPATHIC INTERNIST"},{"providertypeid":"DO","providertype":"DOCTOR
+        OF OSTEOPATHY (DO)"},{"providertypeid":"PHARMD","providertype":"DOCTOR OF
+        PHARMACY (PHARMD)"},{"providertypeid":"DPM","providertype":"DOCTOR OF PODIATRIC
+        MEDICINE"},{"providertypeid":"DPSYCH","providertype":"DOCTOR OF PSYCHOLOGY
+        (DPSYCH)"},{"providertypeid":"DSCPT","providertype":"DOCTOR OF SCIENCE IN
+        PHYSICAL THERAPY"},{"providertypeid":"DSW","providertype":"DOCTOR OF SOCIAL
+        WORK"},{"providertypeid":"DPT","providertype":"DOCTORATE OF PHYSICAL THERAPY"},{"providertypeid":"DPA,
+        PA-C","providertype":"DOCTORATE OF PHYSICIAN ASSISTANT PHYSICIANS ASSISTANT
+        CERTIFIED"},{"providertypeid":"DRIVER","providertype":"DRIVER"},{"providertypeid":"EI","providertype":"EARLY
+        INTERVENTIONIST"},{"providertypeid":"EMT","providertype":"EMERGENCY MEDICAL
+        TECHNICIAN"},{"providertypeid":"EMTI","providertype":"EMERGENCY MEDICAL TECHNICIAN,
+        INTERMEDIATE"},{"providertypeid":"EMTSUP","providertype":"EMERGENCY MEDICAL
+        TECHNICIAN, SUPERVISING"},{"providertypeid":"EQUIP","providertype":"EQUIPMENT"},{"providertypeid":"EP","providertype":"EXERCISE
+        PHYSIOLOGIST"},{"providertypeid":"FNP","providertype":"FAMILY NURSE PRACTITIONER"},{"providertypeid":"FNP-BC","providertype":"FAMILY
+        NURSE PRACTITIONER, BOARD CERTIFIED"},{"providertypeid":"FNP-C","providertype":"FAMILY
+        NURSE PRACTITIONER,CERTIFIED"},{"providertypeid":"FNC","providertype":"FUNCTIONAL
+        NUTRITION COUNSELORS"},{"providertypeid":"GNP","providertype":"GERONTOLOGY
+        NURSE PRACTITIONER (GNP)"},{"providertypeid":"GPT","providertype":"GRADUATE
+        OF PHYSICAL THERAPY"},{"providertypeid":"GPTA","providertype":"GRADUATE PHYSICAL
+        THERAPIST ASSISTANT (GPTA)"},{"providertypeid":"HC","providertype":"HEALTH
+        COACH (HC)"},{"providertypeid":"HE","providertype":"HEALTH EDUCATOR"},{"providertypeid":"HNAV","providertype":"HEALTHCARE
+        NAVIGATOR"},{"providertypeid":"HAD","providertype":"HEARING AID DISPENSER"},{"providertypeid":"ABA-H","providertype":"HIGH-LEVEL
+        APPLIED BEHAVIOR ANALYST"},{"providertypeid":"H","providertype":"HOSPITALIST"},{"providertypeid":"IDC","providertype":"INDEPENDENT
+        DUTY CORPSMAN"},{"providertypeid":"IBCLC","providertype":"INTERNATIONAL BOARD
+        CERTIFIED LACTATION CONSULTANT"},{"providertypeid":"IOMT","providertype":"INTRAOPERATIVE
+        MONITORING TECHNICIAN"},{"providertypeid":"JC","providertype":"JOB COACH"},{"providertypeid":"LPC-CAN","providertype":"LCP
+        CANDIDATE"},{"providertypeid":"LAPC","providertype":"LICENSE ASSOCIATE COUNSELOR
+        (LAPC)"},{"providertypeid":"LGMFT","providertype":"LICENSED &#8203;GRADUATE
+        MARRIAGE AND FAMILY THERAPY"},{"providertypeid":"AP","providertype":"LICENSED
+        ACUPUNCTURIST"},{"providertypeid":"LAPSW","providertype":"LICENSED ADVANCED
+        PRACTITIONER SOCIAL WORKER (LAPSW)"},{"providertypeid":"LA","providertype":"LICENSED
+        AESTHETICIAN"},{"providertypeid":"LADC","providertype":"LICENSED ALCOHOL AND
+        DRUG ABUSE COUNSELOR"},{"providertypeid":"LADAC","providertype":"LICENSED
+        ALCOHOL AND DRUG ABUSE COUNSELOR"},{"providertypeid":"AUD","providertype":"LICENSED
+        AUDIOLOGIST"},{"providertypeid":"C-LCSW","providertype":"LICENSED CERTIFIED
+        SOCIAL WORKER"},{"providertypeid":"LCSW-C","providertype":"LICENSED CERTIFIED
+        SOCIAL WORKER\/CLINICAL (LCSW-C)"},{"providertypeid":"LCDC","providertype":"LICENSED
+        CHEMICAL DEPENDENCY COUNSELOR I"},{"providertypeid":"LCDC II","providertype":"LICENSED
+        CHEMICAL DEPENDENCY COUNSELOR II"},{"providertypeid":"LCDC III","providertype":"LICENSED
+        CHEMICAL DEPENDENCY COUNSELOR III"},{"providertypeid":"LCAS","providertype":"LICENSED
+        CLINICAL ADDICTION SPECIALIST"},{"providertypeid":"LCAS-A","providertype":"LICENSED
+        CLINICAL ADDICTION SPECIALIST ASSOCIATE"},{"providertypeid":"LCADC","providertype":"LICENSED
+        CLINICAL ALCOHOL AND DRUG COUNSELOR (LCADC)"},{"providertypeid":"LCMFT","providertype":"LICENSED
+        CLINICAL MARRIAGE AND FAMILY THERAPIST (LCMFT)"},{"providertypeid":"LCMHC","providertype":"LICENSED
+        CLINICAL MENTAL HEALTH COUNSELOR"},{"providertypeid":"LCMHC-A","providertype":"LICENSED
+        CLINICAL MENTAL HEALTH COUNSELOR ASSOCIATE"},{"providertypeid":"LCPC","providertype":"LICENSED
+        CLINICAL PROFESSIONAL COUNSELOR"},{"providertypeid":"LCP","providertype":"LICENSED
+        CLINICAL PSYCHOTHERAPIST"},{"providertypeid":"LCSW","providertype":"LICENSED
+        CLINICAL SOCIAL WORKER (LCSW)"},{"providertypeid":"LCSW-R","providertype":"LICENSED
+        CLINICAL SOCIAL WORKER PSYCHOTHERAPY (LCSW-R)"},{"providertypeid":"LD","providertype":"LICENSED
+        DIETITIAN"},{"providertypeid":"LDEM","providertype":"LICENSED DIRECT ENTRY
+        MIDWIFE"},{"providertypeid":"LDO","providertype":"LICENSED DISPENSING OPTICIAN"},{"providertypeid":"LGADC","providertype":"LICENSED
+        GRADUATE ALCOHOL AND DRUG COUNSELOR (LGADC)"},{"providertypeid":"LGPC","providertype":"LICENSED
+        GRADUATE PROFESSIONAL COUNSELOR (LGPC)"},{"providertypeid":"LGSW","providertype":"LICENSED
+        GRADUATE SOCIAL WORKER"},{"providertypeid":"LICDC","providertype":"LICENSED
+        INDEPENDENT CHEMICAL DEPENDENCY COUNSELOR"},{"providertypeid":"LICDC-CS","providertype":"LICENSED
+        INDEPENDENT CHEMICAL DEPENDENCY COUNSELOR, CLINICAL SUPERVISOR"},{"providertypeid":"LICSW","providertype":"LICENSED
+        INDEPENDENT CLINICAL SOCIAL WORKER"},{"providertypeid":"LIMHP","providertype":"LICENSED
+        INDEPENDENT MENTAL HEALTH PRACTITIONER"},{"providertypeid":"LISW","providertype":"LICENSED
+        INDEPENDENT SOCIAL WORKER"},{"providertypeid":"LISAC","providertype":"LICENSED
+        INDEPENDENT SUBSTANCE ABUSE COUNSELOR"},{"providertypeid":"LMFT","providertype":"LICENSED
+        MARRIAGE AND FAMILY THERAPIST"},{"providertypeid":"LMFT-A","providertype":"LICENSED
+        MARRIAGE AND FAMILY THERAPIST - ASSOCIATE"},{"providertypeid":"LMT","providertype":"LICENSED
+        MASSAGE THERAPIST"},{"providertypeid":"LMSW","providertype":"LICENSED MASTER
+        SOCIAL WORKER"},{"providertypeid":"LMHC","providertype":"LICENSED MENTAL HEALTH
+        COUNSELOR"},{"providertypeid":"LMHC-A","providertype":"LICENSED MENTAL HEALTH
+        COUNSELOR ASSOCIATE"},{"providertypeid":"LMHP","providertype":"LICENSED MENTAL
+        HEALTH PRACTITIONER"},{"providertypeid":"LM","providertype":"LICENSED MIDWIFE"},{"providertypeid":"LPM","providertype":"LICENSED
+        PARAMEDIC"},{"providertypeid":"LP","providertype":"LICENSED PERFUSIONIST"},{"providertypeid":"LPT","providertype":"LICENSED
+        PHYSICAL THERAPIST (LPT)"},{"providertypeid":"LPTSUP","providertype":"LICENSED
+        PHYSICAL THERAPIST,SUPERVISING"},{"providertypeid":"LPTA","providertype":"LICENSED
+        PHYSICAL THERAPY ASSISTANT"},{"providertypeid":"LPN","providertype":"LICENSED
+        PRACTICAL NURSE"},{"providertypeid":"LPCC","providertype":"LICENSED PROFESSIONAL
+        CLINICAL COUNSELOR"},{"providertypeid":"LPC","providertype":"LICENSED PROFESSIONAL
+        COUNSELOR (LPC)"},{"providertypeid":"LPC-A","providertype":"LICENSED PROFESSIONAL
+        COUNSELOR (LPC-A)"},{"providertypeid":"LPA","providertype":"LICENSED PSYCHOLOGICAL
+        ASSOCIATE"},{"providertypeid":"LPE-I","providertype":"LICENSED PSYCHOLOGICAL
+        EXAMINER INDEPENDENT"},{"providertypeid":"LP-MED","providertype":"LICENSED
+        PSYCHOLOGIST M.ED."},{"providertypeid":"LSWAIC","providertype":"LICENSED SOCIAL
+        WORK ASSOCIATE AND INDEPENDENT CLINICAL"},{"providertypeid":"LSW","providertype":"LICENSED
+        SOCIAL WORKER"},{"providertypeid":"LSCSW","providertype":"LICENSED SPECIALIST
+        CLINICAL SOCIAL WORKER"},{"providertypeid":"LSAA","providertype":"LICENSED
+        SUBSTANCE ABUSE ASSOCIATE"},{"providertypeid":"LSA","providertype":"LICENSED
+        SURGICAL ASSISTANT"},{"providertypeid":"LVN","providertype":"LICENSED VOCATIONAL
+        NURSE"},{"providertypeid":"LADV","providertype":"LIFE ADVISOR (LADV)"},{"providertypeid":"LMGR","providertype":"LIFE
+        MANAGER (LMGR)"},{"providertypeid":"LLMFT","providertype":"LIMITED LICENSE
+        MARRIAGE AND FAMILY THERAPIST"},{"providertypeid":"LLPC","providertype":"LIMITED
+        LICENSE PROFESSIONAL COUNSELOR"},{"providertypeid":"LLP","providertype":"LIMITED
+        LICENSE PSYCHOLOGIST"},{"providertypeid":"LLMSW","providertype":"LIMITED LICENSE
+        SOCIAL WORKER"},{"providertypeid":"LT","providertype":"LOCUM TENENS"},{"providertypeid":"LMFT-I","providertype":"MARRIAGE
+        AND FAMILY THERAPIST INTERN (LMFT)"},{"providertypeid":"MCWC","providertype":"MASTER
+        CERTIFIED WELLNESS COACH"},{"providertypeid":"MSSW","providertype":"MASTER
+        OF SCIENCE IN SOCIAL WORK (MSSW)"},{"providertypeid":"MSPT","providertype":"MASTER
+        OF SCIENCE OF PHYSICAL THERAPY"},{"providertypeid":"MHP","providertype":"MASTER''S
+        OF SCIENCE IN COUNSELOR EDUCATION"},{"providertypeid":"MDBCC","providertype":"MASTERS
+        IN DIVINITY-BOARD CERTIFIED CHAPLAIN"},{"providertypeid":"MDIVBCC","providertype":"MASTERS
+        IN DIVINITY-BOARD CERTIFIED CHAPLAIN"},{"providertypeid":"MSN","providertype":"MASTERS
+        NURSING SCIENCE"},{"providertypeid":"MAC","providertype":"MASTERS OF COUNSELING
+        (MAC)"},{"providertypeid":"MCP","providertype":"MASTERS OF COUNSELING AND
+        PSYCHOLOGY"},{"providertypeid":"MPT","providertype":"MASTERS OF PHYSICAL THERAPY"},{"providertypeid":"MS-CMHC","providertype":"MASTERS
+        OF SCIENCE IN CLINICAL MENTAL HEALTH COUNSELING"},{"providertypeid":"MS, CGC","providertype":"MASTERS,
+        GENETIC COUNSELING"},{"providertypeid":"MGC","providertype":"MASTERS, GENETIC
+        COUNSELING"},{"providertypeid":"MD","providertype":"MD"},{"providertypeid":"PHDMP","providertype":"MEDICAL
+        PSYCHOLOGIST"},{"providertypeid":"MSWR","providertype":"MEDICAL SOCIAL WORKER
+        (MSWR)"},{"providertypeid":"MS","providertype":"MEDICAL STUDENT"},{"providertypeid":"MHC-LP","providertype":"MENTAL
+        HEALTH COUNSELOR WITH LIMITED PERMIT (MHC-LP)"},{"providertypeid":"MHI","providertype":"MENTAL
+        HEALTH INTERN"},{"providertypeid":"ABA-M","providertype":"MID-LEVEL APPLIED
+        BEHAVIOR ANALYST"},{"providertypeid":"MS\/RD","providertype":"MS\/RD"},{"providertypeid":"MSW","providertype":"Master
+        Social Worker (MSW)"},{"providertypeid":"MA","providertype":"Medical Assistant
+        (MA)"},{"providertypeid":"NCT","providertype":"NON-CERTIFIED RADIOLOGY TECHNICIAN"},{"providertypeid":"NE","providertype":"NURSE
+        EDUCATOR"},{"providertypeid":"NP, S","providertype":"NURSE PRACTITIONER, SUPERVISING(NP,S)"},{"providertypeid":"NP-C","providertype":"NURSE
+        PRACTITIONER-CERTIFIED"},{"providertypeid":"NUTRSUP","providertype":"NUTRITIONIST,
+        SUPERVISING"},{"providertypeid":"NP","providertype":"Nurse Practitioner (NP)"},{"providertypeid":"NUTR","providertype":"Nutritionist
+        (NUTR)"},{"providertypeid":"OT","providertype":"OCCUPATIONAL THERAPIST"},{"providertypeid":"OTA","providertype":"OCCUPATIONAL
+        THERAPIST ASSISTANT"},{"providertypeid":"OD","providertype":"OPTOMETRIST (OD)"},{"providertypeid":"OPASUP","providertype":"ORTHOPAEDIC  PHYSICIAN
+        ASSISTANT, SUPERVISING"},{"providertypeid":"ONP-C","providertype":"ORTHOPAEDIC
+        NURSE PRACTITIONER - CERTIFIED"},{"providertypeid":"OPA","providertype":"ORTHOPAEDIC
+        PHYSICIAN ASSISTANT"},{"providertypeid":"OPA-C","providertype":"ORTHOPAEDIC
+        PHYSICIAN''S ASSISTANT"},{"providertypeid":"OMP","providertype":"OTHER MEDICAL
+        PERSONNEL"},{"providertypeid":"PARA","providertype":"PARAMEDIC"},{"providertypeid":"PC","providertype":"PATIENT
+        CARE"},{"providertypeid":"PTN","providertype":"PATIENT NAVIGATOR (PTN)"},{"providertypeid":"PCNS","providertype":"PEDIATRIC
+        CLINICAL NURSE SPECIALIST"},{"providertypeid":"PNP-BC","providertype":"PEDIATRIC
+        NURSE PRACTITIONER, BOARD CERTIFIED"},{"providertypeid":"PPCNP-BC","providertype":"PEDIATRIC
+        PRIMARY CARE NURSE PRACTITIONER-BOARD CERTIFIED (PPCNP-BC)"},{"providertypeid":"PSS","providertype":"PEER
+        SUPPORT SPECIALIST"},{"providertypeid":"PN","providertype":"PERSONAL NAVIGATOR"},{"providertypeid":"PHARM","providertype":"PHARMACIST"},{"providertypeid":"PS","providertype":"PHARMACIST,
+        SUPERVISING"},{"providertypeid":"PHT","providertype":"PHARMACY TECHNICIAN
+        (PHT)"},{"providertypeid":"OTR","providertype":"PHYSICAL THERAPIST (OTR)"},{"providertypeid":"PT","providertype":"PHYSICAL
+        THERAPIST (PT)"},{"providertypeid":"PTA","providertype":"PHYSICAL THERAPY
+        ASSISTANT"},{"providertypeid":"PA","providertype":"PHYSICIAN ASSISTANT (PA)"},{"providertypeid":"PASUP","providertype":"PHYSICIAN
+        ASSISTANT, SUPERVISING"},{"providertypeid":"PA-S","providertype":"PHYSICIANS
+        ASSISTANT STUDENT"},{"providertypeid":"PLMHP","providertype":"PROVISIONAL
+        LICENSED MENTAL HEALTH PRACTITIONER"},{"providertypeid":"P-LPC","providertype":"PROVISIONAL
+        LICENSED PROFESSIONAL COUNSELOR"},{"providertypeid":"PMHNP","providertype":"PSYCHIATRIC-MENTAL
+        HEALTH NURSE PRACTITIONER"},{"providertypeid":"P-MD","providertype":"PSYCHIATRIST"},{"providertypeid":"PSM","providertype":"PSYCHOMETRICIAN"},{"providertypeid":"PHDH","providertype":"PUBLIC
+        HEALTH DENTAL HYGIENIST"},{"providertypeid":"PNC","providertype":"Perinatal
+        Coordinator (PNC)"},{"providertypeid":"QMHPS","providertype":"QUALIFIED MENTAL
+        HEALTH PROFESSIONALS (QMHPS)"},{"providertypeid":"RAD","providertype":"RADIOLOGIST
+        - SUPERVISING"},{"providertypeid":"RAD-S","providertype":"RADIOLOGIST - SUPERVISING"},{"providertypeid":"RSA","providertype":"RADIOLOGIST
+        SPECIALIST ASSISTANT"},{"providertypeid":"RBT","providertype":"REGISTERED
+        BEHAVIOR TECHNICIAN"},{"providertypeid":"RB-T","providertype":"REGISTERED
+        BEHAVIORAL THERAPIST"},{"providertypeid":"RCSW-I","providertype":"REGISTERED
+        CLINICAL SOCIAL WORKER INTERN"},{"providertypeid":"RDH","providertype":"REGISTERED
+        DENTAL HYGIENIST"},{"providertypeid":"RDHSUP","providertype":"REGISTERED DENTAL
+        HYGIENIST, SUPERVISING"},{"providertypeid":"RDMS","providertype":"REGISTERED
+        DIAGNOSTIC MEDICAL SONOGRAPHER"},{"providertypeid":"RD","providertype":"REGISTERED
+        DIETITIAN"},{"providertypeid":"RDN","providertype":"REGISTERED DIETITIAN NUTRITIONIST"},{"providertypeid":"RD-S","providertype":"REGISTERED
+        DIETITIAN STUDENT"},{"providertypeid":"RMFT","providertype":"REGISTERED MARRIAGE
+        AND FAMILY THERAPIST"},{"providertypeid":"RMFTI","providertype":"REGISTERED
+        MARRIAGE AND FAMILY THERAPIST INTERN (RMFTI)"},{"providertypeid":"RMA","providertype":"REGISTERED
+        MEDICAL ASSISTANT"},{"providertypeid":"RMHC","providertype":"REGISTERED MENTAL
+        HEALTH COUNSELOR (RMHC)"},{"providertypeid":"RMHC-I","providertype":"REGISTERED
+        MENTAL HEALTH COUNSELOR INTERN"},{"providertypeid":"RNCS","providertype":"REGISTERED
+        NURSE CLINICAL SPECIALIST"},{"providertypeid":"RNFA","providertype":"REGISTERED
+        NURSE FIRST ASSISTANT"},{"providertypeid":"RPH","providertype":"REGISTERED
+        PHARMACIST"},{"providertypeid":"RPSGT","providertype":"REGISTERED POLYSOMNOGRAPHIC
+        TECHNOLOGIST (RPSGT)"},{"providertypeid":"RPA","providertype":"REGISTERED
+        PSYCHOLOGICAL ASSISTANT"},{"providertypeid":"RRT","providertype":"REGISTERED
+        RADIOLOGY TECHNICIAN"},{"providertypeid":"RVT","providertype":"REGISTERED
+        VASCULAR TECHNOLOGIST"},{"providertypeid":"RYT","providertype":"REGISTERED
+        YOGA TEACHER"},{"providertypeid":"RP","providertype":"REIKI PRACTITIONER"},{"providertypeid":"RES","providertype":"RESIDENT"},{"providertypeid":"RT","providertype":"RESPIRATORY
+        THERAPIST"},{"providertypeid":"RETAIL","providertype":"RETAIL STORE"},{"providertypeid":"RN","providertype":"Registered
+        Nurse (RN)"},{"providertypeid":"SW-I","providertype":"SOCIAL WORKER INTERN"},{"providertypeid":"SLP","providertype":"SPEECH
+        AND LANGUAGE PATHOLOGIST"},{"providertypeid":"SLPA","providertype":"SPEECH
+        AND LANGUAGE PATHOLOGIST ASSISTANT"},{"providertypeid":"SPC","providertype":"SPORTS
+        PERFORMANCE COACH"},{"providertypeid":"SF","providertype":"STUDENT FELLOW"},{"providertypeid":"SRNA","providertype":"STUDENT
+        NURSE ANESTHETIST"},{"providertypeid":"SNP","providertype":"STUDENT NURSE
+        PRACTITIONER"},{"providertypeid":"SOT","providertype":"STUDENT OCCUPATIONAL
+        THERAPY"},{"providertypeid":"SPT","providertype":"STUDENT OF PHYSICAL THERAPY"},{"providertypeid":"SPTA","providertype":"STUDENT
+        OF PHYSICAL THERAPY (ASSISTANT)"},{"providertypeid":"SST","providertype":"STUDENT
+        SPEECH THERAPY"},{"providertypeid":"SUDP","providertype":"SUBSTANCE USE DISORDER
+        PROFESSIONAL"},{"providertypeid":"SUDPT","providertype":"SUBSTANCE USE DISORDER
+        PROFESSIONAL TRAINEE"},{"providertypeid":"SA","providertype":"SURGICAL ASSISTANT"},{"providertypeid":"TECH","providertype":"TECHNICAL"},{"providertypeid":"TLLP","providertype":"TEMPORARY
+        LIMITED LICENSE PSYCHOLOGY"},{"providertypeid":"TC","providertype":"THERAPY
+        COACH (TC)"},{"providertypeid":"MT","providertype":"TRANSCRIPTIONIST"},{"providertypeid":"TRAN","providertype":"TRANSPORTATION"},{"providertypeid":"WHNP-BC","providertype":"WOMEN''S
+        HEALTH CARE NURSE PRACTITIONER, BOARD CERTIFIED"},{"providertypeid":"DTP","providertype":"ZZ"},{"providertypeid":"PODIATRY"}],"totalcount":346}'
+  recorded_at: Mon, 01 May 2023 19:29:14 GMT
+recorded_with: VCR 6.1.0

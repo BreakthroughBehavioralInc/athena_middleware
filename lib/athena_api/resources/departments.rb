@@ -1,5 +1,8 @@
 module AthenaApi
     class Departments < Resource
-      extend AthenaApi::Crud::Get
+      
+      def self.get_departments()
+        execute_request(:get, resource_url)
+      end
     end
 end

@@ -16,8 +16,8 @@ VCR.configure do |config|
   config.allow_http_connections_when_no_cassette = true
   config.debug_logger = $stderr
   config.filter_sensitive_data('<API_KEY>') { ENV['ATHENA_KEY'] }
-  config.filter_sensitive_data('<API_SECRET>') { CGI.escape(ENV['ATHENA_KEY_SECRET']) }
-  config.filter_sensitive_data('<RESOURCE_URL>') { ENV['ATHENA_BASE_URL'] }
+  config.filter_sensitive_data('<API_SECRET>') { CGI.escape(ENV['ATHENA_SECRET']) }
+  config.filter_sensitive_data('<ATHENA_BASE_URL>') { ENV['ATHENA_BASE_URL'] }
 end
 
 RSpec.configure do |config|
@@ -32,131 +32,109 @@ RSpec.configure do |config|
   end
 
   AthenaApi.api_key = ENV["ATHENA_KEY"]
-  AthenaApi.api_secret = ENV["ATHENA_KEY_SECRET"]
+  AthenaApi.api_secret = ENV["ATHENA_SECRET"]
   AthenaApi.base_url = ENV["ATHENA_BASE_URL"]
+  AthenaApi.auth_path = ENV["ATHENA_AUTH_PATH"]
+  AthenaApi.version_string = ENV["ATHENA_VERSION_STRING"]
+  AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
 end
 
 
-# def patient_body
-#     {
-#     departmentid: "123",
-#     primarydepartmentid: "123",
-#     firstname: "rob",
-#     lastname: "mag",
-#     middlename: "",
-#     sex: "male",
-#     dob: "07/23/1995",
-#     address1: "123 Main Street",
-#     address2: "",
-#     city: "Piscataway",
-#     state: "NJ"
-#     zip: "08854",
-#     homephone: "9081234567",
-#     mobilephone: "9081234567",
-#     email: "rob@mail.com",
-#     notes: "rob notes",
-#     }
-# end
+def patient_body
+    [
+      ["departmentid","1"],
+      ["primarydepartmentid","1"],
+      ["firstname", "rob"],
+      ["lastname", "mag"],
+      ["middlename", ""],
+      ["sex","M"],
+      ["dob", "07/23/1995"],
+      ["address1", "123 Main Street"],
+      ["address2", ""],
+      ["city", "Piscataway"],
+      ["state", "NJ"],
+      ["zip", "08854"],
+      ["homephone", "908-555-0173"],
+      ["mobilephone", "908-555-0173"],
+      ["email", "rob@mail.com"],
+      ["notes", "rob notes"]
+    ]
+end
 
-# def patient_update
-#     {
-#     departmentid: "123",
-#     primarydepartmentid: "123",
-#     firstname: "ROB",
-#     lastname: "mag",
-#     middlename: "",
-#     sex: "male",
-#     dob: "07/23/1995",
-#     address1: "123 Main Street",
-#     address2: "",
-#     city: "Piscataway",
-#     state: "NJ"
-#     zip: "08854",
-#     homephone: "9081234567",
-#     mobilephone: "9081234567",
-#     email: "rob@mail.com",
-#     notes: "rob notes",
-#     }
-# end
+def patient_update
+  [
+    ["departmentid","1"],
+    ["primarydepartmentid","1"],
+    ["firstname", "robert"],
+    ["lastname", "mag"],
+    ["middlename", ""],
+    ["sex","M"],
+    ["dob", "07/23/1995"],
+    ["address1", "123 Main Street"],
+    ["address2", ""],
+    ["city", "Piscataway"],
+    ["state", "NJ"],
+    ["zip", "08854"],
+    ["email", "rob@mail.com"],
+    ["notes", "rob notes udpate"]
+  ]
+end
 
 
-# def patient_record_payment
-#     {
-#     appointmentid: "123"
-#     checknumber: "123"
-#     departmentid: "123"
-#     otheramount: "amount_collected"
-#     paymentmethod: "paymentmethod"
-#     todayservice: "Y"
-#     }
-# end
+def patient_record_payment
+    [
+      ["appointmentid", "123"],
+      ["checknumber", "123"],
+      ["departmentid", "1"],
+      ["otheramount", "30"],
+      ["paymentmethod", "paymentmethod"],
+      ["todayservice", "Y"]
+    ]
+end
 
 
-# def update_patient_privacy_information
-#     {
-#         departmentid:"123"
-#         insuredsignature:"signature"
-#         patientsignature:"signature"
-#         privacynotice:"true"
-#         signaturedatetime:"07/12/2001"
-#         signaturename: "rob"
-#     }
-# end
+def update_patient_privacy_information
+  [
+    ["departmentid","1"],
+    ["insuredsignature", "true"],
+    ["patientsignature", "true"],
+    ["privacynotice", "true"],
+    ["signaturedatetime", "07/12/2001 12:20:03"],
+    ["signaturename", "rob"]
+  ]
+end
 
-# def insurance_body
-#     {
-#         patientid: "123",
-#         departmentid: "123",     
-#         expirationdate: "07-01-2023",
-#         insuranceidnumber: "123",
-#         insuranceidnumber: "TOAAN3684542",
-#         insurancepackageid: "package",
-#         insurancephone: "phone",
-#         insurancepolicyholder: "firstname lastname",
-#         insurancepolicyholderaddress1: "address1",
-#         insurancepolicyholderaddress2: "address2",
-#         insurancepolicyholdercity: "Piscataway",
-#         insurancepolicyholdercountrycode: "USA",
-#         insurancepolicyholdercountryiso3166: "US",
-#         insurancepolicyholderdob: "07-01-2001",
-#         insurancepolicyholderfirstname: "firstname",
-#         insurancepolicyholderlastname: "lastname",
-#         insurancepolicyholdermiddlename: "",
-#         insurancepolicyholdersex: "male",
-#         insurancepolicyholderstate: "NJ",
-#         insurancepolicyholderzip: "08854",
-#         insuredentitytypeid: "1",
-#         policynumber: "123",
-#         relationshiptoinsuredid: "123",
-#         sequencenumber: "1",
-#     }
-# end
+def insurance_body
+  [
+    ["patientid", "54382"],
+    ["departmentid", "1"],     
+    ["expirationdate", "07/01/2025"],
+    ["insuranceidnumber", "TOAAN3684542"],
+    ["insurancepackageid", "123"],
+    ["insurancephone", "6091234567"],
+    ["insurancepolicyholder", "rob mag"],
+    ["insurancepolicyholderaddress1", "123 Main Street"],
+    ["insurancepolicyholderaddress2", "address2"],
+    ["insurancepolicyholdercity", "Piscataway"],
+    ["insurancepolicyholdercountrycode", "USA"],
+    ["insurancepolicyholdercountryiso3166", "US"],
+    ["insurancepolicyholderdob", "07/23/1995"],
+    ["insurancepolicyholderfirstname", "rob"],
+    ["insurancepolicyholderlastname", "mag"],
+    ["insurancepolicyholdermiddlename", ""],
+    ["insurancepolicyholdersex", "M"],
+    ["insurancepolicyholderstate", "NJ"],
+    ["insurancepolicyholderzip", "08854"],
+    ["insuredentitytypeid", "1"],
+    ["policynumber", "123"],
+    ["relationshiptoinsuredid", "123"],
+    ["sequencenumber", "1"]
+  ]
+end
 
-# def insurance_update
-#     {
-#         patientid: "123",
-#         departmentid: "123",     
-#         expirationdate: "07-01-2023",
-#         insuranceidnumber: "123",
-#         insuranceidnumber: "TOAAN3684542",
-#         insurancepackageid: "package",
-#         insurancephone: "phone",
-#         insurancepolicyholder: "firstname lastname",
-#         insurancepolicyholderaddress1: "address1",
-#         insurancepolicyholderaddress2: "address2",
-#         insurancepolicyholdercity: "Piscataway",
-#         insurancepolicyholdercountrycode: "USA",
-#         insurancepolicyholdercountryiso3166: "US",
-#         insurancepolicyholderdob: "07-01-2001",
-#         insurancepolicyholderfirstname: "firstname",
-#         insurancepolicyholderlastname: "lastname",
-#         insurancepolicyholdermiddlename: "",
-#         insurancepolicyholdersex: "male",
-#         insurancepolicyholderstate: "NJ",
-#         insurancepolicyholderzip: "08854",
-#         insuredentitytypeid: "1",
-#         policynumber: "123",
-#         relationshiptoinsuredid: "123",
-#         sequencenumber: "1",
-#     }
-# end
+def insurance_update
+  [
+    ["insurancepolicyholderaddress1", "124 Main Street"],
+    ["sequencenumber", "1"]
+  ]
+end

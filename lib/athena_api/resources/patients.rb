@@ -15,5 +15,9 @@ module AthenaApi
       def self.update_patient_privacy_information(patient_id, params = {})
         execute_request(:post, "#{resource_url}/#{patient_id}/privacyinformationverified", body_params: params)
       end
+
+      def self.search()
+        execute_request(:get, "#{resource_url}/search")
+      end
     end
 end
