@@ -22,4 +22,11 @@ jobs:
           ruby-version: 3.0.1
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Run tests
+        env:
+          ATHENA_KEY: ${{ secrets.ATHENA_KEY }}
+          ATHENA_SECRET: ${{ secrets.ATHENA_SECRET }}
+          ATHENA_BASE_URL: ${{ secrets.ATHENA_BASE_URL }}
+          ATHENA_AUTH_PATH: ${{ secrets.ATHENA_AUTH_PATH }}
+          ATHENA_VERSION_STRING: ${{ secrets.ATHENA_VERSION_STRING }}
+          ATHENA_PRACTICE_ID: ${{ secrets.ATHENA_PRACTICE_ID }}
         run: bundle exec rake
