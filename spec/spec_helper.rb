@@ -109,9 +109,8 @@ def insurance_body
     ["patientid", "54382"],
     ["departmentid", "1"],     
     ["expirationdate", "07/01/2025"],
-    ["insuranceidnumber", "123"],
     ["insuranceidnumber", "TOAAN3684542"],
-    ["insurancepackageid", "31724"],
+    ["insurancepackageid", "123"],
     ["insurancephone", "6091234567"],
     ["insurancepolicyholder", "rob mag"],
     ["insurancepolicyholderaddress1", "123 Main Street"],
@@ -135,29 +134,7 @@ end
 
 def insurance_update
   [
-    ["patientid", "54382"],
-    ["departmentid", "1"],     
-    ["expirationdate", "07/01/2025"],
-    ["insuranceidnumber", "131"],
-    ["insuranceidnumber", "TOAAN3684542"],
-    ["insurancepackageid", "31724"],
-    ["insurancephone", "6091234567"],
-    ["insurancepolicyholder", "rob mag"],
-    ["insurancepolicyholderaddress1", "123 Main Street"],
-    ["insurancepolicyholderaddress2", "address2"],
-    ["insurancepolicyholdercity", "Piscataway"],
-    ["insurancepolicyholdercountrycode", "USA"],
-    ["insurancepolicyholdercountryiso3166", "US"],
-    ["insurancepolicyholderdob", "07/23/1995"],
-    ["insurancepolicyholderfirstname", "rob"],
-    ["insurancepolicyholderlastname", "mag"],
-    ["insurancepolicyholdermiddlename", ""],
-    ["insurancepolicyholdersex", "M"],
-    ["insurancepolicyholderstate", "NJ"],
-    ["insurancepolicyholderzip", "08854"],
-    ["insuredentitytypeid", "1"],
-    ["policynumber", "123"],
-    ["relationshiptoinsuredid", "123"],
+    ["insurancepolicyholderaddress1", "124 Main Street"],
     ["sequencenumber", "1"]
   ]
 end
