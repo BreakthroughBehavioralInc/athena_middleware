@@ -1,5 +1,5 @@
 module AthenaApi
-  class Claims < Resource
+  class Appointments < Resource
     extend AthenaApi::Crud::Put
 
   	 def self.open_appointment(appointment_data)
