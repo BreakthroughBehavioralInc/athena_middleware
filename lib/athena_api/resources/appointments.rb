@@ -13,5 +13,9 @@ module AthenaApi
     def self.patient_appointment_reasons(params)
       execute_request(:get, "#{client.config.base_url}/#{url_version}/#{client.config.practice_id}/patientappointmentreasons", params: params)
     end
+
+    def self.patient_appointment_reasons(params)
+      execute_request(:get, "#{client.config.base_url}/#{url_version}/#{client.config.practice_id}/patientappointmentreasons", params: params)
+    end
   end
 end
