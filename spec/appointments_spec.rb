@@ -25,7 +25,6 @@ RSpec.describe AthenaApi::Appointments do
 			it 'should get all open appointment slots' do
 				response = AthenaApi::Appointments.get_open_appointments(open_appointment_query_params)
 				expect(response.totalcount).to_not be(nil)
-				# response["appointmentids"].first.first will give you a appointment_id -- you can delete this comment lol
 			end
 		end
 
