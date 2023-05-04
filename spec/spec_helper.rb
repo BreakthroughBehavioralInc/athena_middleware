@@ -142,10 +142,10 @@ end
 def appointment_open
   [
     ["departmentid", "1"],
-    ["providerid","3"],
-    ["appointmentdate","06-01-2023"],
-    ["appointmenttime","12:30:00"],
-    ["reasonid", "1343"]
+    ["providerid","68"],
+    ["appointmentdate","05/07/2023"],
+    ["appointmenttime","08:30"],
+    ["appointmenttypeid", "1771"]
   ]
 end
 
