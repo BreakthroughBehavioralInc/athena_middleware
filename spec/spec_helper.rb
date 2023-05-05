@@ -80,6 +80,29 @@ def patient_update
   ]
 end
 
+def provider_data
+  [
+    ["firstname", "Adelaide"],
+    ["firstname","Ida"],
+    ["lastname","Little"], 
+    ["entitytypeid",1],
+    ["schedulingname","lsmith87"],
+    ["signatureonfileflag", true],
+    ["billable", false],
+    ["providergroupid",1],
+    ["billednamecase","Ida Little"],
+    ["username","lsmith87"]
+  ]
+end
+
+def patient_data
+  [
+    ["patientid", "54382"],
+    ["appointmenttypeid", "1771"],
+    ["entitytypeid", "1"],
+    ["schedulingname", "lsmith"]
+  ]
+end
 
 def patient_record_payment
     [

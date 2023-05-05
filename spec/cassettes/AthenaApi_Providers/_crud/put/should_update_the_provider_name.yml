@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: "<ATHENA_BASE_URL>/v1/195900/providers/68"
+    body:
+      encoding: UTF-8
+      string: Content-Type=application%2Fjson&billable=false&billednamecase=Ida+Little&entitytypeid=1&firstname=Ida&lastname=Little&providergroupid=1&schedulingname=lsmith87&signatureonfileflag=true&username=lsmith87
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-encoding:
+      - identity
+      Authorization:
+      - Bearer Fuzw0tJKlxWWlid61grV0SNgp3ST
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 May 2023 17:32:42 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '16'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=728061A3545B42FD87A5970645BDBE32|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      nncoection:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49913'
+      x-request-id:
+      - rrt-4355622734251395700-a-gwo1-1743-197230477-1
+    body:
+      encoding: UTF-8
+      string: '{"providerid":1}'
+  recorded_at: Fri, 05 May 2023 17:32:42 GMT
+recorded_with: VCR 6.1.0

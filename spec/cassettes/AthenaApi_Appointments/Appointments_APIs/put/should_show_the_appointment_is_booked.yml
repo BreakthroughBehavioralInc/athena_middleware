@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: "<ATHENA_BASE_URL>/v1/195900/appointments/1251819"
+    body:
+      encoding: UTF-8
+      string: Content-Type=application%2Fjson&appointmenttypeid=1771&patientid=54382
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-encoding:
+      - identity
+      Authorization:
+      - Bearer IEKH7hfqkZZZPTV23avQ1CzoOab3
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      date:
+      - Fri, 05 May 2023 16:39:57 GMT
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      set-cookie:
+      - dtCookie=186823E9AA2D62F4B7DDCF35BA5FED73|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      cneonction:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49933'
+      x-request-id:
+      - rrt-639959609228624226-a-gwo1-5481-197645600-1
+    body:
+      encoding: UTF-8
+      string: |2-
+
+
+        {"detailedmessage":"The appointment ID is already booked or is not marked as being available to be scheduled via the API.","error":"That appointment time was already booked or not available for booking."}
+  recorded_at: Fri, 05 May 2023 16:39:57 GMT
+recorded_with: VCR 6.1.0

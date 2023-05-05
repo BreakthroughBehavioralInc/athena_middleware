@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ATHENA_BASE_URL>/oauth2/v1/token"
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials&scope=athena%2Fservice%2FAthenanet.MDP.%2A
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 May 2023 17:32:39 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '130'
+      connection:
+      - keep-alive
+      host:
+      - api.preview.platform.athenahealth.com
+      x-forwarded-for:
+      - 174.16.110.128
+      x-forwarded-port:
+      - '443'
+      x-forwarded-proto:
+      - https
+      user-agent:
+      - Faraday v2.7.4
+      authorization:
+      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - "*/*"
+      x-forwarded-host:
+      - api.preview.platform.athenahealth.com
+      cache-control:
+      - no-store
+      pragma:
+      - no-cache
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"Fuzw0tJKlxWWlid61grV0SNgp3ST","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Fri, 05 May 2023 17:32:39 GMT
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/providers/68"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer Fuzw0tJKlxWWlid61grV0SNgp3ST
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 May 2023 17:32:39 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '252'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=FDCA555552B89A05603DCC61A0A0069E|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      cneonction:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49913'
+      x-request-id:
+      - rrt-3244078025454653782-b-gwo1-14473-18934240-1
+    body:
+      encoding: UTF-8
+      string: '[{"firstname":"Ida","acceptingnewpatients":false,"schedulingname":"lsmith","billable":false,"lastname":"Little","providerid":68,"providerusername":"lsmith87","hideinportal":false,"entitytype":"Person","npi":1245319599,"createencounteroncheckin":false}]'
+  recorded_at: Fri, 05 May 2023 17:32:39 GMT
+recorded_with: VCR 6.1.0

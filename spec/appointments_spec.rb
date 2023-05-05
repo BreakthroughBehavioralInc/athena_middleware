@@ -1,23 +1,17 @@
 require "spec_helper"
 
-RSpec.describe AthenaApi::Appointments do
+RSpec.describe AthenaApi::Appointments, vcr: { re_record_interval: 604800 }  do
 
-	let(:appointment_id) {"123"}
+	let(:appointment_id) {"1251819"}
 	let(:query_param)  do { departmentid: 1 } end
 	let(:open_appointment_query_params) do {departmentid: 1, reasonid: -1} end
-	let(:appointment_data) do
-		{
-			'key': 'value1',
-			'key2': 'value2'
-		}
-	end
+	let(:appointment_response) {"The appointment ID is already booked or is not marked as being available to be scheduled via the API."}
 
 	describe 'Appointments APIs' do
 		context 'post' do
 			it 'should open appointment' do
 				response = AthenaApi::Appointments.create_appointment_slot(query_param, appointment_open)
 				expect(response["appointmentids"]).to_not be(nil)
-				# response["appointmentids"].first.first will give you a appointment_id -- you can delete this comment lol
 			end
 		end
 
@@ -29,8 +23,9 @@ RSpec.describe AthenaApi::Appointments do
 		end
 
 		context 'put' do
-			xit 'shoud call put appointments' do
-				response = AthenaApi::Appointments.put(appointment_id, appointment_data)
+			it 'should show the appointment is booked' do
+				response = AthenaApi::Appointments.book_appointment(appointment_id, patient_data)
+        expect(response.detailedmessage).to eq(appointment_response)
 			end
 		end
 	end
