@@ -5,7 +5,7 @@ module AthenaApi
       execute_request(:get, "#{resource_url}/#{claim_id}/claimnotes?pendingflags=All")
     end
 
-    def self.claim_transactions(id)
+    def self.claim_transactions(claim_id)
       execute_request(:get, "#{resource_url}/#{claim_id}/claimtransactions")
     end
   end
