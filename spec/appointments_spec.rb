@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe AthenaApi::Appointments, vcr: { re_record_interval: 604800 }  do
+RSpec.describe AthenaApi::Appointments, vcr: { re_record_interval: 604800 } do
 
 	let(:appointment_id) {"1251819"}
 	let(:query_param)  do { departmentid: 1 } end
@@ -25,7 +25,7 @@ RSpec.describe AthenaApi::Appointments, vcr: { re_record_interval: 604800 }  do
 		context 'put' do
 			it 'should show the appointment is booked' do
 				response = AthenaApi::Appointments.book_appointment(appointment_id, patient_data)
-        expect(response.detailedmessage).to eq(appointment_response)
+        		expect(response.detailedmessage).to eq(appointment_response)
 			end
 		end
 	end

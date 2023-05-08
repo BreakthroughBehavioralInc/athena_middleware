@@ -48,15 +48,4 @@ RSpec.describe AthenaApi::Patients, vcr: { re_record_interval: 604800 } do
             end
         end
     end
-
-
-
-
-
-
-
-
-
-
-
 end
