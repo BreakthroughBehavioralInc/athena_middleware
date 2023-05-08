@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 16:39:45 GMT
+      - Mon, 08 May 2023 17:12:27 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 174.16.110.128
+      - 68.194.64.78
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"IEKH7hfqkZZZPTV23avQ1CzoOab3","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Fri, 05 May 2023 16:39:45 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"mjnFvYGobgGYoeO8HCYeKl3hbO7Y","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Mon, 08 May 2023 17:12:27 GMT
 - request:
     method: post
     uri: "<ATHENA_BASE_URL>/v1/195900/appointments/open?departmentid=1"
@@ -70,14 +70,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer IEKH7hfqkZZZPTV23avQ1CzoOab3
+      - Bearer mjnFvYGobgGYoeO8HCYeKl3hbO7Y
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 16:39:56 GMT
+      - Mon, 08 May 2023 17:12:42 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -93,7 +93,7 @@ http_interactions:
       cache-control:
       - no-cache, no-store
       set-cookie:
-      - dtCookie=39AF90058871A990A0DA694C2E31B42F|RUM+Default+Application|1; Path=/;
+      - dtCookie=3363DFD187366E016F0FF337AA3B3764|RUM+Default+Application|1; Path=/;
         Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
@@ -104,11 +104,11 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49933'
+      - '49978'
       x-request-id:
-      - rrt-8672300127860001356-c-gwo1-7484-197547157-1
+      - rrt-3627472992711536842-b-gea1-30008-46312601-1
     body:
       encoding: UTF-8
-      string: '{"appointmentids":{"1251822":"08:30"}}'
-  recorded_at: Fri, 05 May 2023 16:39:56 GMT
+      string: '{"appointmentids":{"1251960":"08:30"}}'
+  recorded_at: Mon, 08 May 2023 17:12:42 GMT
 recorded_with: VCR 6.1.0

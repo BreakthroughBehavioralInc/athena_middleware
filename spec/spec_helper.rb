@@ -174,7 +174,7 @@ end
 
 def create_claim
   [
-    ["claimcharges", ["procedurecode", "CPT_code\icdcode"]],
-    ["supervisingproviderid", ""]
+    ["claimcharges"], [{"procedurecode": "99232"}],
+    ["supervisingproviderid", "3"]
   ]
 end
