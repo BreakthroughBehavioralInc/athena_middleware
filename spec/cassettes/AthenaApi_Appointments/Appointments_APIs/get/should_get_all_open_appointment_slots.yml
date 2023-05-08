@@ -1,0 +1,270 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/appointments/open?departmentid=1&reasonid=-1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer IEKH7hfqkZZZPTV23avQ1CzoOab3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 May 2023 16:39:57 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '27954'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=ADB22840A13F8D54631928536A125AEB|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      nncoection:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49932'
+      x-request-id:
+      - rrt-9061640493790364004-c-gwo1-18059-197100128-1
+    body:
+      encoding: UTF-8
+      string: '{"totalcount":107,"appointments":[{"date":"05\/05\/2023","appointmentid":1249677,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"11:45","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249736,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"11:45","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249678,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"12:59","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249737,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"12:59","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1251711,"departmentid":1,"localproviderid":325,"appointmenttype":"PHYSICAL
+        EXAM","providerid":325,"starttime":"13:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/05\/2023","appointmentid":1217051,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/05\/2023","appointmentid":1217052,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/05\/2023","appointmentid":1249676,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"15:50","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249735,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"15:50","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249675,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"18:50","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/05\/2023","appointmentid":1249734,"departmentid":1,"localproviderid":2072,"appointmenttype":"New
+        Patient Appointment","providerid":2072,"starttime":"18:50","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/08\/2023","appointmentid":1217057,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217058,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217059,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217060,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217061,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217062,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217063,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217064,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217065,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217066,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217067,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217068,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217069,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217070,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217071,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217072,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217073,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"12:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/08\/2023","appointmentid":1217078,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/08\/2023","appointmentid":1217079,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/09\/2023","appointmentid":1217084,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217085,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217086,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217087,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217088,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217089,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217090,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217091,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217092,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217093,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217094,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217095,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217096,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217097,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217098,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217099,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217100,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"12:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/09\/2023","appointmentid":1217105,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/09\/2023","appointmentid":1217106,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/10\/2023","appointmentid":1217111,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217112,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217113,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217114,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217115,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217116,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217117,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217118,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217119,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217120,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217121,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217122,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217123,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217124,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217125,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1251545,"departmentid":1,"localproviderid":344,"appointmenttype":"New
+        Patient Appointment","providerid":344,"starttime":"11:30","duration":30,"appointmenttypeid":8,"reasonid":["-1"],"patientappointmenttypename":"New
+        Patient Appointment"},{"date":"05\/10\/2023","appointmentid":1217126,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217127,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"12:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/10\/2023","appointmentid":1217132,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/10\/2023","appointmentid":1217133,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/11\/2023","appointmentid":1217138,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217139,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217140,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217141,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217142,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217143,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217144,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217145,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217146,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217147,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217148,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217149,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217150,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217151,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217152,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217153,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217154,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"12:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/11\/2023","appointmentid":1217159,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/11\/2023","appointmentid":1217160,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/12\/2023","appointmentid":1217165,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217166,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217167,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217168,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"08:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217169,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217170,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217171,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217172,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"09:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217173,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217174,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217175,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217176,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"10:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217177,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217178,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:15","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217179,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:30","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217180,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"11:45","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217181,"departmentid":1,"localproviderid":68,"appointmenttype":"15
+        minute slot","providerid":68,"starttime":"12:00","duration":15,"appointmenttypeid":926,"reasonid":["-1"],"patientappointmenttypename":"15
+        minute slot"},{"date":"05\/12\/2023","appointmentid":1217186,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:00","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"},{"date":"05\/12\/2023","appointmentid":1217187,"departmentid":1,"localproviderid":68,"appointmenttype":"PHYSICAL
+        EXAM","providerid":68,"starttime":"15:30","duration":30,"appointmenttypeid":4,"reasonid":["-1"],"patientappointmenttypename":"Physical
+        Exam Visit"}]}'
+  recorded_at: Fri, 05 May 2023 16:39:57 GMT
+recorded_with: VCR 6.1.0

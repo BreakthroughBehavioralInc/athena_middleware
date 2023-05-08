@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/claims/123/claimtransactions"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer zEmVm4TMnTFRvhCMLzLBId5c5j1o
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 05 May 2023 16:02:14 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '469'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=FC68C80D38D2C5FB551EDD324DF236B4|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      cneonction:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49945'
+      x-request-id:
+      - rrt-697533293649322457-b-gwo1-25729-1744119-1
+    body:
+      encoding: UTF-8
+      string: '[{"adjustments":0,"payments":0,"payer":"PATIENT","outstandingamount":42.71,"transactiontype":"CHARGE","amount":42.71,"transactiondate":"09\/11\/2020","parenttransactionid":3242,"transactionid":3242,"procedurecode":"CPT
+        99490","units":1},{"adjustments":0,"payments":0,"payer":"PATIENT","outstandingamount":75.78,"transactiontype":"CHARGE","amount":75.78,"transactiondate":"09\/11\/2020","parenttransactionid":3243,"transactionid":3243,"procedurecode":"G2058","units":2}]'
+  recorded_at: Fri, 05 May 2023 16:02:14 GMT
+recorded_with: VCR 6.1.0

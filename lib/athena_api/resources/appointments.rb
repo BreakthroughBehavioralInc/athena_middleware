@@ -1,9 +1,12 @@
 module AthenaApi
   class Appointments < Resource
-    extend AthenaApi::Crud::Put
 
-  	 def self.open_appointment(appointment_data)
-      execute_request(:post, "#{resource_url}/open", body_params: appointment_data)
+  	def self.get_open_appointments(params)
+      execute_request(:get, "#{resource_url}/open", params: params)
+    end
+    
+    def self.create_appointment_slot(params, appointment_data)
+      execute_request(:post, "#{resource_url}/open", params: params, body_params: appointment_data)
     end
 
     def self.patient_appointment_reasons(params)
@@ -20,6 +23,9 @@ module AthenaApi
 
     def self.check_in_appointment(appointment_id)
       execute_request(:post, "#{resource_url}/#{appointment_id}/checkin")
+
+    def self.book_appointment(appointment_id, patient_data)
+      execute_request(:put, "#{resource_url}/#{appointment_id}", body_params: patient_data)
     end
   end
 end
