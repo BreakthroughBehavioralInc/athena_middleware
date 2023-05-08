@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/patientappointmentreasons?departmentid=1&providerid=3"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer mjnFvYGobgGYoeO8HCYeKl3hbO7Y
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 08 May 2023 17:12:43 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '1346'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      set-cookie:
+      - dtCookie=72AA539AF4ABDCB910A32C2C3A847A5A|RUM+Default+Application|1; Path=/;
+        Domain=.athenahealth.com
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      vary:
+      - Accept-Encoding
+      cneonction:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49978'
+      x-request-id:
+      - rrt-3873076024608916868-c-gea1-15281-48701809-1
+    body:
+      encoding: UTF-8
+      string: '{"totalcount":9,"patientappointmentreasons":[{"reasontype":"existing","reason":"Follow-Up","description":"I
+        need to follow up with my provider about a condition or other issue I have.","reasonid":1285},{"reasontype":"existing","reason":"Sick
+        Visit","description":"I am in urgent need of an appointment","reasonid":1301},{"reasontype":"existing","reason":"Annual
+        Physical","description":"I need a sports physical or some other annual physical","reasonid":1321},{"reasontype":"existing","reason":"Exam","description":"I
+        need my provider to examine me or do a procedure.","reasonid":1282},{"reasontype":"all","reason":"New
+        Patient","description":"I am a new patient and I would like to schedule my
+        first visit.","reasonid":1281},{"reasontype":"existing","reason":"Consult\/Referral","description":"I
+        need to speak with my provider about seeing a specialist, or I have received
+        a referral from my primary care provider to speak with a specialist.","reasonid":1283},{"reasontype":"existing","reason":"Sports
+        Physical","description":"Need to check on possible concusion","reasonid":1421},{"reasontype":"existing","reason":"Annual
+        Gynecology Visit","description":"I would like to schedule an annual GYN exam.","reasonid":1381},{"reasontype":"all","reason":"Acupuncture","description":"I
+        would like to see my provider for acupuncture.","reasonid":1343}]}'
+  recorded_at: Mon, 08 May 2023 17:12:43 GMT
+recorded_with: VCR 6.1.0

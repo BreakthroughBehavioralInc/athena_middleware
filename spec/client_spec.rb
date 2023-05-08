@@ -24,7 +24,6 @@ RSpec.describe AthenaApi::Client, vcr: { re_record_interval: 604800 } do
     let (:token_connection) { AthenaApi::Client.active_client.token_connection }
 
     it 'should return a OAuth2::AccessToken object' do
-      binding.pry
       expect(token_connection.is_a?(OAuth2::AccessToken))
     end
 

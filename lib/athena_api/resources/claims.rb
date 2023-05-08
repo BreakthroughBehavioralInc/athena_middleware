@@ -1,5 +1,6 @@
 module AthenaApi
   class Claims < Resource
+    extend AthenaApi::Crud::Get
 
     def self.claim_notes(claim_id)
       execute_request(:get, "#{resource_url}/#{claim_id}/claimnotes?pendingflags=All")
