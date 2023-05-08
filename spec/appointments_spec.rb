@@ -20,10 +20,10 @@ RSpec.describe AthenaApi::Appointments, vcr: { re_record_interval: 604800 }  do
 				response = AthenaApi::Appointments.check_in_appointment(appointment_id)
 				expect(response.detailedmessage).to eq(appointment_checkin_response)
 			end
-
-			xit 'should create claim for appointemtn' do
-				response = AthenaApi::Appointments.create_claim_for_appointment(create_claim)
-				# expect(response.detailedmessage).to eq()
+			# re-do
+			xit 'should create claim for appointment' do
+				response = AthenaApi::Appointments.create_claim_for_appointment(appointment_id, create_claim)
+				expect(response.claimids).to be_empty
 			end
 		end
 

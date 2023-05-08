@@ -166,7 +166,7 @@ def appointment_open
   [
     ["departmentid", "1"],
     ["providerid","68"],
-    ["appointmentdate","05/07/2023"],
+    ["appointmentdate","05/20/2023"],
     ["appointmenttime","08:30"],
     ["appointmenttypeid", "1771"]
   ]
@@ -174,7 +174,7 @@ end
 
 def create_claim
   [
-    ["claimcharges"], [{"procedurecode": "99232"}],
-    ["supervisingproviderid", "3"]
+    ['claimcharges', '[{"procedurecode": "99232", "icd10code1": "F41"}]'],
+    ['supervisingproviderid', '68']
   ]
 end
