@@ -16,6 +16,10 @@ module AthenaApi
         execute_request(:post, "#{resource_url}/#{patient_id}/privacyinformationverified", body_params: params)
       end
 
+      def self.update_custom_fields(patient_id, params = {})
+        execute_request(:post, "#{resource_url}/#{patient_id}/customfields", body_params: params)
+      end
+
       def self.search()
         execute_request(:get, "#{resource_url}/search")
       end
