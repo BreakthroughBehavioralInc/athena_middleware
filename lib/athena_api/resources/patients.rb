@@ -17,7 +17,7 @@ module AthenaApi
       end
 
       def self.update_custom_fields(patient_id, params = {})
-        execute_request(:post, "#{resource_url}/#{patient_id}/customfields", body_params: params)
+        execute_request(:put, "#{resource_url}/#{patient_id}/customfields", body_params: params)
       end
 
       def self.search()

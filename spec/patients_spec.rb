@@ -30,7 +30,7 @@ RSpec.describe AthenaApi::Patients, vcr: { re_record_interval: 604800 } do
         context 'get patient details' do
             it 'should get the patient details with patient id' do
                 response = AthenaApi::Patients.get_patient_details(patient_id)
-                expect(response.first['guarantorfirstname']).to eql("Rob")
+                expect(response.first['guarantorfirstname']).to eql("Robert")
             end
         end
         # need to create appointment
