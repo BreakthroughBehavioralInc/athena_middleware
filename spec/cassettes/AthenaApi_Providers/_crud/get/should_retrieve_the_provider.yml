@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 17:32:39 GMT
+      - Thu, 27 Jul 2023 17:51:25 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 174.16.110.128
+      - 170.48.59.26
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"Fuzw0tJKlxWWlid61grV0SNgp3ST","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Fri, 05 May 2023 17:32:39 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"lNYDlLmHdafB4L2TjYv7COdkfFVA","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Thu, 27 Jul 2023 17:51:25 GMT
 - request:
     method: get
     uri: "<ATHENA_BASE_URL>/v1/195900/providers/68"
@@ -68,14 +68,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer Fuzw0tJKlxWWlid61grV0SNgp3ST
+      - Bearer lNYDlLmHdafB4L2TjYv7COdkfFVA
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 17:32:39 GMT
+      - Thu, 27 Jul 2023 17:51:25 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -90,23 +90,20 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      set-cookie:
-      - dtCookie=FDCA555552B89A05603DCC61A0A0069E|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
-      cneonction:
+      nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49913'
+      - '49944'
       x-request-id:
-      - rrt-3244078025454653782-b-gwo1-14473-18934240-1
+      - rrt-6870741830305316135-d-gea1-29906-238357439-1
     body:
       encoding: UTF-8
       string: '[{"firstname":"Ida","acceptingnewpatients":false,"schedulingname":"lsmith","billable":false,"lastname":"Little","providerid":68,"providerusername":"lsmith87","hideinportal":false,"entitytype":"Person","npi":1245319599,"createencounteroncheckin":false}]'
-  recorded_at: Fri, 05 May 2023 17:32:39 GMT
+  recorded_at: Thu, 27 Jul 2023 17:51:25 GMT
 recorded_with: VCR 6.1.0

@@ -12,18 +12,18 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer Fuzw0tJKlxWWlid61grV0SNgp3ST
+      - Bearer lNYDlLmHdafB4L2TjYv7COdkfFVA
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 17:32:43 GMT
+      - Thu, 27 Jul 2023 17:51:33 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
-      - '35746'
+      - '38373'
       connection:
       - keep-alive
       server:
@@ -34,25 +34,21 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      set-cookie:
-      - dtCookie=B98AB4E1BF084AB2CA1B58F387ED8EB9|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
-      nncoection:
+      cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49912'
+      - '49941'
       x-request-id:
-      - rrt-9061640493790364004-c-gwo1-18059-197243844-1
+      - rrt-40105449954229279-c-gea1-25753-25585830-1
     body:
       encoding: UTF-8
-      string: '{"providers":[{"firstname":"Agha","acceptingnewpatients":false,"schedulingname":"P1326001843","providertypeid":"MD","billable":false,"ansinamecode":"Allopathic
-        & Osteopathic Physicians : Internal Medicine (207R00000X)","lastname":"Abbas","providerid":325,"ansispecialtycode":"207R00000X","hideinportal":false,"entitytype":"Person","npi":1326001843,"providertype":"MD","createencounteroncheckin":false},{"firstname":"Mir","acceptingnewpatients":false,"schedulingname":"P1417912726","providertypeid":"MD","billable":false,"ansinamecode":"Allopathic
+      string: '{"providers":[{"firstname":"Mir","acceptingnewpatients":false,"schedulingname":"P1417912726","providertypeid":"MD","billable":false,"ansinamecode":"Allopathic
         & Osteopathic Physicians : Anesthesiology (207L00000X)","lastname":"Ali","providerid":258,"ansispecialtycode":"207L00000X","hideinportal":false,"entitytype":"Person","npi":1417912726,"providertype":"MD","createencounteroncheckin":false},{"specialty":"Family
         Medicine","acceptingnewpatients":false,"specialtyid":"008","schedulingname":"ROME_HOUSE","providertypeid":"MD","billable":true,"ansinamecode":"Group
         : Single Specialty (193400000X)","lastname":"Altenwerth","providerid":26,"providerusername":"dfenick","ansispecialtycode":"193400000X","hideinportal":false,"entitytype":"Non-person
@@ -108,26 +104,35 @@ http_interactions:
         Medicine","specialtyid":"011","schedulingname":"Crane_Frasier","providertypeid":"MD","billable":true,"displayname":"Dr.MELANY
         BREITENBER","ansinamecode":"Allopathic & Osteopathic Physicians : Psychiatry
         & Neurology : Psychiatry (2084P0800X)","lastname":"Breitenberg","providerid":117,"providerusername":"fcrane","ansispecialtycode":"2084P0800X","hideinportal":false,"entitytype":"Person","providertype":"MD","createencounteroncheckin":true},{"firstname":"Adam","specialty":"Family
-        Medicine","homedepartment":"Cassin MED GROUP","specialtyid":"008","schedulingname":"ABRICKER1","providertypeid":"MD","billable":true,"displayname":"ADAM
-        BRICKER MD","ansinamecode":"Allopathic & Osteopathic Physicians : Dermatology
-        (207N00000X)","lastname":"Bricker","providerid":2104,"providerusername":"p-abricker1","ansispecialtycode":"207N00000X","hideinportal":false,"entitytype":"Person","npi":1023010394,"providertype":"MD","createencounteroncheckin":true},{"firstname":"Mahendra","homedepartment":"Cruickshank
+        Medicine","homedepartment":"Gerlach HEATLH INC","specialtyid":"008","schedulingname":"ABRICKER","providertypeid":"MD","billable":true,"displayname":"DR.
+        BRICKER","ansinamecode":"Allopathic & Osteopathic Physicians : Dermatology
+        (207N00000X)","lastname":"Bricker","providerid":71,"providerusername":"abricker1","ansispecialtycode":"207N00000X","hideinportal":false,"entitytype":"Person","npi":1023010394,"providertype":"MD","createencounteroncheckin":true},{"firstname":"Mahendra","homedepartment":"Cruickshank
         HEALTH CARE","acceptingnewpatients":true,"schedulingname":"CaptainCool","billable":false,"displayname":"Dr.
         Mahendra Singh Dhoni","lastname":"Dhoni","providerid":2137,"hideinportal":false,"entitytype":"Person","npi":120301,"createencounteroncheckin":false},{"firstname":"Good","acceptingnewpatients":false,"schedulingname":"Good_Doctor","billable":false,"lastname":"Doctor","providerid":2113,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Gandalf","specialty":"Pediatric
         Surgery","specialtyid":618,"schedulingname":"gandalf","providertypeid":"MD","billable":false,"ansinamecode":"Allopathic
         & Osteopathic Physicians : Pediatrics (208000000X)","lastname":"Grayhame","providerid":2194,"ansispecialtycode":"208000000X","hideinportal":true,"entitytype":"Person","npi":1538115878,"providertype":"MD","createencounteroncheckin":false},{"firstname":"Stephen_patch","acceptingnewpatients":false,"schedulingname":"Stephen","providertypeid":"MA","billable":false,"lastname":"Hester_patch","providerid":2206,"hideinportal":false,"entitytype":"Person","providertype":"Medical
-        Assistant (MA)","createencounteroncheckin":false},{"firstname":"Richard","acceptingnewpatients":false,"schedulingname":"Jimenez","billable":false,"lastname":"Jimenez","providerid":2100,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Grayce","specialty":"General
+        Assistant (MA)","createencounteroncheckin":false},{"firstname":"Maurice","acceptingnewpatients":true,"schedulingname":"P1326001843","billable":false,"lastname":"Johnson","providerid":325,"hideinportal":false,"entitytype":"Person","npi":1326001843,"createencounteroncheckin":false},{"firstname":"Richard","acceptingnewpatients":false,"schedulingname":"Jimenez","billable":false,"lastname":"Jimenez","providerid":2100,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Grayce","specialty":"General
         Practice","homedepartment":"Gerlach HEATLH INC","specialtyid":"001","schedulingname":"shmg_abricker","providertypeid":"MD","billable":true,"displayname":"Dr.GRAYCE
         KIEHN","scheduleresourcetype":"Flu shot","ansinamecode":"Group : Multi-Specialty
         (193200000X)","lastname":"Kiehn","providerid":101,"ansispecialtycode":"193200000X","hideinportal":false,"entitytype":"Person","providertype":"MD","createencounteroncheckin":false},{"firstname":"Young","acceptingnewpatients":false,"schedulingname":"naming","billable":false,"lastname":"Kim","providerid":2207,"hideinportal":false,"entitytype":"Non-person
-        entity","createencounteroncheckin":false},{"firstname":"Ida","acceptingnewpatients":false,"schedulingname":"lsmith","billable":false,"lastname":"Little","providerid":68,"providerusername":"lsmith87","hideinportal":false,"entitytype":"Person","npi":1245319599,"createencounteroncheckin":false},{"firstname":"Abel","specialty":"Cardiology","homedepartment":"Cruickshank
+        entity","createencounteroncheckin":false},{"firstname":"Ida","acceptingnewpatients":false,"schedulingname":"lsmith","billable":false,"lastname":"Little","providerid":68,"providerusername":"lsmith87","hideinportal":false,"entitytype":"Person","npi":1245319599,"createencounteroncheckin":false},{"firstname":"Jess","acceptingnewpatients":false,"schedulingname":"EmptyCare23","billable":false,"lastname":"Landry","providerid":2232,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"specialty":"Ambulatory
+        Surgical Center","acceptingnewpatients":false,"specialtyid":625,"schedulingname":"jHZ0PXRzB0mk2K3FtXKO","providertypeid":"CCCA","billable":true,"ansinamecode":"Group
+        : Single Specialty (193400000X)","lastname":"Landry23","providerid":2239,"ansispecialtycode":"193400000X","hideinportal":false,"entitytype":"Non-person
+        entity","providertype":"CERTIFIED CLINICAL AUDIOLOGIST","createencounteroncheckin":false},{"specialty":"Ambulatory
+        Surgical Center","acceptingnewpatients":false,"specialtyid":625,"schedulingname":"AmmMQio5nkSYBE6tDK6V","providertypeid":"CCCA","billable":true,"ansinamecode":"Group
+        : Single Specialty (193400000X)","lastname":"Landry23","providerid":2240,"ansispecialtycode":"193400000X","hideinportal":false,"entitytype":"Non-person
+        entity","providertype":"CERTIFIED CLINICAL AUDIOLOGIST","createencounteroncheckin":false},{"firstname":"Abel","specialty":"Cardiology","homedepartment":"Cruickshank
         HEALTH CARE","acceptingnewpatients":true,"specialtyid":"006","schedulingname":"alemare","providertypeid":"MD","billable":true,"displayname":"Abel
         Lemare","ansinamecode":"Allopathic & Osteopathic Physicians : Internal Medicine
         : Cardiovascular Disease (207RC0000X)","lastname":"Lemare","providerid":2115,"providerusername":"abyrd6","ansispecialtycode":"207RC0000X","hideinportal":false,"entitytype":"Person","providertype":"MD","createencounteroncheckin":true},{"specialty":"Internal
         Medicine","specialtyid":"011","schedulingname":"MedScan","billable":false,"displayname":"MedSan","lastname":"Medscan","providerid":2212,"hideinportal":true,"entitytype":"Non-person
         entity","createencounteroncheckin":true},{"firstname":"Test First Name Schedule
         Test","acceptingnewpatients":false,"schedulingname":"et_sunt_v154_test","billable":false,"lastname":"Minim
-        Laboris Eiusmod","providerid":2163,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Arun","acceptingnewpatients":false,"schedulingname":"P1003889502","billable":false,"lastname":"Patil","providerid":344,"hideinportal":false,"npi":1003889502,"createencounteroncheckin":false},{"firstname":"Dummy","acceptingnewpatients":false,"schedulingname":"Dummy_QA","billable":false,"lastname":"Qa","providerid":2111,"hideinportal":false,"entitytype":"Non-person
+        Laboris Eiusmod","providerid":2163,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Poorav","acceptingnewpatients":false,"schedulingname":"poorav45","billable":false,"lastname":"Modi","providerid":2248,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"specialty":"Ambulatory
+        Surgical Center","acceptingnewpatients":false,"specialtyid":625,"schedulingname":"79Q7rvXhUu3jifNjv3zZ","providertypeid":"CCCA","billable":true,"ansinamecode":"Group
+        : Single Specialty (193400000X)","lastname":"Newtest","providerid":2241,"ansispecialtycode":"193400000X","hideinportal":false,"entitytype":"Non-person
+        entity","providertype":"CERTIFIED CLINICAL AUDIOLOGIST","createencounteroncheckin":false},{"firstname":"Arun","acceptingnewpatients":false,"schedulingname":"P1003889502","billable":false,"lastname":"Patil","providerid":344,"hideinportal":false,"npi":1003889502,"createencounteroncheckin":false},{"firstname":"Dummy","acceptingnewpatients":false,"schedulingname":"Dummy_QA","billable":false,"lastname":"Qa","providerid":2111,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Carter","specialty":"Family
         Medicine","homedepartment":"Cruickshank HEALTH CARE","specialtyid":"008","schedulingname":"ROME_CARTER","providertypeid":"MD","billable":true,"displayname":"Dr.KRISTOFER
         BERNHAR","scheduleresourcetype":"Flu shot","ansinamecode":"Group : Single
@@ -147,7 +152,11 @@ http_interactions:
         (163WR1000X)","lastname":"Xyz","providerid":2110,"ansispecialtycode":"163WR1000X","hideinportal":false,"sex":"F","entitytype":"Person","providertype":"MD","createencounteroncheckin":false},{"firstname":"John","acceptingnewpatients":true,"schedulingname":"20106cd3-b31e-4","billable":false,"ansinamecode":"Nursing
         Service Providers : Registered Nurse : Reproductive Endocrinology\/Infertility
         (163WR1000X)","lastname":"Yevinoh561@Ztymm.Com","providerid":2091,"ansispecialtycode":"163WR1000X","hideinportal":false,"sex":"M","entitytype":"Person","createencounteroncheckin":false},{"firstname":"Marya","acceptingnewpatients":false,"schedulingname":"P1720043417","providertypeid":"MD","billable":false,"ansinamecode":"Allopathic
-        & Osteopathic Physicians : Obstetrics & Gynecology (207V00000X)","lastname":"Zlatnik","providerid":235,"ansispecialtycode":"207V00000X","hideinportal":false,"entitytype":"Person","npi":1720043417,"providertype":"MD","createencounteroncheckin":false},{"firstname":"Best","acceptingnewpatients":false,"schedulingname":"Best_doctor","billable":false,"lastname":"Doctor","providerid":2108,"hideinportal":false,"entitytype":"Non-person
+        & Osteopathic Physicians : Obstetrics & Gynecology (207V00000X)","lastname":"Zlatnik","providerid":235,"ansispecialtycode":"207V00000X","hideinportal":false,"entitytype":"Person","npi":1720043417,"providertype":"MD","createencounteroncheckin":false},{"firstname":"Zero
+        Provider","acceptingnewpatients":false,"schedulingname":"Zero_provider","billable":false,"lastname":"Zero
+        Provider","providerid":2242,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Zero
+        Provider","acceptingnewpatients":false,"schedulingname":"Zero_provider2","billable":false,"lastname":"Zero
+        Provider","providerid":2243,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Best","acceptingnewpatients":false,"schedulingname":"Best_doctor","billable":false,"lastname":"Doctor","providerid":2108,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Athena","acceptingnewpatients":false,"schedulingname":"Athena_doctor","billable":false,"lastname":"Doctor","providerid":2112,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"New","acceptingnewpatients":false,"schedulingname":"New_doctore","billable":false,"lastname":"Doctore","providerid":2107,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Doeee","acceptingnewpatients":false,"schedulingname":"testhe","billable":false,"lastname":"Johnn","providerid":2203,"hideinportal":false,"createencounteroncheckin":false},{"firstname":"Chan","acceptingnewpatients":false,"schedulingname":"lee00","billable":false,"lastname":"Kim","providerid":2210,"hideinportal":false,"entitytype":"Non-person
@@ -194,7 +203,7 @@ http_interactions:
         Medicine","acceptingnewpatients":true,"specialtyid":"008","schedulingname":"ullamcosdf1","providertypeid":"MD","billable":true,"ansinamecode":"Group
         : Single Specialty (193400000X)","lastname":"Non","providerid":2193,"ansispecialtycode":"193400000X","hideinportal":false,"sex":"M","entitytype":"Person","providertype":"MD","createencounteroncheckin":false},{"firstname":"Chan","acceptingnewpatients":false,"schedulingname":"lee","billable":false,"lastname":"Park","providerid":2208,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Chanyeol","acceptingnewpatients":false,"schedulingname":"lee0","billable":false,"lastname":"Park","providerid":2209,"hideinportal":false,"entitytype":"Non-person
-        entity","createencounteroncheckin":false},{"firstname":"Rohan","acceptingnewpatients":false,"schedulingname":"test100","billable":false,"lastname":"Verma","providerid":2198,"hideinportal":false,"entitytype":"Non-person
+        entity","createencounteroncheckin":false},{"firstname":"Anant","acceptingnewpatients":false,"schedulingname":"anant","billable":false,"lastname":"Sirsath","providerid":2246,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Anant","acceptingnewpatients":false,"schedulingname":"anant91","billable":false,"lastname":"Sirsath","providerid":2247,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Rohan","acceptingnewpatients":false,"schedulingname":"test100","billable":false,"lastname":"Verma","providerid":2198,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Doctor","acceptingnewpatients":false,"schedulingname":"test1000","billable":false,"lastname":"Verma","providerid":2199,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Lee","acceptingnewpatients":false,"schedulingname":"test69889","billable":false,"lastname":"Wook","providerid":2174,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"firstname":"Lee","acceptingnewpatients":false,"schedulingname":"test123","billable":false,"lastname":"Wook","providerid":2175,"hideinportal":false,"entitytype":"Non-person
@@ -212,6 +221,6 @@ http_interactions:
         entity","createencounteroncheckin":false},{"firstname":"Ashutosh","acceptingnewpatients":false,"schedulingname":"f809e738-44de-4","billable":false,"providerid":2072,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"2cf59f36-701a-4","billable":false,"providerid":2087,"hideinportal":false,"createencounteroncheckin":false},{"firstname":"Burgess_m","acceptingnewpatients":true,"schedulingname":"BURGESS_Mzoho","billable":false,"providerid":2102,"hideinportal":false,"sex":"M","entitytype":"Person","createencounteroncheckin":false},{"firstname":"Kelly_f","specialty":"Bone
         Marrow Transplant","homedepartment":"Cruickshank HEALTH CARE","acceptingnewpatients":true,"specialtyid":636,"schedulingname":"KELLY_F","billable":false,"providerid":2103,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Av","acceptingnewpatients":false,"schedulingname":"abhishek","billable":false,"providerid":2105,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedule","billable":false,"providerid":2128,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedule1","billable":false,"providerid":2129,"hideinportal":false,"entitytype":"Non-person
         entity","createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"name15","billable":false,"providerid":2130,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"name20","billable":false,"providerid":2140,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew","billable":false,"providerid":2141,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew225","billable":false,"providerid":2145,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew50","billable":false,"providerid":2147,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew100","billable":false,"providerid":2148,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew10000","billable":false,"providerid":2150,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew1","billable":false,"providerid":2151,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew1359","billable":false,"providerid":2152,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew1360","billable":false,"providerid":2153,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"aliquip","billable":false,"providerid":2154,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"schedulenew1400","billable":false,"providerid":2157,"hideinportal":false,"createencounteroncheckin":false},{"firstname":"Dd","acceptingnewpatients":false,"schedulingname":"werwe","billable":false,"providerid":2192,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"firstname":"Test","acceptingnewpatients":false,"schedulingname":"name","billable":false,"providerid":2195,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"name1","billable":false,"providerid":2196,"hideinportal":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"schedulingname":"test1224","billable":false,"providerid":2200,"hideinportal":false,"createencounteroncheckin":false},{"firstname":"Test_case_0002","acceptingnewpatients":false,"schedulingname":"Test_Case_0002","providertypeid":"MA","billable":false,"providerid":2205,"hideinportal":false,"entitytype":"Person","providertype":"Medical
-        Assistant (MA)","createencounteroncheckin":false}],"totalcount":122}'
-  recorded_at: Fri, 05 May 2023 17:32:43 GMT
+        Assistant (MA)","createencounteroncheckin":false},{"firstname":"Tommy","acceptingnewpatients":false,"schedulingname":"EmptyCare22","billable":false,"providerid":2231,"hideinportal":false,"entitytype":"Person","createencounteroncheckin":false}],"totalcount":132}'
+  recorded_at: Thu, 27 Jul 2023 17:51:33 GMT
 recorded_with: VCR 6.1.0

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    athena_api (0.1.0)
+    athena_api (0.1.1)
       oauth2
 
 GEM

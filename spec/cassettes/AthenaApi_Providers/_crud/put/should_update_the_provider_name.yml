@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer Fuzw0tJKlxWWlid61grV0SNgp3ST
+      - Bearer lNYDlLmHdafB4L2TjYv7COdkfFVA
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 17:32:42 GMT
+      - Thu, 27 Jul 2023 17:51:32 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -36,23 +36,20 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      set-cookie:
-      - dtCookie=728061A3545B42FD87A5970645BDBE32|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
-      nncoection:
+      cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49913'
+      - '49941'
       x-request-id:
-      - rrt-4355622734251395700-a-gwo1-1743-197230477-1
+      - rrt-7996943248147080507-c-gea1-21196-236294286-1
     body:
       encoding: UTF-8
       string: '{"providerid":1}'
-  recorded_at: Fri, 05 May 2023 17:32:42 GMT
+  recorded_at: Thu, 27 Jul 2023 17:51:32 GMT
 recorded_with: VCR 6.1.0
