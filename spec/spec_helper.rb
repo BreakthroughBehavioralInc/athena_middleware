@@ -54,8 +54,8 @@ def patient_body
       ["city", "Piscataway"],
       ["state", "NJ"],
       ["zip", "08854"],
-      ["homephone", "908-555-0173"],
-      ["mobilephone", "908-555-0173"],
+      ["homephone", "9084684173"],
+      ["mobilephone", "9084684173"],
       ["email", "rob@mail.com"],
       ["notes", "rob notes"]
     ]
@@ -133,7 +133,7 @@ def insurance_body
     ["departmentid", "1"],     
     ["expirationdate", "07/01/2025"],
     ["insuranceidnumber", "TOAAN3684542"],
-    ["insurancepackageid", "123"],
+    ["insurancepackageid", "908"],
     ["insurancephone", "6091234567"],
     ["insurancepolicyholder", "rob mag"],
     ["insurancepolicyholderaddress1", "123 Main Street"],

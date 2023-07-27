@@ -31,5 +31,9 @@ module AthenaApi
         def self.get_insurance_packages
             execute_request(:get, "#{client.config.base_url}/#{url_version}/#{client.config.practice_id}/misc/topinsurancepackages")
         end
+
+        def self.update_insurance_address(patient_id,params)
+            execute_request(:put, "#{resource_url}/#{patient_id}/insurances", params: params)
+        end
     end
 end
