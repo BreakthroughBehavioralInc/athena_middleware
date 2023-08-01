@@ -6,6 +6,7 @@ module AthenaApi
 
       def self.get_patient_details(patient_id)
         execute_request(:get, "#{resource_url}/#{patient_id}?showallclaims=true&showbalancedetails=true")
+
       end
 
       def self.record_payment(patient_id, params = {})
@@ -18,6 +19,14 @@ module AthenaApi
 
       def self.update_custom_fields(patient_id, params = {})
         execute_request(:put, "#{resource_url}/#{patient_id}/customfields", body_params: params)
+      end
+
+      def self.get_custom_fields(patient_id)
+        execute_request(:get, "#{resource_url}/#{patient_id}?showcustomfields=true")
+      end
+
+      def self.update_insurance_address(patient_id, query_params)
+        execute_request(:put, "#{resource_url}/#{patient_id}/insurances", params: query_params)
       end
 
       def self.search()

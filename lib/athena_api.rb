@@ -23,6 +23,7 @@ module AthenaApi
   autoload :Providers, "athena_api/resources/providers"
   autoload :Appointments, "athena_api/resources/appointments"
   autoload :Claims, "athena_api/resources/claims"
+  autoload :Misc, "athena_api/resources/misc"
 
   @config = AthenaApi::Config.new
 
