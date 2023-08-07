@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Thu, 27 Jul 2023 17:33:02 GMT
+      - Mon, 07 Aug 2023 16:08:52 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 68.194.64.78
+      - 170.48.43.12
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"imcXoFvfzsyASYGzz1a5yG1ArbQZ","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Thu, 27 Jul 2023 17:33:02 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"TdCyD7ZjGbfG2DvTAUiJj36gOa37","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Mon, 07 Aug 2023 16:08:52 GMT
 - request:
     method: put
     uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances"
@@ -70,14 +70,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer imcXoFvfzsyASYGzz1a5yG1ArbQZ
+      - Bearer TdCyD7ZjGbfG2DvTAUiJj36gOa37
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Thu, 27 Jul 2023 17:33:28 GMT
+      - Mon, 07 Aug 2023 16:09:16 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -92,20 +92,20 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
       nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49970'
+      - '49904'
       x-request-id:
-      - rrt-7055301922243157616-d-gea1-29191-102697-1
+      - rrt-6079242880218817845-b-gea1-26543-276569048-1
     body:
       encoding: UTF-8
       string: '{"success":true}'
-  recorded_at: Thu, 27 Jul 2023 17:33:28 GMT
+  recorded_at: Mon, 07 Aug 2023 16:09:16 GMT
 recorded_with: VCR 6.1.0

@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer mjnFvYGobgGYoeO8HCYeKl3hbO7Y
+      - Bearer AJvDz6DnGFHs8xbA669qFGG6hy6V
   response:
     status:
       code: 404
       message: Not Found
     headers:
       date:
-      - Mon, 08 May 2023 17:12:42 GMT
+      - Mon, 07 Aug 2023 15:59:59 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -32,26 +32,21 @@ http_interactions:
       - Apache
       pragma:
       - No-cache
-      set-cookie:
-      - dtCookie=DBD3CC177236229BD069FD7DF4FF70EE|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
-      vary:
-      - Accept-Encoding
       nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49977'
+      - '49925'
       x-request-id:
-      - rrt-3756733478048428224-c-gea1-25700-46059932-1
+      - rrt-8871797381612247832-b-gea1-27943-178501069-1
     body:
       encoding: UTF-8
       string: |2-
 
 
         {"detailedmessage":"The appointment is either already canceled or checked in.","error":"This appointment has already been checked in."}
-  recorded_at: Mon, 08 May 2023 17:12:42 GMT
+  recorded_at: Mon, 07 Aug 2023 15:59:59 GMT
 recorded_with: VCR 6.1.0

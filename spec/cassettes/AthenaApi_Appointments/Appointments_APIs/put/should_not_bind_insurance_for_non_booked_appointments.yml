@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer mjnFvYGobgGYoeO8HCYeKl3hbO7Y
+      - Bearer AJvDz6DnGFHs8xbA669qFGG6hy6V
   response:
     status:
       code: 400
       message: Bad Request
     headers:
       date:
-      - Mon, 08 May 2023 17:12:44 GMT
+      - Mon, 07 Aug 2023 16:00:02 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -32,26 +32,21 @@ http_interactions:
       - Apache
       pragma:
       - No-cache
-      set-cookie:
-      - dtCookie=AF68D56393A7D11FB0AC672B0645F1AD|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
-      vary:
-      - Accept-Encoding
       cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49976'
+      - '49936'
       x-request-id:
-      - rrt-1877921719703143834-c-gea1-19867-48353920-1
+      - rrt-7996943248147080507-c-gea1-11437-276006178-1
     body:
       encoding: UTF-8
       string: |2-
 
 
         {"error":"Appointment ID is not a booked appointment"}
-  recorded_at: Mon, 08 May 2023 17:12:44 GMT
+  recorded_at: Mon, 07 Aug 2023 16:00:02 GMT
 recorded_with: VCR 6.1.0

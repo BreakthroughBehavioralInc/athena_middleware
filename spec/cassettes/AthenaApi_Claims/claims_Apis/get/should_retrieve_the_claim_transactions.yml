@@ -12,14 +12,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer zEmVm4TMnTFRvhCMLzLBId5c5j1o
+      - Bearer 0PQ2YgN2k2Vxl7AY3g3db2QwzhA3
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 16:02:14 GMT
+      - Mon, 07 Aug 2023 16:00:03 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -34,24 +34,21 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      set-cookie:
-      - dtCookie=FC68C80D38D2C5FB551EDD324DF236B4|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
-      cneonction:
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49945'
+      - '49924'
       x-request-id:
-      - rrt-697533293649322457-b-gwo1-25729-1744119-1
+      - rrt-8609195904247731616-d-gea1-24713-39610738-1
     body:
       encoding: UTF-8
-      string: '[{"adjustments":0,"payments":0,"payer":"PATIENT","outstandingamount":42.71,"transactiontype":"CHARGE","amount":42.71,"transactiondate":"09\/11\/2020","parenttransactionid":3242,"transactionid":3242,"procedurecode":"CPT
-        99490","units":1},{"adjustments":0,"payments":0,"payer":"PATIENT","outstandingamount":75.78,"transactiontype":"CHARGE","amount":75.78,"transactiondate":"09\/11\/2020","parenttransactionid":3243,"transactionid":3243,"procedurecode":"G2058","units":2}]'
-  recorded_at: Fri, 05 May 2023 16:02:14 GMT
+      string: '[{"payments":0,"outstandingamount":42.71,"transactiondate":"09\/11\/2020","payer":"PATIENT","parenttransactionid":3242,"procedurecode":"CPT
+        99490","amount":42.71,"transactiontype":"CHARGE","transactionid":3242,"adjustments":0,"units":1},{"payments":0,"outstandingamount":75.78,"transactiondate":"09\/11\/2020","payer":"PATIENT","parenttransactionid":3243,"procedurecode":"G2058","amount":75.78,"transactiontype":"CHARGE","transactionid":3243,"adjustments":0,"units":2}]'
+  recorded_at: Mon, 07 Aug 2023 16:00:03 GMT
 recorded_with: VCR 6.1.0
