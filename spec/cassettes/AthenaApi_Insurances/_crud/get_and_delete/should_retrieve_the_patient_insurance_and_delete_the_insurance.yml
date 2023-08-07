@@ -12,14 +12,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer imcXoFvfzsyASYGzz1a5yG1ArbQZ
+      - Bearer TdCyD7ZjGbfG2DvTAUiJj36gOa37
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Thu, 27 Jul 2023 17:33:28 GMT
+      - Mon, 07 Aug 2023 16:09:16 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -34,26 +34,26 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
       nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49969'
+      - '49903'
       x-request-id:
-      - rrt-5986487855950006974-c-gea1-3516-22365967-1
+      - rrt-17874956939464086-b-gea1-31609-280275651-1
     body:
       encoding: UTF-8
-      string: '{"insurances":[{"insurancepolicyholdercountrycode":"USA","sequencenumber":1,"insurancepolicyholderlastname":"MAG","insuredentitytypeid":1,"insuranceidnumber":"TOAAN3684542","insurancepolicyholderstate":"NJ","insurancepolicyholderzip":"08854","insurancepolicyholderdob":"07\/23\/1995","relationshiptoinsured":"Self","lastupdated":"07\/27\/2023","eligibilitystatus":"Unverified","policynumber":"123","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepackageaddress1":"2 GANNETT DR","insurancepolicyholdersex":"M","eligibilityreason":"Athena","ircname":"BCBS-ME","lastupdatedby":"API-28747","insuranceplanname":"BCBS-ME:ANTHEM
-        BLUE CROSS BLUE SHIELD -> 1663","insurancetype":"Commercial","insurancephone":"(000)
-        000-0000","insurancepackagestate":"ME","insurancepackagecity":"SOUTH PORTLAND","insurancepolicyholderaddress2":"ADDRESS2","relationshiptoinsuredid":123,"insuranceid":"24840","insurancepolicyholder":"ROB
-        MAG","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholderfirstname":"ROB","insurancepackageid":123,"ircid":157,"insurancepolicyholdercountryiso3166":"US","insurancepolicyholdercity":"PISCATAWAY","insurancepackagezip":"04106-6909"}],"totalcount":1}'
-  recorded_at: Thu, 27 Jul 2023 17:33:28 GMT
+      string: '{"insurances":[{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","insurancepolicyholderaddress1":"124 MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","lastupdated":"08\/07\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24840","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"}],"totalcount":1}'
+  recorded_at: Mon, 07 Aug 2023 16:09:16 GMT
 - request:
     method: delete
     uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances/24840"
@@ -64,14 +64,14 @@ http_interactions:
       User-Agent:
       - Faraday v2.7.4
       Authorization:
-      - Bearer imcXoFvfzsyASYGzz1a5yG1ArbQZ
+      - Bearer TdCyD7ZjGbfG2DvTAUiJj36gOa37
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Thu, 27 Jul 2023 17:33:53 GMT
+      - Mon, 07 Aug 2023 16:09:41 GMT
       content-type:
       - application/json; charset=UTF-8
       transfer-encoding:
@@ -86,22 +86,22 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
       content-encoding:
       - gzip
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
       nncoection:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49969'
+      - '49903'
       x-request-id:
-      - rrt-3717945344922550020-c-gea1-16197-4430520-1
+      - rrt-3717945344922550020-c-gea1-13436-44245746-1
     body:
       encoding: UTF-8
       string: '{"success":true}'
-  recorded_at: Thu, 27 Jul 2023 17:33:53 GMT
+  recorded_at: Mon, 07 Aug 2023 16:09:41 GMT
 recorded_with: VCR 6.1.0

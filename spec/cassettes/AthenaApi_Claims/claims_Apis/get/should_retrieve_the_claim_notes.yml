@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 16:02:13 GMT
+      - Mon, 07 Aug 2023 16:00:02 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 174.16.110.128
+      - 170.48.43.12
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"zEmVm4TMnTFRvhCMLzLBId5c5j1o","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Fri, 05 May 2023 16:02:13 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"0PQ2YgN2k2Vxl7AY3g3db2QwzhA3","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Mon, 07 Aug 2023 16:00:02 GMT
 - request:
     method: get
     uri: "<ATHENA_BASE_URL>/v1/195900/claims/123/claimnotes?pendingflags=All"
@@ -68,14 +68,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer zEmVm4TMnTFRvhCMLzLBId5c5j1o
+      - Bearer 0PQ2YgN2k2Vxl7AY3g3db2QwzhA3
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Fri, 05 May 2023 16:02:14 GMT
+      - Mon, 07 Aug 2023 16:00:03 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -90,23 +90,20 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      set-cookie:
-      - dtCookie=8126C3BC886F069513158BEF92E67313|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
-      nncoection:
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49946'
+      - '49930'
       x-request-id:
-      - rrt-697533293649322457-b-gwo1-25730-1744106-1
+      - rrt-6791270272304720729-d-gea1-7789-22436516-1
     body:
       encoding: UTF-8
-      string: '[{"status":"DROP","pendingflag":"undef","claimnoteid":322},{"claimnote":"OK","status":"CLOSED","pendingflag":"undef","claimnoteid":6284}]'
-  recorded_at: Fri, 05 May 2023 16:02:13 GMT
+      string: '[{"status":"DROP","pendingflag":"undef","claimnoteid":322},{"status":"CLOSED","pendingflag":"undef","claimnoteid":6284,"claimnote":"OK"}]'
+  recorded_at: Mon, 07 Aug 2023 16:00:03 GMT
 recorded_with: VCR 6.1.0

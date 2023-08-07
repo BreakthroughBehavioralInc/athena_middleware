@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer lNYDlLmHdafB4L2TjYv7COdkfFVA
+      - Bearer GtdTXsE5Aqr7AbsPh1m2B4MNPFhK
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Thu, 27 Jul 2023 17:51:32 GMT
+      - Mon, 07 Aug 2023 16:02:06 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -36,20 +36,20 @@ http_interactions:
       - Mon, 06 Jan 1975 16:00:00 GMT
       cache-control:
       - no-cache, no-store
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
       vary:
       - Accept-Encoding
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
       cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49941'
+      - '49922'
       x-request-id:
-      - rrt-7996943248147080507-c-gea1-21196-236294286-1
+      - rrt-8609195904247731616-d-gea1-24699-39620955-1
     body:
       encoding: UTF-8
       string: '{"providerid":1}'
-  recorded_at: Thu, 27 Jul 2023 17:51:32 GMT
+  recorded_at: Mon, 07 Aug 2023 16:02:06 GMT
 recorded_with: VCR 6.1.0

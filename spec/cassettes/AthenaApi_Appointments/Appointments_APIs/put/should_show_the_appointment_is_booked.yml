@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer mjnFvYGobgGYoeO8HCYeKl3hbO7Y
+      - Bearer AJvDz6DnGFHs8xbA669qFGG6hy6V
   response:
     status:
       code: 409
       message: Conflict
     headers:
       date:
-      - Mon, 08 May 2023 17:12:43 GMT
+      - Mon, 07 Aug 2023 16:00:00 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -32,26 +32,21 @@ http_interactions:
       - Apache
       pragma:
       - No-cache
-      set-cookie:
-      - dtCookie=C75E35A12B39A62E78B9D0A333D5764E|RUM+Default+Application|1; Path=/;
-        Domain=.athenahealth.com
       accept-ch:
       - Sec-CH-UA-Platform-Version
-      vary:
-      - Accept-Encoding
       cneonction:
       - close
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49976'
+      - '49924'
       x-request-id:
-      - rrt-309366922668247079-d-gea1-3605-48749885-1
+      - rrt-3648900648973630752-b-gea1-4098-276136681-1
     body:
       encoding: UTF-8
       string: |2-
 
 
         {"detailedmessage":"The appointment ID is already booked or is not marked as being available to be scheduled via the API.","error":"That appointment time was already booked or not available for booking."}
-  recorded_at: Mon, 08 May 2023 17:12:43 GMT
+  recorded_at: Mon, 07 Aug 2023 16:00:00 GMT
 recorded_with: VCR 6.1.0
