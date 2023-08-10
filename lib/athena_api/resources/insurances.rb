@@ -20,6 +20,10 @@ module AthenaApi
             execute_request(:delete, "#{resource_url}/#{patient_id}/insurances/#{insurance_id}")
         end
 
+        def self.delete_with_params(patient_id, params)
+            execute_request(:delete, "#{resource_url}/#{patient_id}/insurances", params: params)
+        end
+
         def self.get_deactivated_insurance(patient_id)
             execute_request(:get, "#{resource_url}/#{patient_id}/insurances?showcancelled=true")
         end
