@@ -27,8 +27,9 @@ Or install it yourself as:
 
 ## Usage
 
-
 The library needs to be configured with your account's key, secret, base_url, auth_path, version_String, and practice_id.
+
+https://docs.athenahealth.com/api/docs/all-apis
 
 ```ruby
 require 'athena_middleware'
@@ -44,153 +45,246 @@ AthenaApi.practice_id = ENV["ATHENA_PRACTICE_ID"]
 
 # Patients
 AthenaApi::Patients.get(patient_id)
-AthenaApi::Patients.put(patient_id, params)
+AthenaApi::Patients.put(patient_id, patient_body)
 AthenaApi::Patients.post(params)
 AthenaApi::Patients.get_patient_details(patient_id)
-AthenaApi::Patients.record_payment(patient_id, params)
-AthenaApi::Patients.update_patient_privacy_information(id, params)
+AthenaApi::Patients.record_payment(patient_id, body_params)
+AthenaApi::Patients.update_patient_privacy_information(id, body_params)
+AthenaApi::Patients.get_custom_fields(patient_id)
+AthenaApi::Patients.update_custom_fields(patient_id, body_params)
+AthenaApi::Patients.update_insurance_address(patient_id, query_params)
+AthenaApi::Patients.search()
+
+# Insurances
+AthenaApi::Insurances.get(patient_id)
+AthenaApi::Insurances.post(patient_id,body_params)
+AthenaApi::Insurances.put(patient_id,body_params)
+AthenaApi::Insurances.delete(patient_id,insurance_id)
+AthenaApi::Insurances.delete_with_params(patient_id,query_params)
+AthenaApi::Insurances.get_deactivated_insurance(patient_id)
+AthenaApi::Insurances.reactivate_insurance(patient_id,insurance_id)
+AthenaApi::Insurances.update_insurance_address(patient_id,query_params)
+AthenaApi::Insurances.get_insurance_packages()
+
+
+# Appointments
+AthenaApi::Appointments.get(appointment_id)
+AthenaApi::Appointments.get_open_appointments(query_params)
+AthenaApi::Appointments.create_appointment_slot(query_params,body_params)
+AthenaApi::Appointments.patient_appointment_reasons(query_params)
+AthenaApi::Appointments.book_appointment(appointment_id, body_params)
+AthenaApi::Appointments.create_claim_for_appointment(appointment_id, body_params)
+AthenaApi::Appointments.bind_insurance_for_beacon(appointment_id,insurance_id)
+AthenaApi::Appointments.check_in_appointment(appointment_id)
+
+# Claims
+AthenaApi::Claims.claim_notes(claim_id)
+AthenaApi::Claims.claim_transactions(claim_id)
+AthenaApi::Claims.create_financial_claim(claim_body)
+
+# Providers
+AthenaApi::Providers.get(provider_id)
+AthenaApi::Providers.put(provider_id, provider_body)
+AthenaApi::Providers.get_providers(body_params)
 
 # Departments
 AthenaApi::Departments.get()
 
 # Reference
 AthenaApi::Reference.get_provider_types()
-AthenaApi::Reference.get_provider_types()
 AthenaApi::Reference.get_provider_specialties()
 
-# Insurance
-AthenaApi::Insurance.get(patient_id)
-AthenaApi::Insurance.post(patient_id,params)
-AthenaApi::Insurance.put(patient_id,params)
-AthenaApi::Insurance.delete(patient_id,insurance_id)
-AthenaApi::Insurance.get_deactivated_insurance(patient_id)
-AthenaApi::Insurance.reactivate_insurance(patient_id,insurance_id)
-
-
-
-
+# Misc
+AthenaApi::Misc.top_insurance_packagees
 ```
 
-## Resource Body (need to verify)
+## EXAMPLE REQUEST BODIES
 
-```
-POST Patient Body
-    {
-    departmentid: "123",
-    primarydepartmentid: "123",
-    firstname: "rob",
-    lastname: "mag",
-    middlename: "",
-    sex: "male",
-    dob: "07/23/1995",
-    address1: "123 Main Street",
-    address2: "",
-    city: "Piscataway",
-    state: "NJ"
-    zip: "08854",
-    homephone: "9081234567",
-    mobilephone: "9081234567",
-    email: "rob@mail.com",
-    notes: "rob notes",
-    }
+example request bodies references from athena api documentation
+https://docs.athenahealth.com/api/docs/all-apis
 
-
-PUT Patient Update Body
-    {
-    departmentid: "123",
-    primarydepartmentid: "123",
-    firstname: "ROB",
-    lastname: "mag",
-    middlename: "",
-    sex: "male",
-    dob: "07/23/1995",
-    address1: "123 Main Street",
-    address2: "",
-    city: "Piscataway",
-    state: "NJ"
-    zip: "08854",
-    homephone: "9081234567",
-    mobilephone: "9081234567",
-    email: "rob@mail.com",
-    notes: "rob notes",
-    }
-
-POST Patient Record Payment
-    {
-    appointmentid: "123"
-    checknumber: "123"
-    departmentid: "123"
-    otheramount: "amount_collected"
-    paymentmethod: "paymentmethod"
-    todayservice: "Y"
-    }
-
-POST update_patient_privacy_information
-    {
-        departmentid:"123"
-        insuredsignature:"signature"
-        patientsignature:"signature"
-        privacynotice:"true"
-        signaturedatetime:"07/12/2001"
-        signaturename: "rob"
-    }
-
-POST Insurance Body
-    {
-        patientid: "123",
-        departmentid: "123",     
-        expirationdate: "07-01-2023",
-        insuranceidnumber: "123",
-        insuranceidnumber: "TOAAN3684542",
-        insurancepackageid: "package",
-        insurancephone: "phone",
-        insurancepolicyholder: "firstname lastname",
-        insurancepolicyholderaddress1: "address1",
-        insurancepolicyholderaddress2: "address2",
-        insurancepolicyholdercity: "Piscataway",
-        insurancepolicyholdercountrycode: "USA",
-        insurancepolicyholdercountryiso3166: "US",
-        insurancepolicyholderdob: "07-01-2001",
-        insurancepolicyholderfirstname: "firstname",
-        insurancepolicyholderlastname: "lastname",
-        insurancepolicyholdermiddlename: "",
-        insurancepolicyholdersex: "male",
-        insurancepolicyholderstate: "NJ",
-        insurancepolicyholderzip: "08854",
-        insuredentitytypeid: "1",
-        policynumber: "123",
-        relationshiptoinsuredid: "123",
-        sequencenumber: "1",
-    }
+```ruby
+# POST Patients
+ [
+      ["departmentid","departmentid"],
+      ["primarydepartmentid","primarydepartmentid"],
+      ["firstname", "firstname"],
+      ["lastname", "lastname"],
+      ["middlename", "middlename"],
+      ["sex","M/F"],
+      ["dob", "MM/DD/YYYY"],
+      ["address1", "address1"],
+      ["address2", "address2"],
+      ["city", "city"],
+      ["state", "state"],
+      ["zip", "zip"],
+      ["homephone", "homephone"],
+      ["mobilephone", "mobilephone"],
+      ["email", "email"],
+      ["notes", "notes"]
+    ]
 
 
-PUT Insurance Update Body
-    {
-        patientid: "123",
-        departmentid: "123",     
-        expirationdate: "07-01-2023",
-        insuranceidnumber: "123",
-        insuranceidnumber: "TOAAN3684542",
-        insurancepackageid: "package",
-        insurancephone: "phone",
-        insurancepolicyholder: "firstname lastname",
-        insurancepolicyholderaddress1: "address1",
-        insurancepolicyholderaddress2: "address2",
-        insurancepolicyholdercity: "Piscataway",
-        insurancepolicyholdercountrycode: "USA",
-        insurancepolicyholdercountryiso3166: "US",
-        insurancepolicyholderdob: "07-01-2001",
-        insurancepolicyholderfirstname: "firstname",
-        insurancepolicyholderlastname: "lastname",
-        insurancepolicyholdermiddlename: "",
-        insurancepolicyholdersex: "male",
-        insurancepolicyholderstate: "NJ",
-        insurancepolicyholderzip: "08854",
-        insuredentitytypeid: "1",
-        policynumber: "123",
-        relationshiptoinsuredid: "123",
-        sequencenumber: "1",
-    }
+# PUT Patients
+      [
+    ["departmentid","departmentid"],
+    ["primarydepartmentid","primarydepartmentid"],
+    ["firstname", "firstname"],
+    ["lastname", "lastname"],
+    ["middlename", ""],
+    ["sex","M/F"],
+    ["dob", "MM/DD/YYYY1"],
+    ["address1", "address1"],
+    ["address2", "address2"],
+    ["city", "city"],
+    ["state", "state"],
+    ["zip", "zip"],
+    ["email", "email"],
+    ["notes", "notes"]
+   ]
+
+# POST Patients Record Payment
+  [
+      ["appointmentid", "appointmentid"],
+      ["checknumber", "checknumber"],
+      ["departmentid", "departmentid"],
+      ["otheramount", "otheramount"],
+      ["paymentmethod", "paymentmethod"],
+      ["todayservice", "Y/N"]
+    ]
+
+# POST Patients update_patient_privacy_information
+ [
+    ["departmentid","departmentid"],
+    ["insuredsignature", "true"],
+    ["patientsignature", "true"],
+    ["privacynotice", "true"],
+    ["signaturedatetime", "MM/DD/YYYY HH:MM:SS"],
+    ["signaturename", "signaturename"]
+  ]
+
+# PUT Patients update insurance address query params
+{department_id: "department_id", sequencenumber: "sequence number", insurance_policy_holder_address1: "address1"}
+
+# PUT Update Custom Fields
+  [
+      ["departmentid", @data["department_id"]],
+      ["primarydepartmentid", @data["department_id"]],
+      ["customfields", custom_fields.to_json]
+]
+# custom_fields
+  [
+      {customfieldid: "6", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "7", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "5", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "13", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "9", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "10", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "12", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "4", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "8", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "3", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "11", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "1", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "2", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "14", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "22", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "15", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "42", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "62", customfieldvalue: "customfieldvalue"},
+      {customfieldid: "82", customfieldvalue: "customfieldvalue"}
+    ]
+
+# POST Insurances
+  [
+    ["patientid", "patientid"],
+    ["departmentid", "departmentid"],     
+    ["expirationdate", "MM/DD/YYYY"],
+    ["insuranceidnumber", "insuranceidnumber"],
+    ["insurancepackageid", "insurancepackageid"],
+    ["insurancephone", "insurancephone"],
+    ["insurancepolicyholder", "firstname lastname"],
+    ["insurancepolicyholderaddress1", "insurancepolicyholderaddress1"],
+    ["insurancepolicyholderaddress2", "address2"],
+    ["insurancepolicyholdercity", "insurancepolicyholdercity"],
+    ["insurancepolicyholdercountrycode", "countrycode (e.g USA)"],
+    ["insurancepolicyholdercountryiso3166", "countrycode (e.g (US)"],
+    ["insurancepolicyholderdob", "MM/DD/YYYY"],
+    ["insurancepolicyholderfirstname", "firstname"],
+    ["insurancepolicyholderlastname", "lastname"],
+    ["insurancepolicyholdermiddlename", "middlename"],
+    ["insurancepolicyholdersex", "M/F"],
+    ["insurancepolicyholderstate", "state"],
+    ["insurancepolicyholderzip", "zip"],
+    ["insuredentitytypeid", "insuredentitytypeid"],
+    ["policynumber", "policynumber"],
+    ["relationshiptoinsuredid", "relationshiptoinsuredid"],
+    ["sequencenumber", "sequencenumber"]
+  ]
+
+
+# PUT Insurances
+   [
+    ["insurancepolicyholderaddress1", "insurancepolicyholderaddress1"],
+    ["sequencenumber", "sequencenumber"]
+  ]
+
+# POST Appointments Create Appointment Slot 
+# QUERY PARAMS
+ {departmentid: "departmentid"}
+#  BODY
+ [
+    ["departmentid", "departmentid"],
+    ["providerid","providerid"],
+    ["appointmentdate","MM/DD/YYYY (past date)"],
+    ["appointmenttime","HH:MM"],
+    ["appointmenttypeid", "appointmenttypeid"]
+  ]
+
+# POST Appointments Book Appointment
+ [
+      ["patientid", "patient_id"],
+      ["ignoreschedulablepermission", "true"],
+      ["nopatientcase", "true"],
+      ["appointmenttypeid", "appointmenttypeid"]
+]
+
+# POST Appointments Create Claim for Appointment
+
+ [
+      ["claimcharges", [claim_charges].to_json],
+      ["supervisingproviderid", "provider_id".to_i]
+]
+# claim_charges
+ {procedurecode: "procuedurecode", icd10code1: "icdcode", icd10code2: "icdcode", icd10code3: "icdcode", icd10code4:"icdcode"}
+
+
+# POST Claims Create Financial Claims
+   [
+      ["departmentid", "department_id"],
+      ["claimcharges", [claim_charges].to_json],
+      ["patientid", "patient_id"],
+      ["servicedate", "MM/DD/YYY"],
+      ["renderingproviderid", renderingproviderid INT ],
+      ["supervisingproviderid", supervisingproviderid INT]
+    ]
+# claim_charges
+ {procedurecode: "procuedurecode", icd10code1: "icdcode", icd10code2: "icdcode", icd10code3: "icdcode", icd10code4:"icdcode"}
+
+
+# PUT Provider
+[
+    ["firstname", "firstname"],
+    ["lastname","lastname"], 
+    ["entitytypeid",1],
+    ["schedulingname","schedulingname"],
+    ["signatureonfileflag", true/false],
+    ["billable", true/false],
+    ["providergroupid",providergroupid],
+    ["billednamecase","billednamecase"],
+    ["username","username"]
+  ]
+
 
 ```
 

@@ -1,7 +1,6 @@
 module AthenaApi
   class Providers < Resource
     extend AthenaApi::Crud::Get
-  	extend AthenaApi::Crud::Post
     extend AthenaApi::Crud::Put
 
     def self.get_providers(params)
