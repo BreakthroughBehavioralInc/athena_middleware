@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe AthenaApi::Client, vcr: { re_record_interval: 604800 } do
+RSpec.describe AthenaApi::Client do
   let(:config) { AthenaApi::Config.new }
 
   it 'should be able to be initialized with a Config object' do

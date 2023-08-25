@@ -12,14 +12,14 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:01:00 GMT
+      - Fri, 25 Aug 2023 16:52:37 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 170.48.43.12
+      - 170.48.59.12
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -37,7 +37,7 @@ http_interactions:
       user-agent:
       - Faraday v2.7.4
       authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"CuGhJvO0mScL9t21GisSrLmXz1xn","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Mon, 07 Aug 2023 16:01:00 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"KRn9zXoVVlCptvt0arF8N2croMLb","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Fri, 25 Aug 2023 16:52:37 GMT
 - request:
     method: get
     uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382"
@@ -68,14 +68,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer CuGhJvO0mScL9t21GisSrLmXz1xn
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:01:01 GMT
+      - Fri, 25 Aug 2023 16:52:38 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -99,14 +99,14 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49923'
+      - '49907'
       x-request-id:
-      - rrt-3648900648973630752-b-gea1-4097-276142314-1
+      - rrt-9212697487179135046-c-gea1-7034-26390807-1
     body:
       encoding: UTF-8
       string: '[{"email":"rob@mail.com","guarantorcountrycode3166":"US","city":"PISCATAWAY","departmentid":"1","portaltermsonfile":false,"consenttotext":false,"dob":"07\/23\/1995","patientphoto":false,"guarantorzip":"08854","guarantorfirstname":"Robert","lastname":"Mag","guarantorcity":"PISCATAWAY","guarantorlastname":"Mag","zip":"08854","contactpreference_announcement_sms":false,"guarantordob":"07\/23\/1995","guarantorrelationshiptopatient":"1","firstname":"Robert","guarantoraddress1":"123
-        Main Street","emailexists":true,"sex":"M","guarantorstate":"NJ","contactpreference_lab_phone":true,"balances":[{"departmentlist":"1,21,102,144,145,148,150,157,162,166,168","balance":0,"cleanbalance":true,"providergroupid":1}],"guarantoremail":"rob@mail.com","patientid":"54382","contactpreference_billing_phone":true,"lastupdated":"08\/07\/2023","contactpreference_billing_sms":false,"driverslicense":false,"address1":"123
+        Main Street","emailexists":true,"sex":"M","guarantorstate":"NJ","contactpreference_lab_phone":true,"balances":[{"departmentlist":"1,21,102,144,145,148,150,157,162,166,168","balance":0,"cleanbalance":true,"providergroupid":1}],"guarantoremail":"rob@mail.com","patientid":"54382","contactpreference_billing_phone":true,"lastupdated":"08\/25\/2023","contactpreference_billing_sms":false,"driverslicense":false,"address1":"123
         Main Street","primarydepartmentid":"1","contactpreference_announcement_email":true,"lastemail":"rob@mag.com","contactpreference_announcement_phone":true,"guarantoraddresssameaspatient":true,"contactpreference_appointment_phone":true,"contactpreference_billing_email":true,"countrycode":"USA","registrationdate":"05\/01\/2023","contactpreference_appointment_sms":false,"lastupdatedby":"API-28747","guarantorcountrycode":"USA","portalaccessgiven":false,"contactpreference_lab_sms":false,"status":"active","contactpreference_appointment_email":true,"contactpreference_lab_email":true,"privacyinformationverified":true,"notes":"rob
         notes udpate","countrycode3166":"US","state":"NJ","veteran":"Y"}]'
-  recorded_at: Mon, 07 Aug 2023 16:01:01 GMT
+  recorded_at: Fri, 25 Aug 2023 16:52:38 GMT
 recorded_with: VCR 6.1.0

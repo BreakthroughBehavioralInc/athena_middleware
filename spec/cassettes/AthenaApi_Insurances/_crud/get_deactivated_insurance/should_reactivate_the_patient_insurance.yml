@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: put
-    uri: "<ATHENA_BASE_URL>/v1/195900/providers/68"
+    method: post
+    uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances/24840/reactivate"
     body:
-      encoding: UTF-8
-      string: Content-Type=application%2Fjson&billable=false&billednamecase=Ida+Little&entitytypeid=1&firstname=Ida&lastname=Little&providergroupid=1&schedulingname=lsmith87&signatureonfileflag=true&username=lsmith87
+      encoding: US-ASCII
+      string: ''
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Fri, 25 Aug 2023 16:54:38 GMT
+      - Fri, 25 Aug 2023 15:58:32 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -45,11 +45,11 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49906'
+      - '49967'
       x-request-id:
-      - rrt-8944591283372151630-b-gea1-28674-28806475-1
+      - rrt-2940778026390751337-d-gea1-22493-7578283-1
     body:
       encoding: UTF-8
-      string: '{"providerid":1}'
-  recorded_at: Fri, 25 Aug 2023 16:54:38 GMT
+      string: '{"success":true}'
+  recorded_at: Fri, 25 Aug 2023 15:58:31 GMT
 recorded_with: VCR 6.1.0

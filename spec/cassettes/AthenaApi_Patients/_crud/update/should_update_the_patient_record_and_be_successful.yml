@@ -14,14 +14,14 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer CuGhJvO0mScL9t21GisSrLmXz1xn
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:01:31 GMT
+      - Fri, 25 Aug 2023 16:53:10 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -45,11 +45,11 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49929'
+      - '49907'
       x-request-id:
-      - rrt-5986487855950006974-c-gea1-21618-62005123-1
+      - rrt-7676404586096244806-c-gea1-8919-26293557-1
     body:
       encoding: UTF-8
       string: '[{"patientid":"54382"}]'
-  recorded_at: Mon, 07 Aug 2023 16:01:31 GMT
+  recorded_at: Fri, 25 Aug 2023 16:53:10 GMT
 recorded_with: VCR 6.1.0

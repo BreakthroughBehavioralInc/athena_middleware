@@ -12,14 +12,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer GtdTXsE5Aqr7AbsPh1m2B4MNPFhK
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:02:06 GMT
+      - Fri, 25 Aug 2023 16:54:39 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -43,9 +43,9 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49911'
+      - '49904'
       x-request-id:
-      - rrt-4187694800077911733-c-gea1-19177-21362626-1
+      - rrt-7268701156211314778-b-gea1-15270-24886852-1
     body:
       encoding: UTF-8
       string: '{"totalcount":132,"providers":[{"acceptingnewpatients":false,"entitytype":"Person","ansinamecode":"Allopathic
@@ -212,5 +212,5 @@ http_interactions:
         HEALTH CARE","createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Person","hideinportal":false,"providerid":2105,"firstname":"Av","schedulingname":"abhishek","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2128,"schedulingname":"schedule","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Non-person
         entity","hideinportal":false,"providerid":2129,"schedulingname":"schedule1","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2130,"schedulingname":"name15","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2140,"schedulingname":"name20","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2141,"schedulingname":"schedulenew","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2145,"schedulingname":"schedulenew225","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2147,"schedulingname":"schedulenew50","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2148,"schedulingname":"schedulenew100","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2150,"schedulingname":"schedulenew10000","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2151,"schedulingname":"schedulenew1","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2152,"schedulingname":"schedulenew1359","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2153,"schedulingname":"schedulenew1360","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2154,"schedulingname":"aliquip","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2157,"schedulingname":"schedulenew1400","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Person","hideinportal":false,"providerid":2192,"firstname":"Dd","schedulingname":"werwe","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Person","hideinportal":false,"providerid":2195,"firstname":"Test","schedulingname":"name","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2196,"schedulingname":"name1","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"hideinportal":false,"providerid":2200,"schedulingname":"test1224","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Person","hideinportal":false,"providertypeid":"MA","providerid":2205,"firstname":"Test_case_0002","schedulingname":"Test_Case_0002","providertype":"Medical
         Assistant (MA)","billable":false,"createencounteroncheckin":false},{"acceptingnewpatients":false,"entitytype":"Person","hideinportal":false,"providerid":2231,"firstname":"Tommy","schedulingname":"EmptyCare22","billable":false,"createencounteroncheckin":false}]}'
-  recorded_at: Mon, 07 Aug 2023 16:02:06 GMT
+  recorded_at: Fri, 25 Aug 2023 16:54:39 GMT
 recorded_with: VCR 6.1.0

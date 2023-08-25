@@ -12,14 +12,14 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:02:07 GMT
+      - Fri, 25 Aug 2023 16:55:00 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 170.48.43.12
+      - 170.48.59.12
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -37,7 +37,7 @@ http_interactions:
       user-agent:
       - Faraday v2.7.4
       authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept:
@@ -54,8 +54,8 @@ http_interactions:
       - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"L9NO1r5EpP8m08yNSAyphyUE4wgQ","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Mon, 07 Aug 2023 16:02:07 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"VQRWy7tVkou35SKs75j3ZIsig8I6","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Fri, 25 Aug 2023 16:55:00 GMT
 - request:
     method: get
     uri: "<ATHENA_BASE_URL>/v1/195900/reference/providerspecialties"
@@ -68,14 +68,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer L9NO1r5EpP8m08yNSAyphyUE4wgQ
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:02:07 GMT
+      - Fri, 25 Aug 2023 16:55:00 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -99,9 +99,9 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49910'
+      - '49904'
       x-request-id:
-      - rrt-8609195904247731616-d-gea1-24713-39621686-1
+      - rrt-7676404586096244806-c-gea1-8919-26303679-1
     body:
       encoding: UTF-8
       string: '{"providerspecialties":[{"specialtyid":"660","specialtyname":"Acupuncture"},{"specialtyid":"079","specialtyname":"Addiction
@@ -229,5 +229,5 @@ http_interactions:
         Surgery"},{"specialtyid":"112","specialtyname":"Visiting Nurse"},{"specialtyid":"707","specialtyname":"Weight
         Management"},{"specialtyid":"621","specialtyname":"Wheelchair Van"},{"specialtyid":"715","specialtyname":"Wound
         Care"}],"totalcount":259}'
-  recorded_at: Mon, 07 Aug 2023 16:02:07 GMT
+  recorded_at: Fri, 25 Aug 2023 16:55:00 GMT
 recorded_with: VCR 6.1.0
