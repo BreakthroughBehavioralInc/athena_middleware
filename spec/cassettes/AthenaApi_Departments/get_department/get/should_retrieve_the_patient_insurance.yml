@@ -12,14 +12,14 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:00:05 GMT
+      - Fri, 25 Aug 2023 16:57:06 GMT
       content-type:
       - application/json
       content-length:
@@ -29,7 +29,7 @@ http_interactions:
       host:
       - api.preview.platform.athenahealth.com
       x-forwarded-for:
-      - 170.48.43.12
+      - 170.48.59.12
       x-forwarded-port:
       - '443'
       x-forwarded-proto:
@@ -37,7 +37,7 @@ http_interactions:
       user-agent:
       - Faraday v2.7.4
       authorization:
-      - Basic MG9hODQ1d2g3alRnWlZndzMyOTc6aGdTemJBSFVZX1VIdUp6Vnh5bGppY3M1d05Sc1VsLTA2MjU3UWczQw==
+      - Basic <BASIC_AUTH>
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       accept:
@@ -51,11 +51,11 @@ http_interactions:
       x-ratelimit-limit:
       - '5'
       x-ratelimit-remaining:
-      - '1'
+      - '4'
     body:
       encoding: UTF-8
-      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"bwquknMfgFETPXjGcnrzlNNP73GK","scope":"athena/service/Athenanet.MDP.*"}'
-  recorded_at: Mon, 07 Aug 2023 16:00:05 GMT
+      string: '{"token_type":"Bearer","expires_in":"3600","access_token":"xDiyq73wOCNunTNVqwi2UI0r3USK","scope":"athena/service/Athenanet.MDP.*"}'
+  recorded_at: Fri, 25 Aug 2023 16:57:06 GMT
 - request:
     method: get
     uri: "<ATHENA_BASE_URL>/v1/195900/departments"
@@ -68,14 +68,14 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer bwquknMfgFETPXjGcnrzlNNP73GK
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:00:06 GMT
+      - Fri, 25 Aug 2023 16:57:06 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
@@ -99,9 +99,9 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49921'
+      - '49895'
       x-request-id:
-      - rrt-7996943248147080507-c-gea1-11436-276006655-1
+      - rrt-6759841127562623067-d-gea1-13442-26259891-1
     body:
       encoding: UTF-8
       string: '{"departments":[{"ecommercecreditcardtypes":["AX","DS","MC","VI"],"placeofservicetypename":"OFFICE","zip":"02472-2785","phone":"(555)
@@ -206,5 +206,5 @@ http_interactions:
         INC","medicationhistoryconsent":false,"ishospitaldepartment":false,"communicatorbrandid":"21","clinicals":"OFF","state":"ME","chartsharinggroupid":"41","placeofservicefacility":false,"portalurl":"https:\/\/1959-1.portal.athenahealth.com\/","doesnotobservedst":false,"timezone":-4},{"ecommercecreditcardtypes":["AX","DS","MC","VI"],"zip":"91601-1000","providergroupid":"1","timezonename":"America\/Los_Angeles","federaltaxid":"332628371","timezoneoffset":-8,"name":"Hollywood","address":"12
         Hollywood Dr.","city":"NORTH HOLLYWOOD","servicedepartment":true,"departmentid":"192","providergroupname":"7
         Hills Medical Group","patientdepartmentname":"Hollywood","medicationhistoryconsent":false,"ishospitaldepartment":false,"communicatorbrandid":"1","clinicals":"OFF","state":"CA","chartsharinggroupid":"42","placeofservicefacility":false,"portalurl":"1959-1.portal.athenahealth.com","doesnotobservedst":false,"timezone":-7}],"totalcount":31}'
-  recorded_at: Mon, 07 Aug 2023 16:00:06 GMT
+  recorded_at: Fri, 25 Aug 2023 16:57:06 GMT
 recorded_with: VCR 6.1.0

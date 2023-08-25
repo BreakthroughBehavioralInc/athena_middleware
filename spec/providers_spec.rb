@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe AthenaApi::Providers, vcr: { re_record_interval: 604800 } do
+RSpec.describe AthenaApi::Providers, vcr: { re_record_interval: 604800, record: :new_episodes } do
 
 	let(:provider_id) { "68" }
 	let(:provider_name) { "Ida" }

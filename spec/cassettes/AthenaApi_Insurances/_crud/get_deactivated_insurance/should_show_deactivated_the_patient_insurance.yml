@@ -1,89 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances?showcancelled=true"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Accept-Encoding:
-      - identity
-      Authorization:
-      - Bearer TdCyD7ZjGbfG2DvTAUiJj36gOa37
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Mon, 07 Aug 2023 16:09:41 GMT
-      content-type:
-      - application/json; charset=UTF-8
-      content-length:
-      - '8440'
-      connection:
-      - keep-alive
-      server:
-      - Apache
-      pragma:
-      - No-cache
-      expires:
-      - Mon, 06 Jan 1975 16:00:00 GMT
-      cache-control:
-      - no-cache, no-store
-      vary:
-      - Accept-Encoding
-      accept-ch:
-      - Sec-CH-UA-Platform-Version
-      nncoection:
-      - close
-      x-ratelimit-limit:
-      - '50000'
-      x-ratelimit-remaining:
-      - '49903'
-      x-request-id:
-      - rrt-4187694800077911733-c-gea1-19174-21399395-1
-    body:
-      encoding: UTF-8
-      string: '{"insurances":[{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
-        000-0000","cancelled":"08\/07\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","lastupdated":"08\/07\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24840","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"6091234567","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"123
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24841","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"6091234567","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24845","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
-        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24846","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
-        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24847","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
-        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24848","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
-        000-0000","cancelled":"06\/20\/2023","insurancepolicyholderaddress1":"124
-        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"06\/20\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"06\/20\/2023","insurancepolicyholder":"ROB
-        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24959","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
-        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
-        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"}],"totalcount":7}'
-  recorded_at: Mon, 07 Aug 2023 16:09:41 GMT
-- request:
     method: post
     uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances/24840/reactivate"
     body:
@@ -97,7 +14,7 @@ http_interactions:
       Accept-encoding:
       - identity
       Authorization:
-      - Bearer TdCyD7ZjGbfG2DvTAUiJj36gOa37
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
@@ -135,4 +52,107 @@ http_interactions:
       encoding: UTF-8
       string: '{"success":true}'
   recorded_at: Mon, 07 Aug 2023 16:09:42 GMT
+- request:
+    method: get
+    uri: "<ATHENA_BASE_URL>/v1/195900/patients/54382/insurances?showcancelled=true"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - identity
+      Authorization:
+      - Bearer <BEARER_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 25 Aug 2023 15:58:31 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '12541'
+      connection:
+      - keep-alive
+      server:
+      - Apache
+      pragma:
+      - No-cache
+      expires:
+      - Mon, 06 Jan 1975 16:00:00 GMT
+      cache-control:
+      - no-cache, no-store
+      vary:
+      - Accept-Encoding
+      accept-ch:
+      - Sec-CH-UA-Platform-Version
+      cneonction:
+      - close
+      x-ratelimit-limit:
+      - '50000'
+      x-ratelimit-remaining:
+      - '49967'
+      x-request-id:
+      - rrt-8199364567175942215-d-gea1-27027-24815417-1
+    body:
+      encoding: UTF-8
+      string: '{"insurances":[{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","cancelled":"08\/25\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","lastupdated":"08\/25\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24840","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"6091234567","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"123
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24841","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"6091234567","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24845","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24846","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24847","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","cancelled":"05\/01\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"05\/01\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"05\/01\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24848","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"BCBS-ME","policynumber":"123","insurancephone":"(000)
+        000-0000","cancelled":"06\/20\/2023","insurancepolicyholderaddress1":"124
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"06\/20\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"06\/20\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"24959","insurancepolicyholdersex":"M","insurancepackagecity":"SOUTH
+        PORTLAND","insuranceplanname":"BCBS-ME:ANTHEM BLUE CROSS BLUE SHIELD -> 1663","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancepackagezip":"04106-6909","insurancetype":"Commercial","insurancepolicyholdercountrycode":"USA","insurancepackageid":123,"insurancepackageaddress1":"2
+        GANNETT DR","insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":157,"insurancepackagestate":"ME","relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-20709","ircname":"Self-Pay
+        (cash)","policynumber":"123","cancelled":"08\/11\/2023","insurancepolicyholderaddress1":"123
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"08\/11\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"08\/11\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"25094","insurancepolicyholdersex":"M","insuranceplanname":"*SELF
+        PAY*","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancetype":"Personal
+        Payment (Cash - No Insurance)","insurancepolicyholdercountrycode":"USA","insurancepackageid":0,"insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":40,"relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"Self-Pay
+        (cash)","policynumber":"123","cancelled":"08\/11\/2023","insurancepolicyholderaddress1":"123
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"08\/11\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"08\/11\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"25095","insurancepolicyholdersex":"M","insuranceplanname":"*SELF
+        PAY*","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancetype":"Personal
+        Payment (Cash - No Insurance)","insurancepolicyholdercountrycode":"USA","insurancepackageid":0,"insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":40,"relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"Self-Pay
+        (cash)","policynumber":"123","cancelled":"08\/11\/2023","insurancepolicyholderaddress1":"123
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"08\/11\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"08\/11\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"25096","insurancepolicyholdersex":"M","insuranceplanname":"*SELF
+        PAY*","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancetype":"Personal
+        Payment (Cash - No Insurance)","insurancepolicyholdercountrycode":"USA","insurancepackageid":0,"insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":40,"relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"},{"insurancepolicyholdercity":"PISCATAWAY","lastupdatedby":"API-28747","ircname":"Self-Pay
+        (cash)","policynumber":"123","cancelled":"08\/11\/2023","insurancepolicyholderaddress1":"123
+        MAIN STREET","insurancepolicyholderaddress2":"ADDRESS2","expirationdate":"07\/01\/2025","lastupdated":"08\/11\/2023","relationshiptoinsured":"Self","eligibilitylastchecked":"08\/11\/2023","insurancepolicyholder":"ROB
+        MAG","insurancepolicyholderstate":"NJ","eligibilitystatus":"Unverified","insurancepolicyholdercountryiso3166":"US","insuranceid":"25097","insurancepolicyholdersex":"M","insuranceplanname":"*SELF
+        PAY*","insuranceidnumber":"TOAAN3684542","eligibilityreason":"Athena","insurancetype":"Personal
+        Payment (Cash - No Insurance)","insurancepolicyholdercountrycode":"USA","insurancepackageid":0,"insuredentitytypeid":1,"insurancepolicyholderdob":"07\/23\/1995","insurancepolicyholderfirstname":"ROB","sequencenumber":1,"ircid":40,"relationshiptoinsuredid":123,"insurancepolicyholderlastname":"MAG","insurancepolicyholderzip":"08854"}],"totalcount":11}'
+  recorded_at: Fri, 25 Aug 2023 15:58:31 GMT
 recorded_with: VCR 6.1.0

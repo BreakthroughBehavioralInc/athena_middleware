@@ -18,6 +18,17 @@ VCR.configure do |config|
   config.filter_sensitive_data('<API_KEY>') { ENV['ATHENA_KEY'] }
   config.filter_sensitive_data('<API_SECRET>') { CGI.escape(ENV['ATHENA_SECRET']) }
   config.filter_sensitive_data('<ATHENA_BASE_URL>') { ENV['ATHENA_BASE_URL'] }
+  config.filter_sensitive_data('<BEARER_TOKEN>') { |interaction|
+    auths = interaction.request.headers['Authorization'].first
+    if (match = auths.match /^Bearer\s+([^,\s]+)/ )
+      match.captures.first
+    end}
+  config.filter_sensitive_data('<BASIC_AUTH>') { |interaction|
+    auths = interaction.request.headers['Authorization'].first
+    if (match = auths.match /^Basic\s+([^,\s]+)/ )
+      match.captures.first
+    end}
+ 
 end
 
 RSpec.configure do |config|

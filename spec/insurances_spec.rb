@@ -40,7 +40,7 @@ RSpec.describe AthenaApi::Insurances, vcr: { re_record_interval: 604800, record:
         end
 
         context 'get deactivated insurance' do
-            it 'should show deactivated the patient insurance' do
+            it 'should reactivate the patient insurance' do
                 response = AthenaApi::Insurances.reactivate_insurance(patient_id,reactivate_insurance_id)
                 expect(response["success"]).to eql true
             end

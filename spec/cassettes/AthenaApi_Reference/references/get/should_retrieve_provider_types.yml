@@ -12,18 +12,18 @@ http_interactions:
       Accept-Encoding:
       - identity
       Authorization:
-      - Bearer L9NO1r5EpP8m08yNSAyphyUE4wgQ
+      - Bearer <BEARER_TOKEN>
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 07 Aug 2023 16:02:08 GMT
+      - Fri, 25 Aug 2023 16:55:01 GMT
       content-type:
       - application/json; charset=UTF-8
       content-length:
-      - '27176'
+      - '27357'
       connection:
       - keep-alive
       server:
@@ -43,12 +43,12 @@ http_interactions:
       x-ratelimit-limit:
       - '50000'
       x-ratelimit-remaining:
-      - '49921'
+      - '49904'
       x-request-id:
-      - rrt-6791270272304720729-d-gea1-7787-22447610-1
+      - rrt-8199364567175942215-d-gea1-27027-25023072-1
     body:
       encoding: UTF-8
-      string: '{"totalcount":353,"providertypes":[{"providertypeid":"ACNP","providertype":"ACUTE
+      string: '{"totalcount":355,"providertypes":[{"providertypeid":"ACNP","providertype":"ACUTE
         CARE - NURSE PRACTITIONER"},{"providertypeid":"ACNS-BC","providertype":"ACUTE
         CLINICAL NURSE SPECIALIST BOARD CERTIFIED (ACNS-BC)"},{"providertypeid":"ACNPC-AG","providertype":"ADULT
         GERONTOLOGY ACUTE CLINICAL NURSE PRACTITIONER BOARD CERTIFIED (ACNPC-AG)"},{"providertypeid":"AGACNP-BC","providertype":"ADULT
@@ -72,7 +72,8 @@ http_interactions:
         ASSISTANT"},{"providertypeid":"ASW","providertype":"ASSOCIATE CLINICAL SOCIAL
         WORKER"},{"providertypeid":"LCSW-A","providertype":"ASSOCIATE LICENSED CLINICAL
         SOCIAL WORKER (LCSW-A)"},{"providertypeid":"AMFT","providertype":"ASSOCIATE
-        MARRIAGE AND FAMILY THERAPIST"},{"providertypeid":"BDS","providertype":"BACHELOR
+        MARRIAGE AND FAMILY THERAPIST"},{"providertypeid":"APCC","providertype":"ASSOCIATE
+        PROFESSIONAL CLINICAL COUNSELOR (APCC)"},{"providertypeid":"BDS","providertype":"BACHELOR
         DEGREE OF DENTISTRY"},{"providertypeid":"MBBS","providertype":"BACHELOR OF
         MEDICINE AND BACHELOR OF SURGERY"},{"providertypeid":"BPSYCH","providertype":"BACHELOR
         OF PSYCHOLOGY (BPSYCH)"},{"providertypeid":"BSN","providertype":"BACHELOR
@@ -150,8 +151,8 @@ http_interactions:
         WORKER"},{"providertypeid":"CHP","providertype":"COMMUNITY HEALTH PRACTITIONER"},{"providertypeid":"HD","providertype":"COUNTY
         HEALTH DEPARTMENT"},{"providertypeid":"CRNASUP","providertype":"CRNA,SUPERVISING"},{"providertypeid":"CNM","providertype":"Certified
         Nurse Midwife (CNM)"},{"providertypeid":"DHAT","providertype":"DENTAL HEALTH
-        AIDE THERAPIST"},{"providertypeid":"DMS","providertype":"DENTIST"},{"providertypeid":"LSW-I","providertype":"DO
-        NOT USE"},{"providertypeid":"CH3","providertype":"DO NOT USE"},{"providertypeid":"DAOM","providertype":"DOCTOR
+        AIDE THERAPIST"},{"providertypeid":"DMS","providertype":"DENTIST"},{"providertypeid":"CH3","providertype":"DO
+        NOT USE"},{"providertypeid":"LSW-I","providertype":"DO NOT USE"},{"providertypeid":"DAOM","providertype":"DOCTOR
         OF ACUPUNCTURE AND ORIENTAL MEDICINE (DAOM)"},{"providertypeid":"AU.D","providertype":"DOCTOR
         OF AUDIOLOGY"},{"providertypeid":"DC","providertype":"DOCTOR OF CHIROPRACTIC"},{"providertypeid":"DMD","providertype":"DOCTOR
         OF DENTAL MEDICINE"},{"providertypeid":"DDS","providertype":"DOCTOR OF DENTAL
@@ -194,8 +195,8 @@ http_interactions:
         MARRIAGE AND FAMILY THERAPY"},{"providertypeid":"AP","providertype":"LICENSED
         ACUPUNCTURIST"},{"providertypeid":"LAPSW","providertype":"LICENSED ADVANCED
         PRACTITIONER SOCIAL WORKER (LAPSW)"},{"providertypeid":"LA","providertype":"LICENSED
-        AESTHETICIAN"},{"providertypeid":"LADAC","providertype":"LICENSED ALCOHOL
-        AND DRUG ABUSE COUNSELOR"},{"providertypeid":"LADC","providertype":"LICENSED
+        AESTHETICIAN"},{"providertypeid":"LADC","providertype":"LICENSED ALCOHOL AND
+        DRUG ABUSE COUNSELOR"},{"providertypeid":"LADAC","providertype":"LICENSED
         ALCOHOL AND DRUG ABUSE COUNSELOR"},{"providertypeid":"AUD","providertype":"LICENSED
         AUDIOLOGIST"},{"providertypeid":"C-LCSW","providertype":"LICENSED CERTIFIED
         SOCIAL WORKER"},{"providertypeid":"LCSW-C","providertype":"LICENSED CERTIFIED
@@ -257,15 +258,15 @@ http_interactions:
         CERTIFIED WELLNESS COACH"},{"providertypeid":"MSSW","providertype":"MASTER
         OF SCIENCE IN SOCIAL WORK (MSSW)"},{"providertypeid":"MSPT","providertype":"MASTER
         OF SCIENCE OF PHYSICAL THERAPY"},{"providertypeid":"MHP","providertype":"MASTER''S
-        OF SCIENCE IN COUNSELOR EDUCATION"},{"providertypeid":"MDBCC","providertype":"MASTERS
-        IN DIVINITY-BOARD CERTIFIED CHAPLAIN"},{"providertypeid":"MDIVBCC","providertype":"MASTERS
+        OF SCIENCE IN COUNSELOR EDUCATION"},{"providertypeid":"MDIVBCC","providertype":"MASTERS
+        IN DIVINITY-BOARD CERTIFIED CHAPLAIN"},{"providertypeid":"MDBCC","providertype":"MASTERS
         IN DIVINITY-BOARD CERTIFIED CHAPLAIN"},{"providertypeid":"MSN","providertype":"MASTERS
         NURSING SCIENCE"},{"providertypeid":"MAC","providertype":"MASTERS OF COUNSELING
         (MAC)"},{"providertypeid":"MCP","providertype":"MASTERS OF COUNSELING AND
         PSYCHOLOGY"},{"providertypeid":"MPT","providertype":"MASTERS OF PHYSICAL THERAPY"},{"providertypeid":"MS-CMHC","providertype":"MASTERS
-        OF SCIENCE IN CLINICAL MENTAL HEALTH COUNSELING"},{"providertypeid":"MS, CGC","providertype":"MASTERS,
-        GENETIC COUNSELING"},{"providertypeid":"MGC","providertype":"MASTERS, GENETIC
-        COUNSELING"},{"providertypeid":"MD","providertype":"MD"},{"providertypeid":"PHDMP","providertype":"MEDICAL
+        OF SCIENCE IN CLINICAL MENTAL HEALTH COUNSELING"},{"providertypeid":"MGC","providertype":"MASTERS,
+        GENETIC COUNSELING"},{"providertypeid":"MS, CGC","providertype":"MASTERS,
+        GENETIC COUNSELING"},{"providertypeid":"MD","providertype":"MD"},{"providertypeid":"PHDMP","providertype":"MEDICAL
         PSYCHOLOGIST"},{"providertypeid":"MSWR","providertype":"MEDICAL SOCIAL WORKER
         (MSWR)"},{"providertypeid":"MS","providertype":"MEDICAL STUDENT"},{"providertypeid":"MHC-LP","providertype":"MENTAL
         HEALTH COUNSELOR WITH LIMITED PERMIT (MHC-LP)"},{"providertypeid":"MHI","providertype":"MENTAL
@@ -301,8 +302,8 @@ http_interactions:
         HEALTH REGISTERED NURSE (PSYCH RN)"},{"providertypeid":"P-MD","providertype":"PSYCHIATRIST"},{"providertypeid":"PSM","providertype":"PSYCHOMETRICIAN"},{"providertypeid":"PHDH","providertype":"PUBLIC
         HEALTH DENTAL HYGIENIST"},{"providertypeid":"PNC","providertype":"Perinatal
         Coordinator (PNC)"},{"providertypeid":"QMHPS","providertype":"QUALIFIED MENTAL
-        HEALTH PROFESSIONALS (QMHPS)"},{"providertypeid":"RAD","providertype":"RADIOLOGIST
-        - SUPERVISING"},{"providertypeid":"RAD-S","providertype":"RADIOLOGIST - SUPERVISING"},{"providertypeid":"RSA","providertype":"RADIOLOGIST
+        HEALTH PROFESSIONALS (QMHPS)"},{"providertypeid":"RAD-S","providertype":"RADIOLOGIST
+        - SUPERVISING"},{"providertypeid":"RAD","providertype":"RADIOLOGIST - SUPERVISING"},{"providertypeid":"RSA","providertype":"RADIOLOGIST
         SPECIALIST ASSISTANT"},{"providertypeid":"RBT","providertype":"REGISTERED
         BEHAVIOR TECHNICIAN"},{"providertypeid":"RB-T","providertype":"REGISTERED
         BEHAVIORAL THERAPIST"},{"providertypeid":"RCSW-I","providertype":"REGISTERED
@@ -332,13 +333,15 @@ http_interactions:
         PERFORMANCE COACH"},{"providertypeid":"SF","providertype":"STUDENT FELLOW"},{"providertypeid":"SRNA","providertype":"STUDENT
         NURSE ANESTHETIST"},{"providertypeid":"SNP","providertype":"STUDENT NURSE
         PRACTITIONER"},{"providertypeid":"SOT","providertype":"STUDENT OCCUPATIONAL
-        THERAPY"},{"providertypeid":"SPT","providertype":"STUDENT OF PHYSICAL THERAPY"},{"providertypeid":"SPTA","providertype":"STUDENT
-        OF PHYSICAL THERAPY (ASSISTANT)"},{"providertypeid":"SST","providertype":"STUDENT
-        SPEECH THERAPY"},{"providertypeid":"SUDP","providertype":"SUBSTANCE USE DISORDER
-        PROFESSIONAL"},{"providertypeid":"SUDPT","providertype":"SUBSTANCE USE DISORDER
-        PROFESSIONAL TRAINEE"},{"providertypeid":"SA","providertype":"SURGICAL ASSISTANT"},{"providertypeid":"TECH","providertype":"TECHNICAL"},{"providertypeid":"TLLP","providertype":"TEMPORARY
+        THERAPY"},{"providertypeid":"SOTA","providertype":"STUDENT OCCUPATIONAL THERAPY
+        ASSISTANT (SOTA)"},{"providertypeid":"SPT","providertype":"STUDENT OF PHYSICAL
+        THERAPY"},{"providertypeid":"SPTA","providertype":"STUDENT OF PHYSICAL THERAPY
+        (ASSISTANT)"},{"providertypeid":"SST","providertype":"STUDENT SPEECH THERAPY"},{"providertypeid":"SUDP","providertype":"SUBSTANCE
+        USE DISORDER PROFESSIONAL"},{"providertypeid":"SUDPT","providertype":"SUBSTANCE
+        USE DISORDER PROFESSIONAL TRAINEE"},{"providertypeid":"SA","providertype":"SURGICAL
+        ASSISTANT"},{"providertypeid":"TECH","providertype":"TECHNICAL"},{"providertypeid":"TLLP","providertype":"TEMPORARY
         LIMITED LICENSE PSYCHOLOGY"},{"providertypeid":"TC","providertype":"THERAPY
         COACH (TC)"},{"providertypeid":"MT","providertype":"TRANSCRIPTIONIST"},{"providertypeid":"TRAN","providertype":"TRANSPORTATION"},{"providertypeid":"WHNP-BC","providertype":"WOMEN''S
         HEALTH CARE NURSE PRACTITIONER, BOARD CERTIFIED"},{"providertypeid":"DTP","providertype":"ZZ"},{"providertypeid":"PODIATRY"}]}'
-  recorded_at: Mon, 07 Aug 2023 16:02:08 GMT
+  recorded_at: Fri, 25 Aug 2023 16:55:01 GMT
 recorded_with: VCR 6.1.0
