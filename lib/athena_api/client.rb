@@ -1,17 +1,16 @@
 require "oauth2"
+require "singleton"
 
 module AthenaApi
   class Client
     BUFFER = 120
 
+  include Singleton
+
     attr_reader :config
 
-    def initialize(config = {})
-      @config = config
-    end
-
-    def self.active_client
-      new(AthenaApi.config)
+    def initialize
+      @config = AthenaApi.config
     end
 
     def connection

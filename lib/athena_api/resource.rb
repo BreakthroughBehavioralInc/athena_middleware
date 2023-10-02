@@ -9,7 +9,7 @@ module AthenaApi
       end
   
       def self.client
-        @client ||= AthenaApi::Client.active_client
+        AthenaApi::Client.instance
       end
   
       def self.resource_url

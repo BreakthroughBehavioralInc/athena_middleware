@@ -88,7 +88,7 @@ AthenaApi::Providers.put(provider_id, provider_body)
 AthenaApi::Providers.get_providers(body_params)
 
 # Departments
-AthenaApi::Departments.get()
+AthenaApi::Departments.get_departments()
 
 # Reference
 AthenaApi::Reference.get_provider_types()
